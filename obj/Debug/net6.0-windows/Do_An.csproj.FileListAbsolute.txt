@@ -1,0 +1,60 @@
+E:\Net\Do_An\Do_An\bin\Debug\net6.0-windows\Do_An.exe
+E:\Net\Do_An\Do_An\bin\Debug\net6.0-windows\Do_An.deps.json
+E:\Net\Do_An\Do_An\bin\Debug\net6.0-windows\Do_An.runtimeconfig.json
+E:\Net\Do_An\Do_An\bin\Debug\net6.0-windows\Do_An.dll
+E:\Net\Do_An\Do_An\bin\Debug\net6.0-windows\Do_An.pdb
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.AssemblyReference.cache
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Form1.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.GenerateResource.cache
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.GeneratedMSBuildEditorConfig.editorconfig
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.AssemblyInfoInputs.cache
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.AssemblyInfo.cs
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.CoreCompileInputs.cache
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.dll
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\refint\Do_An.dll
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.pdb
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\ref\Do_An.dll
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Properties.Resources.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Admin.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Admin1.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.NhânViênBanHang.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Pass.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.NhanVien.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.NhapHang.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Test.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.ThongKe.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.HoaDon.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Form2.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.X.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.Kho.resources
+E:\Net\Do_An\Do_An\obj\Debug\net6.0-windows\Do_An.logo.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\Do_An.exe
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\Do_An.deps.json
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\Do_An.runtimeconfig.json
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\Do_An.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\Do_An.pdb
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.AssemblyReference.cache
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.Admin1.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.Form1.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.Pass.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.Properties.Resources.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_NhanVien.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.X.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.GenerateResource.cache
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.GeneratedMSBuildEditorConfig.editorconfig
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.AssemblyInfoInputs.cache
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.AssemblyInfo.cs
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.CoreCompileInputs.cache
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\ref\Do_An.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.pdb
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_Admin.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\refint\Do_An.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_Kho.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_CaNhan.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_HoaDon.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_NhapHang.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_ThongKe.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_DangNhap.resources
