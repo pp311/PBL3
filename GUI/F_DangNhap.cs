@@ -21,7 +21,7 @@ namespace Do_An
 
         private void button1_Click(object sender, EventArgs e)
         {
-            F_Admin f_admin = new F_Admin();
+            F_QuanLy f_admin = new F_QuanLy();
             f_admin.Closed += (s, args) => this.Close();
             f_admin.Show();
         }

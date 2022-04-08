@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="F_Admin.cs">
+    <Compile Update="GUI\Admin1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="F_DangNhap.cs">
+    <Compile Update="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Admin1.cs">
+    <Compile Update="GUI\F_QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="GUI\F_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Pass.cs">
+    <Compile Update="GUI\Pass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UC_CaNhan.cs">
+    <Compile Update="GUI\UC_CaNhan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_HoaDon.cs">
+    <Compile Update="GUI\UC_HoaDon.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_Kho.cs">
+    <Compile Update="GUI\UC_Kho.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_NhanVien.cs">
+    <Compile Update="GUI\UC_NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_NhapHang.cs">
+    <Compile Update="GUI\UC_NhapHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="UC_ThongKe.cs">
+    <Compile Update="GUI\UC_ThongKe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="X.cs">
+    <Compile Update="GUI\X.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
