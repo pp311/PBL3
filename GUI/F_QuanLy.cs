@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Do_An
 {
-    public partial class F_Admin : Form
+    public partial class F_QuanLy : Form
     {
-        public F_Admin()
+        public F_QuanLy()
         {
             InitializeComponent();
         }
