@@ -12,9 +12,29 @@ namespace Do_An
 {
     public partial class F_QuanLy : Form
     {
+        System.Windows.Forms.Timer t = null;
         public F_QuanLy()
         {
             InitializeComponent();
+            StartTimer();
+        }
+
+        private void StartTimer()
+        {
+            t = new System.Windows.Forms.Timer();
+            t.Interval = 1000;
+            t.Tick += new EventHandler(timer1_Tick);
+            t.Enabled = true;
+        }
+        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lb_Clock.Text = DateTime.Now.ToString();
+        }
+
+        void t_Tick(object sender, EventArgs e)
+        {
+            lb_Clock.Text = DateTime.Now.ToString();
         }
 
         private void btn_NhanVien_Click(object sender, EventArgs e)
@@ -88,5 +108,7 @@ namespace Do_An
             else
                 UC_ThongKe.Instance.BringToFront();
         }
+
+        
     }
 }

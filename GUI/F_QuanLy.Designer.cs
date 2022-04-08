@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_QuanLy));
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,11 +42,12 @@
             this.btn_HoaDon = new System.Windows.Forms.Button();
             this.btn_Kho = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lb_Clock = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_Main = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -225,8 +227,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel3.Controls.Add(this.lb_Clock);
             this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Controls.Add(this.dateTimePicker2);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -236,29 +238,28 @@
             this.panel3.Size = new System.Drawing.Size(1253, 72);
             this.panel3.TabIndex = 7;
             // 
+            // lb_Clock
+            // 
+            this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lb_Clock.AutoSize = true;
+            this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lb_Clock.Location = new System.Drawing.Point(881, 23);
+            this.lb_Clock.Name = "lb_Clock";
+            this.lb_Clock.Size = new System.Drawing.Size(133, 28);
+            this.lb_Clock.TabIndex = 84;
+            this.lb_Clock.Text = "00:00:00 AM";
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox8.Image = global::Do_An.Properties.Resources.dhhhhh;
-            this.pictureBox8.Location = new System.Drawing.Point(887, -9);
+            this.pictureBox8.Location = new System.Drawing.Point(782, 3);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(104, 76);
+            this.pictureBox8.Size = new System.Drawing.Size(104, 69);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 83;
             this.pictureBox8.TabStop = false;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.HighlightText;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(996, 21);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(125, 32);
-            this.dateTimePicker2.TabIndex = 82;
             // 
             // pictureBox1
             // 
@@ -292,6 +293,10 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(1253, 891);
             this.pnl_Main.TabIndex = 8;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // F_QuanLy
             // 
@@ -334,8 +339,9 @@
         private Panel panel3;
         private Label label2;
         private PictureBox pictureBox1;
-        private DateTimePicker dateTimePicker2;
         private PictureBox pictureBox8;
         private Panel pnl_Main;
+        private System.Windows.Forms.Timer timer1;
+        private Label lb_Clock;
     }
 }
