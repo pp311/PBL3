@@ -59,13 +59,14 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Do_An.Properties.Resources.admin1;
-            this.pictureBox6.Location = new System.Drawing.Point(2, 216);
+            this.pictureBox6.Location = new System.Drawing.Point(11, 219);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(56, 67);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label4
             // 
@@ -77,6 +78,7 @@
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Quản lý";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1
             // 
@@ -88,6 +90,7 @@
             this.label1.Size = new System.Drawing.Size(97, 26);
             this.label1.TabIndex = 17;
             this.label1.Text = "Bike Shop";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -101,6 +104,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel2
             // 
@@ -121,6 +125,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 963);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btn_NhapHang
             // 
@@ -237,53 +242,58 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1253, 72);
             this.panel3.TabIndex = 7;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // lb_Clock
             // 
             this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lb_Clock.AutoSize = true;
             this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_Clock.Location = new System.Drawing.Point(881, 23);
+            this.lb_Clock.Location = new System.Drawing.Point(956, 23);
             this.lb_Clock.Name = "lb_Clock";
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 84;
             this.lb_Clock.Text = "00:00:00 AM";
+            this.lb_Clock.Click += new System.EventHandler(this.lb_Clock_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox8.Image = global::Do_An.Properties.Resources.dhhhhh;
-            this.pictureBox8.Location = new System.Drawing.Point(782, 3);
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(893, 3);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(104, 69);
+            this.pictureBox8.Size = new System.Drawing.Size(69, 65);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 83;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Do_An.Properties.Resources.xx;
-            this.pictureBox1.Location = new System.Drawing.Point(1176, 0);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1200, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 31);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(518, 15);
+            this.label2.Location = new System.Drawing.Point(517, 15);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "Bike Shop QHP";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pnl_Main
             // 
@@ -293,6 +303,7 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(1253, 891);
             this.pnl_Main.TabIndex = 8;
+            this.pnl_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Main_Paint);
             // 
             // timer1
             // 

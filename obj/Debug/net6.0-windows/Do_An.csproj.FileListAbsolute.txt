@@ -50,7 +50,6 @@ E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\ref\Do_An.dll
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.pdb
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
-E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_Admin.resources
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\refint\Do_An.dll
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_Kho.resources
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_CaNhan.resources
@@ -87,3 +86,8 @@ D:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do
 D:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
 D:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\ref\Do_An.dll
 D:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_QuanLy.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_NhanVienBH.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_NhanVienSC.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_QuanLy.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_BanHang.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_BaoHanh.resources
