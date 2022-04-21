@@ -27,5 +27,11 @@ namespace Do_An
                 return _instance;
             }
         }
+
+        private void btn_DMK_Click(object sender, EventArgs e)
+        {
+            Pass p = new Pass();
+            p.Show();
+        }
     }
 }

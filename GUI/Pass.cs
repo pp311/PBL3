@@ -16,5 +16,10 @@ namespace Do_An
         {
             InitializeComponent();
         }
+
+        private void btn_Huy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

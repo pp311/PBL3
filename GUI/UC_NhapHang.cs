@@ -26,5 +26,11 @@ namespace Do_An
         {
             InitializeComponent();
         }
+
+        private void btn_NhapSP_Click(object sender, EventArgs e)
+        {
+            Form_SanPham fsp = new Form_SanPham();
+            fsp.Show();
+        }
     }
 }
