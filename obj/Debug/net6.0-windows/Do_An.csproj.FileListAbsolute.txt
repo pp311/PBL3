@@ -125,3 +125,4 @@ E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\refint
 E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\Do_An.pdb
 E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
 E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\ref\Do_An.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_Admin.resources

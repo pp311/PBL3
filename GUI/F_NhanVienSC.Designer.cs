@@ -33,9 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_CaNhanSC = new System.Windows.Forms.Button();
             this.btn_BanHangBH = new System.Windows.Forms.Button();
-            this.btn_CaNhan = new System.Windows.Forms.Button();
-            this.btn_ThongKe = new System.Windows.Forms.Button();
-          
             this.btn_BaoHanhSC = new System.Windows.Forms.Button();
             this.btn_HoaDonBH = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -61,9 +58,6 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_CaNhanSC);
             this.panel2.Controls.Add(this.btn_BanHangBH);
-            this.panel2.Controls.Add(this.btn_CaNhan);
-            this.panel2.Controls.Add(this.btn_ThongKe);
-        
             this.panel2.Controls.Add(this.btn_BaoHanhSC);
             this.panel2.Controls.Add(this.btn_HoaDonBH);
             this.panel2.Controls.Add(this.label4);
@@ -118,41 +112,6 @@
             this.btn_BanHangBH.UseVisualStyleBackColor = false;
             this.btn_BanHangBH.Click += new System.EventHandler(this.btn_BanHangBH_Click);
             // 
-            // btn_CaNhan
-            // 
-            this.btn_CaNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_CaNhan.BackColor = System.Drawing.Color.Turquoise;
-            this.btn_CaNhan.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_CaNhan.FlatAppearance.BorderSize = 0;
-            this.btn_CaNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CaNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CaNhan.Location = new System.Drawing.Point(0, 1295);
-            this.btn_CaNhan.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_CaNhan.Name = "btn_CaNhan";
-            this.btn_CaNhan.Size = new System.Drawing.Size(167, 80);
-            this.btn_CaNhan.TabIndex = 24;
-            this.btn_CaNhan.Text = "Cá nhân";
-            this.btn_CaNhan.UseVisualStyleBackColor = false;
-            // 
-            // btn_ThongKe
-            // 
-            this.btn_ThongKe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_ThongKe.BackColor = System.Drawing.Color.Turquoise;
-            this.btn_ThongKe.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_ThongKe.FlatAppearance.BorderSize = 0;
-            this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThongKe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ThongKe.Location = new System.Drawing.Point(0, 1215);
-            this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_ThongKe.Name = "btn_ThongKe";
-            this.btn_ThongKe.Size = new System.Drawing.Size(167, 80);
-            this.btn_ThongKe.TabIndex = 23;
-            this.btn_ThongKe.Text = "Thống kê";
-            this.btn_ThongKe.UseVisualStyleBackColor = false;
-            // 
-            // btn_NhanVien
-            // 
- 
             // btn_BaoHanhSC
             // 
             this.btn_BaoHanhSC.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,7 +174,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(172, 160);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,7 +223,7 @@
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(783, 5);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(60, 49);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -276,7 +235,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(1052, 18);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(29, 23);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -322,8 +281,6 @@
 
         private Panel panel2;
         private Button btn_BanHangBH;
-        private Button btn_CaNhan;
-        private Button btn_ThongKe;
    
         private Button btn_BaoHanhSC;
         private Button btn_HoaDonBH;

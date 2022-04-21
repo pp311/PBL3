@@ -70,10 +70,11 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(656, 44);
+            this.groupBox1.Location = new System.Drawing.Point(679, 43);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(475, 240);
+            this.groupBox1.Size = new System.Drawing.Size(454, 256);
             this.groupBox1.TabIndex = 120;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách mua hàng";
@@ -87,7 +88,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(11, 21);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(456, 213);
+            this.dataGridView1.Size = new System.Drawing.Size(435, 213);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
