@@ -34,10 +34,17 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+=======
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +53,11 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(573, 36);
+=======
+            this.label3.Location = new System.Drawing.Point(575, 15);
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 41);
             this.label3.TabIndex = 97;
@@ -59,12 +70,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.dataGridView1.Location = new System.Drawing.Point(32, 333);
+=======
+            this.dataGridView1.Location = new System.Drawing.Point(32, 241);
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
+<<<<<<< HEAD
             this.dataGridView1.Size = new System.Drawing.Size(1050, 525);
+=======
+            this.dataGridView1.Size = new System.Drawing.Size(1050, 617);
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.dataGridView1.TabIndex = 101;
             // 
             // button20
@@ -131,6 +150,7 @@
             this.button16.Text = "Thêm thông tin SP";
             this.button16.UseVisualStyleBackColor = false;
             // 
+<<<<<<< HEAD
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -138,6 +158,34 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(229, 34);
+=======
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(411, 154);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 27);
+            this.label2.TabIndex = 115;
+            this.label2.Text = "Phân loại";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(509, 154);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(138, 28);
+            this.comboBox2.TabIndex = 116;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Location = new System.Drawing.Point(731, 151);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(229, 33);
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.textBox4.TabIndex = 118;
             // 
             // button1
@@ -146,12 +194,17 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.07563F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(988, 229);
+=======
+            this.button1.Location = new System.Drawing.Point(965, 151);
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 33);
             this.button1.TabIndex = 119;
             this.button1.Text = "Tìm kiếm";
             this.button1.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             // 
             // comboBox1
             // 
@@ -172,15 +225,24 @@
             this.label1.Size = new System.Drawing.Size(97, 27);
             this.label1.TabIndex = 140;
             this.label1.Text = "Phân loại";
+=======
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // UC_Kho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
+=======
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label2);
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button19);
@@ -204,9 +266,16 @@
         private Button button17;
         private Button button19;
         private Button button16;
+<<<<<<< HEAD
         private TextBox textBox4;
         private Button button1;
         private ComboBox comboBox1;
         private Label label1;
+=======
+        private Label label2;
+        private ComboBox comboBox2;
+        private TextBox textBox4;
+        private Button button1;
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     }
 }

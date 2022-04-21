@@ -17,7 +17,23 @@ namespace Do_An
             InitializeComponent();
         }
 
+<<<<<<< HEAD
 
+=======
+        private void btn_CaNhanNVBH_Click(object sender, EventArgs e)
+        {
+            if (!pnl_MainBH.Controls.Contains(UC_CaNhan.Instance))
+            {
+                pnl_MainBH.Controls.Add(UC_CaNhan.Instance);
+                UC_CaNhan.Instance.Dock = DockStyle.Fill;
+                UC_CaNhan.Instance.BringToFront();
+            }
+            else
+                UC_CaNhan.Instance.BringToFront();
+        }
+
+        
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
 
         private void btn_HoaDonBH_Click(object sender, EventArgs e)
         {
@@ -42,6 +58,7 @@ namespace Do_An
             else
                 UC_BanHang.Instance.BringToFront();
         }
+<<<<<<< HEAD
 
         private void btn_SanPhamBH_Click(object sender, EventArgs e)
         {
@@ -71,5 +88,7 @@ namespace Do_An
         {
            //
         }
+=======
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     }
 }

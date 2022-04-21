@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     "",
     "\\GUI"
   ],
   "SelectedNode": "\\GUI\\UC_CaNhan.cs",
+=======
+    ""
+  ],
+  "SelectedNode": "\\Do_An.sln",
+>>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
   "PreviewInSolutionExplorer": false
 }
