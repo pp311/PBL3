@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="GUI\Form_SanPham.cs">
+    <Compile Update="GUI\Admin1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GUI\Admin1.cs">
+    <Compile Update="GUI\Form_SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\Form1.cs">
@@ -57,6 +57,9 @@
     </Compile>
     <Compile Update="GUI\UC_SanPham.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="GUI\Form_HoaDon.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>

@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -43,20 +42,23 @@
             this.button17 = new System.Windows.Forms.Button();
             this.btn_NhapSP = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.numericUpDown1);
+            this.panel2.Controls.Add(this.numericUpDown2);
             this.panel2.Controls.Add(this.dateTimePicker4);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.textBox7);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Location = new System.Drawing.Point(32, 81);
@@ -64,6 +66,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1202, 231);
             this.panel2.TabIndex = 129;
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker4.Location = new System.Drawing.Point(844, 25);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(287, 36);
+            this.dateTimePicker4.TabIndex = 137;
             // 
             // button2
             // 
@@ -103,15 +114,6 @@
             this.label5.TabIndex = 80;
             this.label5.Text = "Giá nhập";
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(844, 80);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(290, 34);
-            this.textBox3.TabIndex = 86;
-            // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -123,14 +125,6 @@
             this.label14.Size = new System.Drawing.Size(109, 27);
             this.label14.TabIndex = 114;
             this.label14.Text = "Ngày nhập";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(185, 84);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(290, 34);
-            this.textBox7.TabIndex = 118;
             // 
             // label15
             // 
@@ -247,14 +241,21 @@
             this.button1.Text = "Xem chi tiết";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker4
+            // numericUpDown2
             // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(844, 25);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(287, 36);
-            this.dateTimePicker4.TabIndex = 137;
+            this.numericUpDown2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown2.Location = new System.Drawing.Point(185, 80);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(290, 36);
+            this.numericUpDown2.TabIndex = 138;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.numericUpDown1.Location = new System.Drawing.Point(841, 80);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(290, 36);
+            this.numericUpDown1.TabIndex = 139;
             // 
             // UC_NhapHang
             // 
@@ -273,6 +274,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,9 +286,7 @@
         private Panel panel2;
         private TextBox textBox1;
         private Label label5;
-        private TextBox textBox3;
         private Label label14;
-        private TextBox textBox7;
         private Label label15;
         private Label label13;
         private DataGridView dataGridView1;
@@ -296,5 +297,7 @@
         private Button button1;
         private Button button2;
         private DateTimePicker dateTimePicker4;
+        private NumericUpDown numericUpDown2;
+        private NumericUpDown numericUpDown1;
     }
 }

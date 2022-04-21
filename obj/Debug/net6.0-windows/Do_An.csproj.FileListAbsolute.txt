@@ -161,3 +161,4 @@ E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.csproj.CoreCompileInputs.cache
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
 E:\PBL3-gui\obj\Debug\net6.0-windows\ref\Do_An.dll
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.UC_SanPham.resources
+E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.Form_HoaDon.resources
