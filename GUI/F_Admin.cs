@@ -67,27 +67,14 @@ namespace Do_An
 
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
-            
-            /*  if (!pnl_Main.Controls.Contains(UC_NhapHang.Instance))
-              {
-                  pnl_Main.Controls.Add(UC_NhapHang.Instance);
-                  UC_NhapHang.Instance.Dock = DockStyle.Fill;
-                  UC_NhapHang.Instance.BringToFront();
-              }
-              else
-                  UC_NhapHang.Instance.BringToFront();*/
-            
-           /* if (!pnl_Main.Controls.Contains(UC_BanHanh.Instance))
-                
+            if (!pnl_Main.Controls.Contains(UC_NhapHang.Instance))
             {
-                
-                pnl_Main.Controls.Add(UC_BanHanh.Instance);
-                UC_BanHang.Instance.Dock = DockStyle.Fill;
-                UC_BanHang.Instance.BringToFront();
-            }*/
-            /*
+                pnl_Main.Controls.Add(UC_NhapHang.Instance);
+                UC_NhapHang.Instance.Dock = DockStyle.Fill;
+                UC_NhapHang.Instance.BringToFront();
+            }
             else
-                UC_BanHang.Instance.BringToFront();*/
+                UC_NhapHang.Instance.BringToFront();
         }
 
         private void btn_ThongKe_Click(object sender, EventArgs e)
@@ -100,11 +87,6 @@ namespace Do_An
             }
             else
                 UC_ThongKe.Instance.BringToFront();
-        }
-
-        private void pictureĐX_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
