@@ -25,6 +25,9 @@ namespace Do_An
         public UC_NhanVien()
         {
             InitializeComponent();
+            tb_IdNhanVien.Enabled = false;
+            EnableEdit(false);
+
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -32,6 +35,46 @@ namespace Do_An
 
         }
 
-     
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Validate();
+
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            EnableEdit(true);
+        }
+        private void EnableEdit(bool b)
+        {
+            tb_TenNhanVien.Enabled = b;
+            tb_SoDienThoai.Enabled = b;
+            tb_DiaChi.Enabled = b;
+            rb_Nam.Enabled = b;
+            rb_Nu.Enabled = b;
+            cbb_ViTri.Enabled = b;
+            dtp_NgaySinh.Enabled = b;
+            tb_TaiKhoan.Enabled = b;
+        }
+        private void Validate()
+        {
+            string tenNhanVien = tb_TenNhanVien.Text;
+            string soDienThoai = tb_SoDienThoai.Text;
+            string diaChi = tb_DiaChi.Text;
+            string taiKhoan = tb_TaiKhoan.Text;
+            bool isValid = true;
+            if (string.IsNullOrEmpty(tenNhanVien) || !tenNhanVien.All(c => char.IsLetter(c))) isValid = false;
+            if (string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
+            if (string.IsNullOrEmpty(diaChi) || !diaChi.All(c => char.IsLetterOrDigit(c))) isValid = false;
+            if(!rb_Nam.Checked && !rb_Nu.Checked) isValid = false;
+            //if(cbb_ViTri.SelectedItem == null) isValid = false;
+            if(string.IsNullOrEmpty(taiKhoan)) isValid = false;
+            if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            EnableEdit(true);
+        }
     }
 }
