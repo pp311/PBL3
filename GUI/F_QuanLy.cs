@@ -23,16 +23,11 @@ namespace Do_An
         {
             t = new System.Windows.Forms.Timer();
             t.Interval = 1000;
-            t.Tick += new EventHandler(timer1_Tick);
+            t.Tick += new EventHandler(t_Tick);
             t.Enabled = true;
         }
         
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            lb_Clock.Text = DateTime.Now.ToString();
-        }
-
-        void t_Tick(object sender, EventArgs e)
+           void t_Tick(object sender, EventArgs e)
         {
             lb_Clock.Text = DateTime.Now.ToString();
         }

@@ -178,3 +178,15 @@ D:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\ru
 D:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.CopyComplete
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.Form_HoaDon.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.Form_SanPham.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_Admin.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.GUI.test.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_SanPham.resources
+E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.CopyComplete

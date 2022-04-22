@@ -12,12 +12,26 @@ namespace Do_An
 {
     public partial class F_NhanVienBH : Form
     {
+        System.Windows.Forms.Timer t = null;
         public F_NhanVienBH()
         {
             InitializeComponent();
+            StartTimer();
+
         }
 
-
+        private void StartTimer()
+        {
+            t = new System.Windows.Forms.Timer();
+            t.Interval = 1000;
+            t.Tick += new EventHandler(t_Tick);
+            t.Enabled = true;
+        }
+         
+        void t_Tick(object sender, EventArgs e)
+        {
+            lb_Clock.Text = DateTime.Now.ToString();
+        }
 
         private void btn_HoaDonBH_Click(object sender, EventArgs e)
         {
