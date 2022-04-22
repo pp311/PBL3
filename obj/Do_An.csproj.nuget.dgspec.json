@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PBL3-gui\\Do_An.csproj": {}
+    "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj": {}
   },
   "projects": {
-    "E:\\PBL3-gui\\Do_An.csproj": {
+    "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PBL3-gui\\Do_An.csproj",
+        "projectUniqueName": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
         "projectName": "Do_An",
-        "projectPath": "E:\\PBL3-gui\\Do_An.csproj",
-        "packagesPath": "C:\\Users\\hanhn\\.nuget\\packages\\",
-        "outputPath": "E:\\PBL3-gui\\obj\\",
+        "projectPath": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
+        "packagesPath": "C:\\Users\\PhucPhan\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hanhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PhucPhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
