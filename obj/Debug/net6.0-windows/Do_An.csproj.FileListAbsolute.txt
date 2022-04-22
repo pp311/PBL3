@@ -125,7 +125,6 @@ E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\refint
 E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\Do_An.pdb
 E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
 E:\OneDrive - The University of Technology\alooo\obj\Debug\net6.0-windows\ref\Do_An.dll
-<<<<<<< HEAD
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.csproj.AssemblyReference.cache
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.dll
 E:\PBL3-gui\obj\Debug\net6.0-windows\refint\Do_An.dll
@@ -163,6 +162,3 @@ E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
 E:\PBL3-gui\obj\Debug\net6.0-windows\ref\Do_An.dll
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.UC_SanPham.resources
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.Form_HoaDon.resources
-=======
-E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.F_Admin.resources
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e

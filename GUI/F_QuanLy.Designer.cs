@@ -75,15 +75,9 @@
             this.label4.Location = new System.Drawing.Point(90, 239);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-<<<<<<< HEAD
             this.label4.Size = new System.Drawing.Size(71, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Quản lí";
-=======
-            this.label4.Size = new System.Drawing.Size(75, 24);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Quản lý";
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label1

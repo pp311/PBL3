@@ -64,7 +64,6 @@ namespace Do_An
             else
                 UC_CaNhan.Instance.BringToFront();
         }
-<<<<<<< HEAD
 
         private void btn_SanPhamSC_Click(object sender, EventArgs e)
         {
@@ -77,7 +76,5 @@ namespace Do_An
             else
                 UC_SanPham.Instance.BringToFront();
         }
-=======
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     }
 }

@@ -13,8 +13,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Do_An
-<<<<<<< HEAD
 build_property.ProjectDir = E:\PBL3-gui\
-=======
-build_property.ProjectDir = E:\OneDrive - The University of Technology\Hoc\Do_An\
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e

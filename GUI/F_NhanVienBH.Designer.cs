@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_NhanVienBH));
             this.panel2 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
             this.btn_CaNhanBH = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_BanHangBH = new System.Windows.Forms.Button();
@@ -38,11 +37,6 @@
             this.btn_ThongKe = new System.Windows.Forms.Button();
             this.btn_NhanVien = new System.Windows.Forms.Button();
             this.btn_SanPhamBH = new System.Windows.Forms.Button();
-=======
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_BanHangBH = new System.Windows.Forms.Button();
-            this.btn_CaNhanBH = new System.Windows.Forms.Button();
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.btn_HoaDonBH = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,11 +44,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_Clock = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
             this.picture_setting = new System.Windows.Forms.PictureBox();
-=======
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_MainBH = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
@@ -62,17 +52,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picture_setting)).BeginInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
-<<<<<<< HEAD
             this.panel2.Controls.Add(this.btn_CaNhanBH);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_BanHangBH);
@@ -80,18 +65,12 @@
             this.panel2.Controls.Add(this.btn_ThongKe);
             this.panel2.Controls.Add(this.btn_NhanVien);
             this.panel2.Controls.Add(this.btn_SanPhamBH);
-=======
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btn_BanHangBH);
-            this.panel2.Controls.Add(this.btn_CaNhanBH);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel2.Controls.Add(this.btn_HoaDonBH);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 916);
@@ -119,18 +98,6 @@
             this.pictureBox1.Location = new System.Drawing.Point(64, 214);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 56);
-=======
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(172, 687);
-            this.panel2.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(56, 160);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 42);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
@@ -142,23 +109,15 @@
             this.btn_BanHangBH.FlatAppearance.BorderSize = 0;
             this.btn_BanHangBH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_BanHangBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.btn_BanHangBH.Location = new System.Drawing.Point(2, 361);
             this.btn_BanHangBH.Margin = new System.Windows.Forms.Padding(0);
             this.btn_BanHangBH.Name = "btn_BanHangBH";
             this.btn_BanHangBH.Size = new System.Drawing.Size(194, 107);
-=======
-            this.btn_BanHangBH.Location = new System.Drawing.Point(2, 271);
-            this.btn_BanHangBH.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_BanHangBH.Name = "btn_BanHangBH";
-            this.btn_BanHangBH.Size = new System.Drawing.Size(170, 80);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.btn_BanHangBH.TabIndex = 25;
             this.btn_BanHangBH.Text = "Bán hàng";
             this.btn_BanHangBH.UseVisualStyleBackColor = false;
             this.btn_BanHangBH.Click += new System.EventHandler(this.btn_BanHangBH_Click);
             // 
-<<<<<<< HEAD
             // btn_CaNhan
             // 
             this.btn_CaNhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -223,24 +182,6 @@
             this.btn_SanPhamBH.Text = "Sản phẩm";
             this.btn_SanPhamBH.UseVisualStyleBackColor = false;
             this.btn_SanPhamBH.Click += new System.EventHandler(this.btn_SanPhamBH_Click);
-=======
-            // btn_CaNhanBH
-            // 
-            this.btn_CaNhanBH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_CaNhanBH.BackColor = System.Drawing.Color.Turquoise;
-            this.btn_CaNhanBH.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_CaNhanBH.FlatAppearance.BorderSize = 0;
-            this.btn_CaNhanBH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CaNhanBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CaNhanBH.Location = new System.Drawing.Point(2, 430);
-            this.btn_CaNhanBH.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_CaNhanBH.Name = "btn_CaNhanBH";
-            this.btn_CaNhanBH.Size = new System.Drawing.Size(170, 80);
-            this.btn_CaNhanBH.TabIndex = 21;
-            this.btn_CaNhanBH.Text = "Cá nhân";
-            this.btn_CaNhanBH.UseVisualStyleBackColor = false;
-            this.btn_CaNhanBH.Click += new System.EventHandler(this.btn_CaNhanNVBH_Click);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // btn_HoaDonBH
             // 
@@ -250,17 +191,10 @@
             this.btn_HoaDonBH.FlatAppearance.BorderSize = 0;
             this.btn_HoaDonBH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HoaDonBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.btn_HoaDonBH.Location = new System.Drawing.Point(2, 468);
             this.btn_HoaDonBH.Margin = new System.Windows.Forms.Padding(0);
             this.btn_HoaDonBH.Name = "btn_HoaDonBH";
             this.btn_HoaDonBH.Size = new System.Drawing.Size(194, 107);
-=======
-            this.btn_HoaDonBH.Location = new System.Drawing.Point(2, 351);
-            this.btn_HoaDonBH.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_HoaDonBH.Name = "btn_HoaDonBH";
-            this.btn_HoaDonBH.Size = new System.Drawing.Size(170, 80);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.btn_HoaDonBH.TabIndex = 20;
             this.btn_HoaDonBH.Text = "Hóa đơn";
             this.btn_HoaDonBH.UseVisualStyleBackColor = false;
@@ -270,17 +204,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label4.Location = new System.Drawing.Point(11, 273);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 24);
-=======
-            this.label4.Location = new System.Drawing.Point(10, 205);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 19);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label4.TabIndex = 18;
             this.label4.Text = "Nhân viên bán hàng";
             // 
@@ -288,17 +215,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(48, 155);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 26);
-=======
-            this.label1.Location = new System.Drawing.Point(42, 116);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 21);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label1.TabIndex = 17;
             this.label1.Text = "Bike Shop";
             // 
@@ -308,15 +228,9 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(197, 213);
-=======
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(172, 160);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -326,22 +240,12 @@
             this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel1.Controls.Add(this.lb_Clock);
             this.panel1.Controls.Add(this.pictureBox8);
-<<<<<<< HEAD
             this.panel1.Controls.Add(this.picture_setting);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(197, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1235, 72);
-=======
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(172, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1081, 54);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel1.TabIndex = 7;
             // 
             // lb_Clock
@@ -349,15 +253,9 @@
             this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lb_Clock.AutoSize = true;
             this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.lb_Clock.Location = new System.Drawing.Point(940, 26);
             this.lb_Clock.Name = "lb_Clock";
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
-=======
-            this.lb_Clock.Location = new System.Drawing.Point(822, 20);
-            this.lb_Clock.Name = "lb_Clock";
-            this.lb_Clock.Size = new System.Drawing.Size(102, 21);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.lb_Clock.TabIndex = 87;
             this.lb_Clock.Text = "00:00:00 AM";
             // 
@@ -365,22 +263,14 @@
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-<<<<<<< HEAD
             this.pictureBox8.Location = new System.Drawing.Point(877, 6);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(69, 65);
-=======
-            this.pictureBox8.Location = new System.Drawing.Point(767, 4);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(60, 49);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 86;
             this.pictureBox8.TabStop = false;
             // 
-<<<<<<< HEAD
             // picture_setting
             // 
             this.picture_setting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -393,73 +283,36 @@
             this.picture_setting.TabIndex = 85;
             this.picture_setting.TabStop = false;
             this.picture_setting.Click += new System.EventHandler(this.picture_setting_Click);
-=======
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1036, 17);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(29, 23);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 85;
-            this.pictureBox3.TabStop = false;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(522, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 41);
-=======
-            this.label2.Location = new System.Drawing.Point(457, 14);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 33);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label2.TabIndex = 26;
             this.label2.Text = "Bike Shop QHP";
             // 
             // pnl_MainBH
             // 
             this.pnl_MainBH.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
             this.pnl_MainBH.Location = new System.Drawing.Point(197, 72);
             this.pnl_MainBH.Name = "pnl_MainBH";
             this.pnl_MainBH.Size = new System.Drawing.Size(1235, 844);
-=======
-            this.pnl_MainBH.Location = new System.Drawing.Point(172, 54);
-            this.pnl_MainBH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnl_MainBH.Name = "pnl_MainBH";
-            this.pnl_MainBH.Size = new System.Drawing.Size(1081, 633);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.pnl_MainBH.TabIndex = 8;
             // 
             // F_NhanVienBH
             // 
-<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1432, 916);
-=======
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 687);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.Controls.Add(this.pnl_MainBH);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
-=======
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.Name = "F_NhanVienBH";
             this.Text = "F_NhanVienBanHang";
             this.TopMost = true;
@@ -471,11 +324,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.picture_setting)).EndInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.ResumeLayout(false);
 
         }
@@ -484,14 +333,10 @@
 
         private Panel panel2;
         private Button btn_BanHangBH;
-<<<<<<< HEAD
         private Button btn_CaNhan;
         private Button btn_ThongKe;
         private Button btn_NhanVien;
         private Button btn_SanPhamBH;
-=======
-        private Button btn_CaNhanBH;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
         private Button btn_HoaDonBH;
         private Label label4;
         private Label label1;
@@ -502,11 +347,7 @@
         private PictureBox pictureBox1;
         private Label lb_Clock;
         private PictureBox pictureBox8;
-<<<<<<< HEAD
         private PictureBox picture_setting;
         private Button btn_CaNhanBH;
-=======
-        private PictureBox pictureBox3;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     }
 }

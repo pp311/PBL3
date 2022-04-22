@@ -1,5 +1,3 @@
-using System.Data.SqlClient;
-
 namespace Do_An
 {
     public partial class Form1 : Form
@@ -11,7 +9,7 @@ namespace Do_An
 
         private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)

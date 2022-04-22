@@ -42,12 +42,8 @@
             this.button17 = new System.Windows.Forms.Button();
             this.btn_NhapSP = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-=======
-            this.button2 = new System.Windows.Forms.Button();
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -56,36 +52,23 @@
             // 
             // panel2
             // 
-<<<<<<< HEAD
             this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.numericUpDown2);
             this.panel2.Controls.Add(this.dateTimePicker4);
             this.panel2.Controls.Add(this.button2);
-=======
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.dateTimePicker2);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label13);
-<<<<<<< HEAD
             this.panel2.Location = new System.Drawing.Point(32, 81);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1202, 231);
-=======
-            this.panel2.Location = new System.Drawing.Point(32, 75);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1202, 192);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel2.TabIndex = 129;
             // 
             // dateTimePicker4
             // 
-<<<<<<< HEAD
             this.dateTimePicker4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker4.Location = new System.Drawing.Point(844, 25);
@@ -108,12 +91,6 @@
             this.button2.TabIndex = 132;
             this.button2.Text = "Lưu";
             this.button2.UseVisualStyleBackColor = false;
-=======
-            this.dateTimePicker2.Location = new System.Drawing.Point(766, 25);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(290, 27);
-            this.dateTimePicker2.TabIndex = 119;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // textBox1
             // 
@@ -121,11 +98,7 @@
             this.textBox1.Location = new System.Drawing.Point(185, 25);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
-<<<<<<< HEAD
             this.textBox1.Size = new System.Drawing.Size(290, 34);
-=======
-            this.textBox1.Size = new System.Drawing.Size(290, 33);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.textBox1.TabIndex = 87;
             // 
             // label5
@@ -134,67 +107,32 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label5.Location = new System.Drawing.Point(732, 84);
-=======
-            this.label5.Location = new System.Drawing.Point(671, 81);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 27);
             this.label5.TabIndex = 80;
             this.label5.Text = "Giá nhập";
             // 
-<<<<<<< HEAD
-=======
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(766, 77);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(290, 33);
-            this.textBox3.TabIndex = 86;
-            // 
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label14.Location = new System.Drawing.Point(732, 28);
-=======
-            this.label14.Location = new System.Drawing.Point(654, 25);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(109, 27);
             this.label14.TabIndex = 114;
             this.label14.Text = "Ngày nhập";
             // 
-<<<<<<< HEAD
-=======
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(185, 84);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(290, 33);
-            this.textBox7.TabIndex = 118;
-            // 
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // label15
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label15.Location = new System.Drawing.Point(42, 29);
-=======
-            this.label15.Location = new System.Drawing.Point(61, 29);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(127, 27);
             this.label15.TabIndex = 113;
@@ -231,11 +169,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(440, 19);
-=======
-            this.label3.Location = new System.Drawing.Point(440, 13);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(479, 41);
             this.label3.TabIndex = 128;
@@ -276,7 +210,6 @@
             // 
             // btn_NhapSP
             // 
-<<<<<<< HEAD
             this.btn_NhapSP.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btn_NhapSP.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btn_NhapSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -291,21 +224,6 @@
             this.btn_NhapSP.Text = "Nhập sản phẩm";
             this.btn_NhapSP.UseVisualStyleBackColor = false;
             this.btn_NhapSP.Click += new System.EventHandler(this.btn_NhapSP_Click);
-=======
-            this.button16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button16.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(1123, 333);
-            this.button16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(149, 71);
-            this.button16.TabIndex = 131;
-            this.button16.Text = "Nhập sản phẩm";
-            this.button16.UseVisualStyleBackColor = false;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // button1
             // 
@@ -323,7 +241,6 @@
             this.button1.Text = "Xem chi tiết";
             this.button1.UseVisualStyleBackColor = false;
             // 
-<<<<<<< HEAD
             // numericUpDown2
             // 
             this.numericUpDown2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -339,23 +256,6 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(290, 36);
             this.numericUpDown1.TabIndex = 139;
-=======
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(506, 136);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 40);
-            this.button2.TabIndex = 132;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = false;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // UC_NhapHang
             // 
@@ -367,11 +267,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button17);
-<<<<<<< HEAD
             this.Controls.Add(this.btn_NhapSP);
-=======
-            this.Controls.Add(this.button16);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_NhapHang";
             this.Size = new System.Drawing.Size(1315, 877);
@@ -399,14 +295,9 @@
         private Button button17;
         private Button btn_NhapSP;
         private Button button1;
-<<<<<<< HEAD
         private Button button2;
         private DateTimePicker dateTimePicker4;
         private NumericUpDown numericUpDown2;
         private NumericUpDown numericUpDown1;
-=======
-        private DateTimePicker dateTimePicker2;
-        private Button button2;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     }
 }

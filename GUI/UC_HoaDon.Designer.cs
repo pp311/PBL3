@@ -44,11 +44,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-=======
-            this.button2 = new System.Windows.Forms.Button();
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -108,24 +104,9 @@
             this.textBox1.Location = new System.Drawing.Point(185, 25);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
-<<<<<<< HEAD
             this.textBox1.Size = new System.Drawing.Size(290, 34);
             this.textBox1.TabIndex = 87;
             // 
-=======
-            this.textBox1.Size = new System.Drawing.Size(290, 33);
-            this.textBox1.TabIndex = 87;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(185, 145);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(290, 33);
-            this.textBox2.TabIndex = 84;
-            // 
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // label5
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -145,19 +126,12 @@
             this.textBox3.Location = new System.Drawing.Point(766, 77);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox3.Name = "textBox3";
-<<<<<<< HEAD
             this.textBox3.Size = new System.Drawing.Size(290, 34);
-=======
-            this.textBox3.Size = new System.Drawing.Size(290, 33);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.textBox3.TabIndex = 86;
             // 
             // panel2
             // 
-<<<<<<< HEAD
             this.panel2.Controls.Add(this.numericUpDown1);
-=======
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label5);
@@ -207,11 +181,7 @@
             this.textBox7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox7.Location = new System.Drawing.Point(185, 84);
             this.textBox7.Name = "textBox7";
-<<<<<<< HEAD
             this.textBox7.Size = new System.Drawing.Size(290, 34);
-=======
-            this.textBox7.Size = new System.Drawing.Size(290, 33);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.textBox7.TabIndex = 118;
             // 
             // label15
@@ -243,11 +213,7 @@
             this.textBox6.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox6.Location = new System.Drawing.Point(766, 21);
             this.textBox6.Name = "textBox6";
-<<<<<<< HEAD
             this.textBox6.Size = new System.Drawing.Size(290, 34);
-=======
-            this.textBox6.Size = new System.Drawing.Size(290, 33);
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             this.textBox6.TabIndex = 117;
             // 
             // label11
@@ -286,7 +252,6 @@
             this.label3.Text = "Quản lí hoá đơn";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-<<<<<<< HEAD
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -294,23 +259,6 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(290, 36);
             this.numericUpDown1.TabIndex = 140;
-=======
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(522, 188);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 40);
-            this.button2.TabIndex = 134;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = false;
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
             // 
             // UC_HoaDon
             // 
@@ -351,9 +299,6 @@
         private DataGridView dataGridView1;
         private Label label3;
         private Button button2;
-<<<<<<< HEAD
         private NumericUpDown numericUpDown1;
-=======
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     }
 }

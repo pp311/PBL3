@@ -4,7 +4,6 @@
     <Compile Update="GUI\Admin1.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Update="GUI\Form_SanPham.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -20,20 +19,6 @@
     <Compile Update="GUI\F_NhanVienSC.cs">
       <SubType>Form</SubType>
     </Compile>
-=======
-    <Compile Update="GUI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\F_Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\F_NhanVienBH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="GUI\F_NhanVienSC.cs">
-      <SubType>Form</SubType>
-    </Compile>
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
     <Compile Update="GUI\F_QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,15 +53,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="GUI\X.cs">
-<<<<<<< HEAD
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="GUI\UC_SanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="GUI\Form_HoaDon.cs">
-=======
->>>>>>> ef15ea6996451a355c787f5226c98cf3e8d01f6e
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

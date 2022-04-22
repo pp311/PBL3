@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.panel1.BackColor = System.Drawing.Color.MintCream;
             this.panel1.Controls.Add(this.btn_ThoatCT);
             this.panel1.Controls.Add(this.button16);
             this.panel1.Controls.Add(this.label1);
@@ -59,7 +59,7 @@
             // btn_ThoatCT
             // 
             this.btn_ThoatCT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btn_ThoatCT.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_ThoatCT.BackColor = System.Drawing.Color.DarkGray;
             this.btn_ThoatCT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ThoatCT.FlatAppearance.BorderSize = 0;
             this.btn_ThoatCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -75,7 +75,7 @@
             // button16
             // 
             this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button16.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button16.BackColor = System.Drawing.Color.DarkGray;
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -91,8 +91,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(885, 593);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "X";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "X";
