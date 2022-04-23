@@ -41,5 +41,10 @@ namespace Do_An
             if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
 
         }
+
+        private void Form_SanPham_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.LightSeaGreen, 30), this.DisplayRectangle);
+        }
     }
 }

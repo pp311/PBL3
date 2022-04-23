@@ -190,3 +190,7 @@ E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.GUI.test.resources
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.UC_SanPham.resources
 E:\OneDrive - The University of Technology\Hoc\Do_An\obj\Debug\net6.0-windows\Do_An.csproj.CopyComplete
+E:\PBL3-gui_h\obj\Debug\net6.0-windows\Do_An.csproj.AssemblyReference.cache
+E:\PBL3-gui_h\obj\Debug\net6.0-windows\Do_An.dll
+E:\PBL3-gui_h\obj\Debug\net6.0-windows\refint\Do_An.dll
+E:\PBL3-gui_h\obj\Debug\net6.0-windows\Do_An.pdb

@@ -21,5 +21,11 @@ namespace Do_An
         {
             this.Close();
         }
+
+        private void Form_HoaDon_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawRectangle(new Pen(Color.Black, 30), this.DisplayRectangle);
+
+        }
     }
 }

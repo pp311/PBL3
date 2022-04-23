@@ -257,6 +257,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1489, 894);
+            this.ControlBox = false;
             this.Controls.Add(this.dtlv_F_SP);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_XacNhan);
@@ -267,6 +268,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_SanPham";
             this.TopMost = true;
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_SanPham_Paint);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).EndInit();
