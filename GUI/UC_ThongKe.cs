@@ -26,5 +26,7 @@ namespace Do_An
         {
             InitializeComponent();
         }
+
+        
     }
 }

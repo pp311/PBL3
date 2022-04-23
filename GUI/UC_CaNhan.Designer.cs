@@ -34,7 +34,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tb_SoDienThoai = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_HoTen = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -110,6 +112,16 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Ngày sinh";
             // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(170, 130);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(334, 30);
+            this.textBox3.TabIndex = 33;
+            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -120,6 +132,16 @@
             this.label7.Size = new System.Drawing.Size(51, 29);
             this.label7.TabIndex = 29;
             this.label7.Text = "SĐT";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(170, 80);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(334, 30);
+            this.textBox2.TabIndex = 32;
             // 
             // label8
             // 
@@ -281,7 +303,9 @@
         private Label label4;
         private TextBox tb_SoDienThoai;
         private Label label5;
+        private TextBox textBox3;
         private Label label7;
+        private TextBox textBox2;
         private Label label8;
         private TextBox tb_HoTen;
         private Panel panel1;

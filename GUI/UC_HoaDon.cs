@@ -53,5 +53,7 @@ namespace Do_An
             tb_KhachHang.Enabled = true;
             tb_SoDienThoai.Enabled = true;
         }
+
+       
     }
 }

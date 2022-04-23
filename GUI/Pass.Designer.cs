@@ -66,6 +66,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(885, 593);
             this.panel1.TabIndex = 2;
@@ -82,6 +83,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(885, 593);
             this.panel2.TabIndex = 0;
@@ -196,6 +198,10 @@
         private Label label2;
         private Panel panel1;
         private Panel panel2;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label5;
+        private Label label4;
         private Label label3;
         private Button btn_Huy;
         private Button button1;

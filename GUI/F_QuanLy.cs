@@ -27,7 +27,12 @@ namespace Do_An
             t.Enabled = true;
         }
         
-           void t_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lb_Clock.Text = DateTime.Now.ToString();
+        }
+
+        void t_Tick(object sender, EventArgs e)
         {
             lb_Clock.Text = DateTime.Now.ToString();
         }

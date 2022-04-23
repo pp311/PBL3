@@ -29,9 +29,13 @@ namespace Do_An
         }
          
         void t_Tick(object sender, EventArgs e)
-        {
+            {
             lb_Clock.Text = DateTime.Now.ToString();
-        }
+            }
+
+        
+
+        
 
         private void btn_HoaDonBH_Click(object sender, EventArgs e)
         {

@@ -90,10 +90,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.LawnGreen;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(535, 448);
+            this.label7.Location = new System.Drawing.Point(534, 442);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 37);
-            this.label7.TabIndex = 24;
+            this.label7.TabIndex = 26;
             this.label7.Text = "0";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -102,7 +102,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.LimeGreen;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(744, 292);
+            this.label14.Location = new System.Drawing.Point(749, 295);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(33, 37);
             this.label14.TabIndex = 21;
@@ -114,7 +114,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.LimeGreen;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(309, 292);
+            this.label13.Location = new System.Drawing.Point(313, 295);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(33, 37);
             this.label13.TabIndex = 18;
@@ -126,7 +126,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.ForestGreen;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(746, 159);
+            this.label2.Location = new System.Drawing.Point(749, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 37);
             this.label2.TabIndex = 15;
@@ -138,7 +138,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.ForestGreen;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(309, 159);
+            this.label1.Location = new System.Drawing.Point(313, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 37);
             this.label1.TabIndex = 12;
@@ -150,7 +150,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.LawnGreen;
             this.label12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(508, 419);
+            this.label12.Location = new System.Drawing.Point(506, 407);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 23);
             this.label12.TabIndex = 11;
@@ -186,7 +186,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.ForestGreen;
             this.label8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(256, 130);
+            this.label8.Location = new System.Drawing.Point(262, 130);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 23);
             this.label8.TabIndex = 7;
@@ -292,7 +292,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LawnGreen;
-            this.pictureBox5.Location = new System.Drawing.Point(381, 404);
+            this.pictureBox5.Location = new System.Drawing.Point(380, 396);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(334, 100);
@@ -317,6 +317,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_ThongKe";
             this.Size = new System.Drawing.Size(1151, 658);
             this.panel3.ResumeLayout(false);
@@ -343,7 +344,6 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private Label label7;
         private Label label14;
         private Label label13;
         private Label label2;
@@ -354,5 +354,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
+        private Label label7;
     }
 }

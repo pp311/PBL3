@@ -38,8 +38,8 @@ namespace Do_An
         private void btn_Save_Click(object sender, EventArgs e)
         {
             Validate();
-
-        }
+     
+    }
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
