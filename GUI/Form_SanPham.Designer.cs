@@ -30,25 +30,25 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.num_Gia = new System.Windows.Forms.NumericUpDown();
+            this.num_SoLuong = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.date_NgayNhap = new System.Windows.Forms.DateTimePicker();
+            this.tb_TenSP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbb_PhanLoai = new System.Windows.Forms.ComboBox();
+            this.tb_IDSP = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.btn_Huy = new System.Windows.Forms.Button();
+            this.btn_XacNhan = new System.Windows.Forms.Button();
+            this.dtlv_F_SP = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_SoLuong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtlv_F_SP)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -56,7 +56,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(549, 54);
+            this.label3.Location = new System.Drawing.Point(561, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(375, 41);
             this.label3.TabIndex = 7;
@@ -66,59 +66,75 @@
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.numericUpDown2);
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.num_Gia);
+            this.panel1.Controls.Add(this.num_SoLuong);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.dateTimePicker3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.date_NgayNhap);
+            this.panel1.Controls.Add(this.tb_TenSP);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.cbb_PhanLoai);
+            this.panel1.Controls.Add(this.tb_IDSP);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(62, 99);
+            this.panel1.Location = new System.Drawing.Point(99, 67);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 258);
+            this.panel1.Size = new System.Drawing.Size(1265, 190);
             this.panel1.TabIndex = 37;
+            // 
+            // num_Gia
+            // 
+            this.num_Gia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.num_Gia.Location = new System.Drawing.Point(861, 136);
+            this.num_Gia.Name = "num_Gia";
+            this.num_Gia.Size = new System.Drawing.Size(381, 36);
+            this.num_Gia.TabIndex = 110;
+            // 
+            // num_SoLuong
+            // 
+            this.num_SoLuong.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.num_SoLuong.Location = new System.Drawing.Point(186, 139);
+            this.num_SoLuong.Name = "num_SoLuong";
+            this.num_SoLuong.Size = new System.Drawing.Size(381, 36);
+            this.num_SoLuong.TabIndex = 109;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(52, 47);
+            this.label4.Location = new System.Drawing.Point(34, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 29);
             this.label4.TabIndex = 26;
             this.label4.Text = "ID sản phẩm";
             // 
-            // dateTimePicker3
+            // date_NgayNhap
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(861, 111);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(381, 36);
-            this.dateTimePicker3.TabIndex = 108;
+            this.date_NgayNhap.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_NgayNhap.Location = new System.Drawing.Point(861, 73);
+            this.date_NgayNhap.Name = "date_NgayNhap";
+            this.date_NgayNhap.Size = new System.Drawing.Size(381, 36);
+            this.date_NgayNhap.TabIndex = 108;
             // 
-            // textBox2
+            // tb_TenSP
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(204, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(381, 36);
-            this.textBox2.TabIndex = 32;
+            this.tb_TenSP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_TenSP.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_TenSP.Location = new System.Drawing.Point(186, 77);
+            this.tb_TenSP.Name = "tb_TenSP";
+            this.tb_TenSP.Size = new System.Drawing.Size(381, 36);
+            this.tb_TenSP.TabIndex = 32;
             // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(743, 177);
+            this.label8.Location = new System.Drawing.Point(725, 143);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 29);
             this.label8.TabIndex = 30;
@@ -129,37 +145,37 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(52, 114);
+            this.label5.Location = new System.Drawing.Point(34, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 29);
             this.label5.TabIndex = 27;
             this.label5.Text = "Tên sản phẩm";
             // 
-            // comboBox2
+            // cbb_PhanLoai
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(861, 45);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(381, 34);
-            this.comboBox2.TabIndex = 107;
+            this.cbb_PhanLoai.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbb_PhanLoai.FormattingEnabled = true;
+            this.cbb_PhanLoai.Location = new System.Drawing.Point(861, 11);
+            this.cbb_PhanLoai.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.cbb_PhanLoai.Name = "cbb_PhanLoai";
+            this.cbb_PhanLoai.Size = new System.Drawing.Size(381, 34);
+            this.cbb_PhanLoai.TabIndex = 107;
             // 
-            // textBox1
+            // tb_IDSP
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(204, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(381, 36);
-            this.textBox1.TabIndex = 31;
+            this.tb_IDSP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_IDSP.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_IDSP.Location = new System.Drawing.Point(186, 11);
+            this.tb_IDSP.Name = "tb_IDSP";
+            this.tb_IDSP.Size = new System.Drawing.Size(381, 36);
+            this.tb_IDSP.TabIndex = 31;
             // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(743, 114);
+            this.label7.Location = new System.Drawing.Point(725, 80);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 29);
             this.label7.TabIndex = 29;
@@ -170,7 +186,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(52, 180);
+            this.label2.Location = new System.Drawing.Point(34, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 29);
             this.label2.TabIndex = 106;
@@ -181,94 +197,81 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(743, 47);
+            this.label6.Location = new System.Drawing.Point(725, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 29);
             this.label6.TabIndex = 28;
             this.label6.Text = "Phân loại";
             // 
-            // button1
+            // btn_Huy
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1248, 607);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 71);
-            this.button1.TabIndex = 104;
-            this.button1.Text = "Hủy";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Huy.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Huy.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Huy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Huy.FlatAppearance.BorderSize = 0;
+            this.btn_Huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Huy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Huy.Location = new System.Drawing.Point(812, 801);
+            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Huy.Name = "btn_Huy";
+            this.btn_Huy.Size = new System.Drawing.Size(149, 71);
+            this.btn_Huy.TabIndex = 104;
+            this.btn_Huy.Text = "Hủy";
+            this.btn_Huy.UseVisualStyleBackColor = false;
+            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
-            // button16
+            // btn_XacNhan
             // 
-            this.button16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button16.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(1248, 481);
-            this.button16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(149, 71);
-            this.button16.TabIndex = 103;
-            this.button16.Text = "Xác nhận";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btn_XacNhan.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_XacNhan.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_XacNhan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_XacNhan.FlatAppearance.BorderSize = 0;
+            this.btn_XacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XacNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_XacNhan.Location = new System.Drawing.Point(525, 801);
+            this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_XacNhan.Name = "btn_XacNhan";
+            this.btn_XacNhan.Size = new System.Drawing.Size(149, 71);
+            this.btn_XacNhan.TabIndex = 103;
+            this.btn_XacNhan.Text = "Xác nhận";
+            this.btn_XacNhan.UseVisualStyleBackColor = false;
+            this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
             // 
-            // dataGridView1
+            // dtlv_F_SP
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtlv_F_SP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 412);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1149, 525);
-            this.dataGridView1.TabIndex = 131;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown1.Location = new System.Drawing.Point(204, 177);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(381, 36);
-            this.numericUpDown1.TabIndex = 109;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown2.Location = new System.Drawing.Point(861, 174);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(381, 36);
-            this.numericUpDown2.TabIndex = 110;
+            this.dtlv_F_SP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtlv_F_SP.Location = new System.Drawing.Point(89, 307);
+            this.dtlv_F_SP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dtlv_F_SP.Name = "dtlv_F_SP";
+            this.dtlv_F_SP.RowHeadersWidth = 51;
+            this.dtlv_F_SP.RowTemplate.Height = 29;
+            this.dtlv_F_SP.Size = new System.Drawing.Size(1300, 471);
+            this.dtlv_F_SP.TabIndex = 131;
             // 
             // Form_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 963);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button16);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(1489, 894);
+            this.Controls.Add(this.dtlv_F_SP);
+            this.Controls.Add(this.btn_Huy);
+            this.Controls.Add(this.btn_XacNhan);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_SanPham";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_SanPham";
             this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_SoLuong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtlv_F_SP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,19 +281,19 @@
         private Label label3;
         private Panel panel1;
         private Label label2;
-        private Button button1;
-        private Button button16;
+        private Button btn_Huy;
+        private Button btn_XacNhan;
         private Label label4;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox tb_IDSP;
         private Label label8;
-        private TextBox textBox2;
+        private TextBox tb_TenSP;
         private Label label7;
         private Label label5;
-        private ComboBox comboBox2;
-        private DateTimePicker dateTimePicker3;
-        private DataGridView dataGridView1;
-        private NumericUpDown numericUpDown2;
-        private NumericUpDown numericUpDown1;
+        private ComboBox cbb_PhanLoai;
+        private DateTimePicker date_NgayNhap;
+        private DataGridView dtlv_F_SP;
+        private NumericUpDown num_Gia;
+        private NumericUpDown num_SoLuong;
     }
 }

@@ -32,7 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
+            this.btn_XemCT = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -82,21 +82,21 @@
             this.label2.TabIndex = 135;
             this.label2.Text = "Phân loại";
             // 
-            // button20
+            // btn_XemCT
             // 
-            this.button20.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button20.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button20.Location = new System.Drawing.Point(1134, 352);
-            this.button20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(149, 67);
-            this.button20.TabIndex = 134;
-            this.button20.Text = "Xem chi tiết";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btn_XemCT.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_XemCT.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_XemCT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_XemCT.FlatAppearance.BorderSize = 0;
+            this.btn_XemCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XemCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_XemCT.Location = new System.Drawing.Point(1134, 352);
+            this.btn_XemCT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_XemCT.Name = "btn_XemCT";
+            this.btn_XemCT.Size = new System.Drawing.Size(149, 67);
+            this.btn_XemCT.TabIndex = 134;
+            this.btn_XemCT.Text = "Xem chi tiết";
+            this.btn_XemCT.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -130,7 +130,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.btn_XemCT);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Name = "UC_SanPham";
@@ -147,7 +147,7 @@
         private Button button1;
         private TextBox textBox4;
         private Label label2;
-        private Button button20;
+        private Button btn_XemCT;
         private DataGridView dataGridView1;
         private ComboBox comboBox2;
     }

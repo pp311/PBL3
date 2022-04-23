@@ -162,3 +162,10 @@ E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.genruntimeconfig.cache
 E:\PBL3-gui\obj\Debug\net6.0-windows\ref\Do_An.dll
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.UC_SanPham.resources
 E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.Form_HoaDon.resources
+E:\PBL3-gui\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\PBL3-gui\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\PBL3-gui\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\PBL3-gui\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\PBL3-gui\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\PBL3-gui\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\PBL3-gui\obj\Debug\net6.0-windows\Do_An.csproj.CopyComplete

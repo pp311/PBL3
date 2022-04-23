@@ -27,6 +27,10 @@ namespace Do_An
             }
         }
 
-      
+        private void btn_LapHD_Click(object sender, EventArgs e)
+        {
+            Form_HoaDon fhd = new Form_HoaDon();
+            fhd.Show();
+        }
     }
 }

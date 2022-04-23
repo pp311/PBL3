@@ -89,7 +89,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(373, 236);
+            this.textBox3.Location = new System.Drawing.Point(346, 224);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(290, 34);
@@ -98,7 +98,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(373, 295);
+            this.textBox7.Location = new System.Drawing.Point(346, 283);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(290, 34);
             this.textBox7.TabIndex = 122;
@@ -108,7 +108,7 @@
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(230, 240);
+            this.label15.Location = new System.Drawing.Point(203, 228);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(127, 27);
             this.label15.TabIndex = 120;
@@ -120,7 +120,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(230, 298);
+            this.label13.Location = new System.Drawing.Point(203, 286);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(143, 27);
             this.label13.TabIndex = 121;
@@ -134,7 +134,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(234, 424);
+            this.button1.Location = new System.Drawing.Point(207, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 53);
             this.button1.TabIndex = 70;
@@ -149,7 +149,7 @@
             this.btn_Huy.FlatAppearance.BorderSize = 0;
             this.btn_Huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Huy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Huy.Location = new System.Drawing.Point(483, 424);
+            this.btn_Huy.Location = new System.Drawing.Point(456, 412);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(163, 53);
             this.btn_Huy.TabIndex = 69;
@@ -163,7 +163,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.MintCream;
             this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(365, 133);
+            this.label3.Location = new System.Drawing.Point(338, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(183, 37);
             this.label3.TabIndex = 0;
