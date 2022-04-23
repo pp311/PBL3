@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.num_Gia = new System.Windows.Forms.NumericUpDown();
+            this.num_SoLuongNhap = new System.Windows.Forms.NumericUpDown();
+            this.dtp_NgayNhap = new System.Windows.Forms.DateTimePicker();
+            this.btn_Lưu = new System.Windows.Forms.Button();
+            this.tb_IDSP = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
+            this.btn_SuaSP = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.btn_NhapSP = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.btn_XemCT = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_SoLuongNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.numericUpDown1);
-            this.panel2.Controls.Add(this.numericUpDown2);
-            this.panel2.Controls.Add(this.dateTimePicker4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.num_Gia);
+            this.panel2.Controls.Add(this.num_SoLuongNhap);
+            this.panel2.Controls.Add(this.dtp_NgayNhap);
+            this.panel2.Controls.Add(this.btn_Lưu);
+            this.panel2.Controls.Add(this.tb_IDSP);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label15);
@@ -67,39 +67,56 @@
             this.panel2.Size = new System.Drawing.Size(1202, 231);
             this.panel2.TabIndex = 129;
             // 
-            // dateTimePicker4
+            // num_Gia
             // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(844, 25);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(287, 36);
-            this.dateTimePicker4.TabIndex = 137;
+            this.num_Gia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.num_Gia.Location = new System.Drawing.Point(841, 80);
+            this.num_Gia.Name = "num_Gia";
+            this.num_Gia.Size = new System.Drawing.Size(290, 36);
+            this.num_Gia.TabIndex = 139;
             // 
-            // button2
+            // num_SoLuongNhap
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(546, 141);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 40);
-            this.button2.TabIndex = 132;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = false;
+            this.num_SoLuongNhap.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.num_SoLuongNhap.Location = new System.Drawing.Point(185, 80);
+            this.num_SoLuongNhap.Name = "num_SoLuongNhap";
+            this.num_SoLuongNhap.Size = new System.Drawing.Size(290, 36);
+            this.num_SoLuongNhap.TabIndex = 138;
             // 
-            // textBox1
+            // dtp_NgayNhap
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(185, 25);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 34);
-            this.textBox1.TabIndex = 87;
+            this.dtp_NgayNhap.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtp_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_NgayNhap.Location = new System.Drawing.Point(844, 25);
+            this.dtp_NgayNhap.Name = "dtp_NgayNhap";
+            this.dtp_NgayNhap.Size = new System.Drawing.Size(287, 36);
+            this.dtp_NgayNhap.TabIndex = 137;
+            // 
+            // btn_Lưu
+            // 
+            this.btn_Lưu.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Lưu.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Lưu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Lưu.FlatAppearance.BorderSize = 0;
+            this.btn_Lưu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Lưu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Lưu.Location = new System.Drawing.Point(546, 141);
+            this.btn_Lưu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Lưu.Name = "btn_Lưu";
+            this.btn_Lưu.Size = new System.Drawing.Size(148, 40);
+            this.btn_Lưu.TabIndex = 132;
+            this.btn_Lưu.Text = "Lưu";
+            this.btn_Lưu.UseVisualStyleBackColor = false;
+            this.btn_Lưu.Click += new System.EventHandler(this.btn_Lưu_Click);
+            // 
+            // tb_IDSP
+            // 
+            this.tb_IDSP.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_IDSP.Location = new System.Drawing.Point(185, 25);
+            this.tb_IDSP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tb_IDSP.Name = "tb_IDSP";
+            this.tb_IDSP.Size = new System.Drawing.Size(290, 34);
+            this.tb_IDSP.TabIndex = 87;
             // 
             // label5
             // 
@@ -176,21 +193,22 @@
             this.label3.Text = "Quản lí thông tin nhập sản phẩm";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button19
+            // btn_SuaSP
             // 
-            this.button19.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button19.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button19.Location = new System.Drawing.Point(1123, 431);
-            this.button19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(149, 71);
-            this.button19.TabIndex = 132;
-            this.button19.Text = "Sửa thông tin nhập hàng";
-            this.button19.UseVisualStyleBackColor = false;
+            this.btn_SuaSP.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_SuaSP.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_SuaSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_SuaSP.FlatAppearance.BorderSize = 0;
+            this.btn_SuaSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SuaSP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_SuaSP.Location = new System.Drawing.Point(1123, 431);
+            this.btn_SuaSP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_SuaSP.Name = "btn_SuaSP";
+            this.btn_SuaSP.Size = new System.Drawing.Size(149, 71);
+            this.btn_SuaSP.TabIndex = 132;
+            this.btn_SuaSP.Text = "Sửa thông tin nhập hàng";
+            this.btn_SuaSP.UseVisualStyleBackColor = false;
+            this.btn_SuaSP.Click += new System.EventHandler(this.btn_SuaSP_Click);
             // 
             // button17
             // 
@@ -225,47 +243,31 @@
             this.btn_NhapSP.UseVisualStyleBackColor = false;
             this.btn_NhapSP.Click += new System.EventHandler(this.btn_NhapSP_Click);
             // 
-            // button1
+            // btn_XemCT
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1123, 635);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 71);
-            this.button1.TabIndex = 136;
-            this.button1.Text = "Xem chi tiết";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown2.Location = new System.Drawing.Point(185, 80);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(290, 36);
-            this.numericUpDown2.TabIndex = 138;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown1.Location = new System.Drawing.Point(841, 80);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(290, 36);
-            this.numericUpDown1.TabIndex = 139;
+            this.btn_XemCT.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_XemCT.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_XemCT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_XemCT.FlatAppearance.BorderSize = 0;
+            this.btn_XemCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XemCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_XemCT.Location = new System.Drawing.Point(1123, 635);
+            this.btn_XemCT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_XemCT.Name = "btn_XemCT";
+            this.btn_XemCT.Size = new System.Drawing.Size(149, 71);
+            this.btn_XemCT.TabIndex = 136;
+            this.btn_XemCT.Text = "Xem chi tiết";
+            this.btn_XemCT.UseVisualStyleBackColor = false;
             // 
             // UC_NhapHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_XemCT);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button19);
+            this.Controls.Add(this.btn_SuaSP);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.btn_NhapSP);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -273,9 +275,9 @@
             this.Size = new System.Drawing.Size(1315, 877);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_SoLuongNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,20 +286,20 @@
         #endregion
 
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox tb_IDSP;
         private Label label5;
         private Label label14;
         private Label label15;
         private Label label13;
         private DataGridView dataGridView1;
         private Label label3;
-        private Button button19;
+        private Button btn_SuaSP;
         private Button button17;
         private Button btn_NhapSP;
-        private Button button1;
-        private Button button2;
-        private DateTimePicker dateTimePicker4;
-        private NumericUpDown numericUpDown2;
-        private NumericUpDown numericUpDown1;
+        private Button btn_XemCT;
+        private Button btn_Lưu;
+        private DateTimePicker dtp_NgayNhap;
+        private NumericUpDown num_SoLuongNhap;
+        private NumericUpDown num_Gia;
     }
 }

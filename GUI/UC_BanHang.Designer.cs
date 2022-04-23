@@ -43,7 +43,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_LapHD = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -230,26 +230,27 @@
             this.button3.Text = "Xoá";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btn_LapHD
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button4.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(521, 236);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(147, 60);
-            this.button4.TabIndex = 143;
-            this.button4.Text = "Lập hoá đơn";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_LapHD.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_LapHD.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_LapHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_LapHD.FlatAppearance.BorderSize = 0;
+            this.btn_LapHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_LapHD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_LapHD.Location = new System.Drawing.Point(521, 236);
+            this.btn_LapHD.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_LapHD.Name = "btn_LapHD";
+            this.btn_LapHD.Size = new System.Drawing.Size(147, 60);
+            this.btn_LapHD.TabIndex = 143;
+            this.btn_LapHD.Text = "Lập hoá đơn";
+            this.btn_LapHD.UseVisualStyleBackColor = false;
+            this.btn_LapHD.Click += new System.EventHandler(this.btn_LapHD_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btn_LapHD);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox3);
@@ -327,7 +328,7 @@
         private TextBox textBox3;
         private Button button1;
         private Button button3;
-        private Button button4;
+        private Button btn_LapHD;
         private Panel panel1;
         private Panel panel2;
         private NumericUpDown numericUpDown1;
