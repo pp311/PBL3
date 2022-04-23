@@ -23,7 +23,7 @@ namespace Do_An
         {
             t = new System.Windows.Forms.Timer();
             t.Interval = 1000;
-            t.Tick += new EventHandler(timer1_Tick);
+            t.Tick += new EventHandler(t_Tick);
             t.Enabled = true;
         }
         

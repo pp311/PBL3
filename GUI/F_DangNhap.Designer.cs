@@ -32,10 +32,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_MatKhau = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_TaiKhoan = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,10 +84,10 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.tb_MatKhau);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.tb_TaiKhoan);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 94);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -111,15 +111,16 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // tb_MatKhau
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox2.Location = new System.Drawing.Point(193, 86);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 23);
-            this.textBox2.TabIndex = 10;
+            this.tb_MatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_MatKhau.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tb_MatKhau.Location = new System.Drawing.Point(193, 86);
+            this.tb_MatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_MatKhau.Name = "tb_MatKhau";
+            this.tb_MatKhau.PasswordChar = '*';
+            this.tb_MatKhau.Size = new System.Drawing.Size(185, 23);
+            this.tb_MatKhau.TabIndex = 1;
             // 
             // label3
             // 
@@ -143,15 +144,15 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Tên đăng nhập";
             // 
-            // textBox1
+            // tb_TaiKhoan
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.Location = new System.Drawing.Point(193, 50);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 23);
-            this.textBox1.TabIndex = 9;
+            this.tb_TaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tb_TaiKhoan.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tb_TaiKhoan.Location = new System.Drawing.Point(193, 50);
+            this.tb_TaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_TaiKhoan.Name = "tb_TaiKhoan";
+            this.tb_TaiKhoan.Size = new System.Drawing.Size(185, 23);
+            this.tb_TaiKhoan.TabIndex = 0;
             // 
             // panel1
             // 
@@ -185,16 +186,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Xin Chào";
             // 
-            // logo
+            // F_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(814, 389);
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "logo";
+            this.Name = "F_DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ad";
+            this.Load += new System.EventHandler(this.F_DangNhap_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -216,10 +218,10 @@
         private Panel panel2;
         private Panel panel1;
         private Button button1;
-        private TextBox textBox2;
+        private TextBox tb_MatKhau;
         private Label label3;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox tb_TaiKhoan;
         private Label label1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;

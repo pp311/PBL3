@@ -32,8 +32,7 @@ namespace Do_An
 
         private void btn_NhapSP_Click(object sender, EventArgs e)
         {
-            Form_SanPham fsp = new Form_SanPham();
-            fsp.Show();
+            EnableEdit(true);
         }
 
         private void btn_Lưu_Click(object sender, EventArgs e)

@@ -32,6 +32,17 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -119,6 +130,128 @@
             this.button1.TabIndex = 73;
             this.button1.Text = "Lưu";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(575, 436);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 29);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Chức vụ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(705, 129);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(269, 41);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Thông tin cá nhân";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox5.Location = new System.Drawing.Point(704, 577);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(381, 36);
+            this.textBox5.TabIndex = 24;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(575, 281);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 29);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Họ và Tên";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Location = new System.Drawing.Point(704, 503);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(381, 36);
+            this.textBox4.TabIndex = 23;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(575, 355);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 29);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Ngày sinh";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(705, 429);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(381, 36);
+            this.textBox3.TabIndex = 22;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(575, 507);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 29);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "SĐT";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(705, 351);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(381, 36);
+            this.textBox2.TabIndex = 21;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(575, 580);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 29);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Địa chỉ";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(705, 275);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(381, 36);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 

@@ -8,18 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Do_An
+namespace Do_An.GUI
 {
-    public partial class Form_HoaDon : Form
+    public partial class test : Form
     {
-        public Form_HoaDon()
+        public test()
         {
             InitializeComponent();
         }
 
-        private void btn_Huy_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string text = textBox1.Text;
+            if (text.All(c => char.IsLetter(c))) MessageBox.Show("true");
+            else MessageBox.Show("false");
         }
     }
 }

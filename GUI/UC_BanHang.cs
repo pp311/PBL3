@@ -32,5 +32,7 @@ namespace Do_An
             Form_HoaDon fhd = new Form_HoaDon();
             fhd.Show();
         }
+
+       
     }
 }
