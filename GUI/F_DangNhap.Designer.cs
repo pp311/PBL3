@@ -119,6 +119,7 @@
             this.tB_matkhau.Location = new System.Drawing.Point(276, 143);
             this.tB_matkhau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tB_matkhau.Name = "tB_matkhau";
+            this.tB_matkhau.PasswordChar = '*';
             this.tB_matkhau.Size = new System.Drawing.Size(263, 31);
             this.tB_matkhau.TabIndex = 10;
             // 

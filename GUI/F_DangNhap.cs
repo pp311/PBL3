@@ -29,20 +29,36 @@ namespace Do_An
                 conn.Open();
                 string tk = tB_taikhoan.Text;
                 string mk = tB_matkhau.Text;
+                string sql1 = "select Vitri from nhanvien inner join taikhoan on nhanvien.ID_TaiKhoan = taikhoan.ID_TaiKhoan where taikhoan.TenTaiKhoan = '" + tk + "'";
+                SqlCommand cmd1 = new SqlCommand(sql1, conn);
+                string s = (string)cmd1.ExecuteScalar();
+
                 string sql = "select * from taikhoan where TenTaiKhoan = '" + tk + "' and MatKhau = '" + mk + "'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader dtr = cmd.ExecuteReader();
+
+                
                 if (dtr.Read() == true)
                 {
-                    //F_NhanVienSC f_NhanVienSC = new F_NhanVienSC();
-                    //f_NhanVienSC.Closed += (s, args) => this.Close();
-                    //f_NhanVienSC.Show();
-                    //F_NhanVienBH f_NhanVienBH = new F_NhanVienBH();
-                    //f_NhanVienBH.Closed +=(s, args) => this.Close();
-                    //f_NhanVienBH.Show();
-                    F_QuanLy f_admin = new F_QuanLy();
-                    f_admin.Closed += (s, args) => this.Close();
-                    f_admin.Show();
+                    if (s == "Quản lý")
+                    {
+                        F_QuanLy f_admin = new F_QuanLy();
+                        f_admin.Closed += (s, args) => this.Close();
+                        f_admin.Show();
+                    }
+                    if (s == "Nhân viên bán hàng")
+                    {
+                        F_NhanVienBH f_NhanVienBH = new F_NhanVienBH();
+                        f_NhanVienBH.Closed +=(s, args) => this.Close();
+                        f_NhanVienBH.Show();
+                    }
+                    if (s == "Nhân viên sửa chữa")
+                    {
+                        F_NhanVienSC f_NhanVienSC = new F_NhanVienSC();
+                        f_NhanVienSC.Closed += (s, args) => this.Close();
+                        f_NhanVienSC.Show();
+
+                    }
                 }
                 else
                 {
