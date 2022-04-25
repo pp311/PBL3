@@ -42,7 +42,7 @@ namespace Do_An
             string tenKhachHang = tb_KhachHang.Text;
             string soDienThoai = tb_SoDienThoai.Text;
             bool isValid = true;
-            if (string.IsNullOrEmpty(tenKhachHang) || !tenKhachHang.All(c => char.IsLetter(c))) isValid = false;
+            if (string.IsNullOrEmpty(tenKhachHang) || !tenKhachHang.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             if(string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
             if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
         }

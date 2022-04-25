@@ -51,9 +51,9 @@
             this.panel1.Controls.Add(this.btn_ThoatCT);
             this.panel1.Controls.Add(this.button16);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(105, 121);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(635, 317);
+            this.panel1.Size = new System.Drawing.Size(626, 333);
             this.panel1.TabIndex = 3;
             // 
             // btn_ThoatCT
@@ -64,9 +64,9 @@
             this.btn_ThoatCT.FlatAppearance.BorderSize = 0;
             this.btn_ThoatCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThoatCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ThoatCT.Location = new System.Drawing.Point(368, 163);
+            this.btn_ThoatCT.Location = new System.Drawing.Point(364, 163);
             this.btn_ThoatCT.Name = "btn_ThoatCT";
-            this.btn_ThoatCT.Size = new System.Drawing.Size(189, 53);
+            this.btn_ThoatCT.Size = new System.Drawing.Size(189, 69);
             this.btn_ThoatCT.TabIndex = 71;
             this.btn_ThoatCT.Text = "Thoát chương trình";
             this.btn_ThoatCT.UseVisualStyleBackColor = false;
@@ -80,9 +80,9 @@
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(82, 161);
+            this.button16.Location = new System.Drawing.Point(78, 161);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(163, 53);
+            this.button16.Size = new System.Drawing.Size(163, 69);
             this.button16.TabIndex = 69;
             this.button16.Text = "Đăng xuất";
             this.button16.UseVisualStyleBackColor = false;
@@ -92,12 +92,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(885, 593);
+            this.ClientSize = new System.Drawing.Size(628, 339);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "X";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "X";
+            this.Text = "Exit";
             this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

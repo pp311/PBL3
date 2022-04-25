@@ -30,23 +30,18 @@
         {
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.num_Gia = new System.Windows.Forms.NumericUpDown();
             this.num_SoLuong = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.date_NgayNhap = new System.Windows.Forms.DateTimePicker();
             this.tb_TenSP = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cbb_PhanLoai = new System.Windows.Forms.ComboBox();
             this.tb_IDSP = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_Huy = new System.Windows.Forms.Button();
             this.btn_XacNhan = new System.Windows.Forms.Button();
             this.dtlv_F_SP = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_SoLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtlv_F_SP)).BeginInit();
             this.SuspendLayout();
@@ -56,26 +51,22 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(561, 17);
+            this.label3.Location = new System.Drawing.Point(617, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 41);
+            this.label3.Size = new System.Drawing.Size(297, 41);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Nhập thông tin sản phẩm";
+            this.label3.Text = "Thông tin sản phẩm";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.num_Gia);
             this.panel1.Controls.Add(this.num_SoLuong);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.date_NgayNhap);
             this.panel1.Controls.Add(this.tb_TenSP);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cbb_PhanLoai);
             this.panel1.Controls.Add(this.tb_IDSP);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(99, 67);
@@ -83,14 +74,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1265, 190);
             this.panel1.TabIndex = 37;
-            // 
-            // num_Gia
-            // 
-            this.num_Gia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_Gia.Location = new System.Drawing.Point(861, 136);
-            this.num_Gia.Name = "num_Gia";
-            this.num_Gia.Size = new System.Drawing.Size(381, 36);
-            this.num_Gia.TabIndex = 110;
             // 
             // num_SoLuong
             // 
@@ -111,15 +94,6 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "ID sản phẩm";
             // 
-            // date_NgayNhap
-            // 
-            this.date_NgayNhap.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.date_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.date_NgayNhap.Location = new System.Drawing.Point(861, 73);
-            this.date_NgayNhap.Name = "date_NgayNhap";
-            this.date_NgayNhap.Size = new System.Drawing.Size(381, 36);
-            this.date_NgayNhap.TabIndex = 108;
-            // 
             // tb_TenSP
             // 
             this.tb_TenSP.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -128,17 +102,6 @@
             this.tb_TenSP.Name = "tb_TenSP";
             this.tb_TenSP.Size = new System.Drawing.Size(381, 36);
             this.tb_TenSP.TabIndex = 32;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(725, 143);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 29);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Giá";
             // 
             // label5
             // 
@@ -170,27 +133,16 @@
             this.tb_IDSP.Size = new System.Drawing.Size(381, 36);
             this.tb_IDSP.TabIndex = 31;
             // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(725, 80);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 29);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Ngày nhập";
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(34, 146);
+            this.label2.Location = new System.Drawing.Point(34, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 29);
+            this.label2.Size = new System.Drawing.Size(144, 29);
             this.label2.TabIndex = 106;
-            this.label2.Text = "Số lượng";
+            this.label2.Text = "Số lượng còn";
             // 
             // label6
             // 
@@ -269,7 +221,6 @@
             this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_SoLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtlv_F_SP)).EndInit();
             this.ResumeLayout(false);
@@ -286,14 +237,10 @@
         private Label label4;
         private Label label6;
         private TextBox tb_IDSP;
-        private Label label8;
         private TextBox tb_TenSP;
-        private Label label7;
         private Label label5;
         private ComboBox cbb_PhanLoai;
-        private DateTimePicker date_NgayNhap;
         private DataGridView dtlv_F_SP;
-        private NumericUpDown num_Gia;
         private NumericUpDown num_SoLuong;
     }
 }

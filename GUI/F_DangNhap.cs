@@ -24,7 +24,7 @@ namespace Do_An
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6DUEMNF\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-V8TS0L2\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True");
             try
             {
                 conn.Open();
@@ -41,6 +41,7 @@ namespace Do_An
                 
                 if (dtr.Read() == true)
                 {
+                    this.Hide();
                     if (s == "Quản lý")
                     {
                         F_QuanLy f_admin = new F_QuanLy();
@@ -50,7 +51,7 @@ namespace Do_An
                     if (s == "Nhân viên bán hàng")
                     {
                         F_NhanVienBH f_NhanVienBH = new F_NhanVienBH();
-                        f_NhanVienBH.Closed +=(s, args) => this.Close();
+                        f_NhanVienBH.Closed += (s, args) => this.Close();
                         f_NhanVienBH.Show();
                     }
                     if (s == "Nhân viên sửa chữa")
@@ -63,7 +64,8 @@ namespace Do_An
                 }
                 else
                 {
-                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                    if(tk == "" || mk == "") MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    else MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
                 }
             }
             catch (Exception ex)

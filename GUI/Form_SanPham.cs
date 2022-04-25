@@ -35,7 +35,7 @@ namespace Do_An
             int soluong = Convert.ToInt32(num_SoLuong.Value);
             bool isValid = true;
             if (soluong <= 0) isValid = false;
-            if (string.IsNullOrEmpty(ten) || !ten.All(c => char.IsLetter(c))) isValid = false;
+            if (string.IsNullOrEmpty(ten) || !ten.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             //if (string.IsNullOrEmpty(phanloai) || !phanloai.All(c => char.IsLetter(c))) isValid = false
             if (cbb_PhanLoai.SelectedItem == null) isValid = false;
             if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");

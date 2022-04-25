@@ -63,9 +63,9 @@ namespace Do_An
             string diaChi = tb_DiaChi.Text;
             string taiKhoan = tb_TaiKhoan.Text;
             bool isValid = true;
-            if (string.IsNullOrEmpty(tenNhanVien) || !tenNhanVien.All(c => char.IsLetter(c))) isValid = false;
+            if (string.IsNullOrEmpty(tenNhanVien) || !tenNhanVien.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             if (string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
-            if (string.IsNullOrEmpty(diaChi) || !diaChi.All(c => char.IsLetterOrDigit(c))) isValid = false;
+            if (string.IsNullOrEmpty(diaChi) || !diaChi.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))) isValid = false;
             if(!rb_Nam.Checked && !rb_Nu.Checked) isValid = false;
             //if(cbb_ViTri.SelectedItem == null) isValid = false;
             if(string.IsNullOrEmpty(taiKhoan)) isValid = false;

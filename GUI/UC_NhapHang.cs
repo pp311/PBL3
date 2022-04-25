@@ -25,13 +25,14 @@ namespace Do_An
         public UC_NhapHang()
         {
             InitializeComponent();
-            tb_IDSP.Enabled=false;
+            tb_IDSP.Enabled = false;
             EnableEdit(false);
 
         }
 
         private void btn_NhapSP_Click(object sender, EventArgs e)
         {
+            tb_IDSP.Enabled = true;
             EnableEdit(true);
         }
 
@@ -52,6 +53,7 @@ namespace Do_An
 
         private void btn_SuaSP_Click(object sender, EventArgs e)
         {
+            tb_IDSP.Enabled = false;
             EnableEdit(true);
         }
         private void EnableEdit(bool b)
@@ -59,6 +61,11 @@ namespace Do_An
             num_SoLuongNhap.Enabled = b;
             dtp_NgayNhap.Enabled=b;
             num_Gia.Enabled = b;
+        }
+
+        private void btn_XemCT_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

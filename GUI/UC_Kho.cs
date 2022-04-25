@@ -32,5 +32,11 @@ namespace Do_An
             Form_SanPham fsp = new Form_SanPham();
             fsp.Show();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Form_SanPham f = new Form_SanPham();
+            f.Show();
+        }
     }
 }

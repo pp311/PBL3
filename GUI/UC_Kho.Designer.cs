@@ -46,9 +46,9 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(501, 27);
+            this.label3.Location = new System.Drawing.Point(587, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 33);
+            this.label3.Size = new System.Drawing.Size(178, 41);
             this.label3.TabIndex = 97;
             this.label3.Text = "Quản lí kho";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,12 +59,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 250);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 333);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(919, 394);
+            this.dataGridView1.Size = new System.Drawing.Size(1050, 525);
             this.dataGridView1.TabIndex = 101;
             // 
             // button20
@@ -75,13 +75,14 @@
             this.button20.FlatAppearance.BorderSize = 0;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button20.Location = new System.Drawing.Point(983, 476);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
+            this.button20.Location = new System.Drawing.Point(1123, 635);
+            this.button20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(130, 50);
+            this.button20.Size = new System.Drawing.Size(149, 67);
             this.button20.TabIndex = 105;
             this.button20.Text = "Xem chi tiết";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button17
             // 
@@ -91,10 +92,10 @@
             this.button17.FlatAppearance.BorderSize = 0;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button17.Location = new System.Drawing.Point(983, 400);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
+            this.button17.Location = new System.Drawing.Point(1123, 533);
+            this.button17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(130, 53);
+            this.button17.Size = new System.Drawing.Size(149, 71);
             this.button17.TabIndex = 104;
             this.button17.Text = "Xóa sản phẩm";
             this.button17.UseVisualStyleBackColor = false;
@@ -107,10 +108,10 @@
             this.button19.FlatAppearance.BorderSize = 0;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button19.Location = new System.Drawing.Point(983, 323);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
+            this.button19.Location = new System.Drawing.Point(1123, 431);
+            this.button19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(130, 53);
+            this.button19.Size = new System.Drawing.Size(149, 71);
             this.button19.TabIndex = 103;
             this.button19.Text = "Chỉnh sửa thông tin SP";
             this.button19.UseVisualStyleBackColor = false;
@@ -123,10 +124,10 @@
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(983, 250);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
+            this.button16.Location = new System.Drawing.Point(1123, 333);
+            this.button16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(130, 53);
+            this.button16.Size = new System.Drawing.Size(149, 71);
             this.button16.TabIndex = 102;
             this.button16.Text = "Thêm thông tin SP";
             this.button16.UseVisualStyleBackColor = false;
@@ -135,10 +136,10 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(660, 172);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Location = new System.Drawing.Point(754, 229);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(201, 28);
+            this.textBox4.Size = new System.Drawing.Size(229, 33);
             this.textBox4.TabIndex = 118;
             // 
             // button1
@@ -147,10 +148,9 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.07563F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(864, 172);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(987, 229);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 27);
+            this.button1.Size = new System.Drawing.Size(93, 33);
             this.button1.TabIndex = 119;
             this.button1.Text = "Tìm kiếm";
             this.button1.UseVisualStyleBackColor = false;
@@ -159,25 +159,25 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(140, 175);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Location = new System.Drawing.Point(160, 233);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 29);
+            this.comboBox1.Size = new System.Drawing.Size(191, 34);
             this.comboBox1.TabIndex = 141;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(51, 177);
+            this.label1.Location = new System.Drawing.Point(58, 236);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 22);
+            this.label1.Size = new System.Drawing.Size(97, 27);
             this.label1.TabIndex = 140;
             this.label1.Text = "Phân loại";
             // 
             // UC_Kho
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -189,8 +189,9 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_Kho";
-            this.Size = new System.Drawing.Size(1151, 658);
+            this.Size = new System.Drawing.Size(1315, 877);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

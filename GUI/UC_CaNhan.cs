@@ -44,9 +44,9 @@ namespace Do_An
             string soDienThoai = tb_SoDienThoai.Text;
             string diaChi = tb_DiaChi.Text;
             bool isValid = true;
-            if (string.IsNullOrEmpty(hoTen) || !hoTen.All(c => char.IsLetter(c))) isValid = false;
+            if (string.IsNullOrEmpty(hoTen) || !hoTen.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             if (string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
-            if (string.IsNullOrEmpty(diaChi) || !diaChi.All(c => char.IsLetterOrDigit(c))) isValid = false;
+            if (string.IsNullOrEmpty(diaChi) || !diaChi.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))) isValid = false;
             if (!rb_Nam.Checked && !rb_Nu.Checked) isValid = false;
             //if(cbb_ViTri.SelectedItem == null) isValid = false;
 

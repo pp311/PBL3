@@ -26,5 +26,11 @@ namespace Do_An
         {
             InitializeComponent();
         }
+
+        private void btn_XemCT_Click(object sender, EventArgs e)
+        {
+            Form_SanPham f = new Form_SanPham();
+            f.Show();
+        }
     }
 }

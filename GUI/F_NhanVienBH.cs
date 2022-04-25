@@ -87,7 +87,7 @@ namespace Do_An
 
         private void picture_setting_Click(object sender, EventArgs e)
         {
-           //
+            this.Close();
         }
     }
 }
