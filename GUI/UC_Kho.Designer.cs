@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dgv_TableSanPham = new System.Windows.Forms.DataGridView();
+            this.btn_Detail = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Edit = new System.Windows.Forms.Button();
+            this.btn_Add = new System.Windows.Forms.Button();
+            this.tb_Search = new System.Windows.Forms.TextBox();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.cbb_Type = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TableSanPham)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -53,117 +53,120 @@
             this.label3.Text = "Quản lí kho";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dgv_TableSanPham
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_TableSanPham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 333);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1050, 525);
-            this.dataGridView1.TabIndex = 101;
+            this.dgv_TableSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_TableSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_TableSanPham.Location = new System.Drawing.Point(32, 333);
+            this.dgv_TableSanPham.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgv_TableSanPham.Name = "dgv_TableSanPham";
+            this.dgv_TableSanPham.RowHeadersWidth = 51;
+            this.dgv_TableSanPham.RowTemplate.Height = 29;
+            this.dgv_TableSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_TableSanPham.Size = new System.Drawing.Size(1050, 525);
+            this.dgv_TableSanPham.TabIndex = 101;
             // 
-            // button20
+            // btn_Detail
             // 
-            this.button20.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button20.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button20.Location = new System.Drawing.Point(1123, 635);
-            this.button20.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(149, 67);
-            this.button20.TabIndex = 105;
-            this.button20.Text = "Xem chi tiết";
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.btn_Detail.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Detail.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Detail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Detail.FlatAppearance.BorderSize = 0;
+            this.btn_Detail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Detail.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Detail.Location = new System.Drawing.Point(1123, 635);
+            this.btn_Detail.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Detail.Name = "btn_Detail";
+            this.btn_Detail.Size = new System.Drawing.Size(149, 67);
+            this.btn_Detail.TabIndex = 105;
+            this.btn_Detail.Text = "Xem chi tiết";
+            this.btn_Detail.UseVisualStyleBackColor = false;
+            this.btn_Detail.Click += new System.EventHandler(this.button20_Click);
             // 
-            // button17
+            // btn_Delete
             // 
-            this.button17.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button17.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button17.Location = new System.Drawing.Point(1123, 533);
-            this.button17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(149, 71);
-            this.button17.TabIndex = 104;
-            this.button17.Text = "Xóa sản phẩm";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Delete.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Delete.FlatAppearance.BorderSize = 0;
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Delete.Location = new System.Drawing.Point(1123, 533);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(149, 71);
+            this.btn_Delete.TabIndex = 104;
+            this.btn_Delete.Text = "Xóa sản phẩm";
+            this.btn_Delete.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // btn_Edit
             // 
-            this.button19.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button19.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button19.Location = new System.Drawing.Point(1123, 431);
-            this.button19.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(149, 71);
-            this.button19.TabIndex = 103;
-            this.button19.Text = "Chỉnh sửa thông tin SP";
-            this.button19.UseVisualStyleBackColor = false;
+            this.btn_Edit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Edit.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Edit.FlatAppearance.BorderSize = 0;
+            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Edit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Edit.Location = new System.Drawing.Point(1123, 431);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(149, 71);
+            this.btn_Edit.TabIndex = 103;
+            this.btn_Edit.Text = "Chỉnh sửa thông tin SP";
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
-            // button16
+            // btn_Add
             // 
-            this.button16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button16.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(1123, 333);
-            this.button16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(149, 71);
-            this.button16.TabIndex = 102;
-            this.button16.Text = "Thêm thông tin SP";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.btn_Add.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Add.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Add.FlatAppearance.BorderSize = 0;
+            this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Add.Location = new System.Drawing.Point(1123, 333);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(149, 71);
+            this.btn_Add.TabIndex = 102;
+            this.btn_Add.Text = "Thêm thông tin SP";
+            this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.button16_Click);
             // 
-            // textBox4
+            // tb_Search
             // 
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(754, 229);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(229, 33);
-            this.textBox4.TabIndex = 118;
+            this.tb_Search.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_Search.Location = new System.Drawing.Point(754, 229);
+            this.tb_Search.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tb_Search.Name = "tb_Search";
+            this.tb_Search.Size = new System.Drawing.Size(229, 33);
+            this.tb_Search.TabIndex = 118;
             // 
-            // button1
+            // btn_Search
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.07563F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(987, 229);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 33);
-            this.button1.TabIndex = 119;
-            this.button1.Text = "Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Search.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Search.FlatAppearance.BorderSize = 0;
+            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Search.Font = new System.Drawing.Font("Segoe UI", 9.07563F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Search.Location = new System.Drawing.Point(987, 229);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(93, 33);
+            this.btn_Search.TabIndex = 119;
+            this.btn_Search.Text = "Tìm kiếm";
+            this.btn_Search.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cbb_Type
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(160, 233);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 34);
-            this.comboBox1.TabIndex = 141;
+            this.cbb_Type.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cbb_Type.FormattingEnabled = true;
+            this.cbb_Type.Location = new System.Drawing.Point(160, 233);
+            this.cbb_Type.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.cbb_Type.Name = "cbb_Type";
+            this.cbb_Type.Size = new System.Drawing.Size(191, 34);
+            this.cbb_Type.TabIndex = 141;
             // 
             // label1
             // 
@@ -179,20 +182,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbb_Type);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_Search);
+            this.Controls.Add(this.tb_Search);
+            this.Controls.Add(this.btn_Detail);
+            this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.btn_Edit);
+            this.Controls.Add(this.btn_Add);
+            this.Controls.Add(this.dgv_TableSanPham);
             this.Controls.Add(this.label3);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_Kho";
             this.Size = new System.Drawing.Size(1315, 877);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_TableSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,14 +204,14 @@
         #endregion
 
         private Label label3;
-        private DataGridView dataGridView1;
-        private Button button20;
-        private Button button17;
-        private Button button19;
-        private Button button16;
-        private TextBox textBox4;
-        private Button button1;
-        private ComboBox comboBox1;
+        private DataGridView dgv_TableSanPham;
+        private Button btn_Detail;
+        private Button btn_Delete;
+        private Button btn_Edit;
+        private Button btn_Add;
+        private TextBox tb_Search;
+        private Button btn_Search;
+        private ComboBox cbb_Type;
         private Label label1;
     }
 }

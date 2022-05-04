@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_NhanVienSC));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_CaNhanSC = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_SanPhamSC = new System.Windows.Forms.Button();
             this.btn_BanHangBH = new System.Windows.Forms.Button();
             this.btn_CaNhan = new System.Windows.Forms.Button();
@@ -71,18 +70,9 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 963);
+            this.panel2.Size = new System.Drawing.Size(197, 770);
             this.panel2.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(59, 211);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 59);
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
             // 
             // btn_CaNhanSC
             // 
@@ -91,15 +81,24 @@
             this.btn_CaNhanSC.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_CaNhanSC.FlatAppearance.BorderSize = 0;
             this.btn_CaNhanSC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CaNhanSC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CaNhanSC.Location = new System.Drawing.Point(1, 808);
+            this.btn_CaNhanSC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_CaNhanSC.Location = new System.Drawing.Point(1, 646);
             this.btn_CaNhanSC.Margin = new System.Windows.Forms.Padding(0);
             this.btn_CaNhanSC.Name = "btn_CaNhanSC";
-            this.btn_CaNhanSC.Size = new System.Drawing.Size(194, 107);
+            this.btn_CaNhanSC.Size = new System.Drawing.Size(194, 86);
             this.btn_CaNhanSC.TabIndex = 28;
             this.btn_CaNhanSC.Text = "Cá nhân";
             this.btn_CaNhanSC.UseVisualStyleBackColor = false;
             this.btn_CaNhanSC.Click += new System.EventHandler(this.btn_CaNhanSC_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(59, 169);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 47);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_SanPhamSC
             // 
@@ -108,11 +107,11 @@
             this.btn_SanPhamSC.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_SanPhamSC.FlatAppearance.BorderSize = 0;
             this.btn_SanPhamSC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SanPhamSC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_SanPhamSC.Location = new System.Drawing.Point(2, 701);
+            this.btn_SanPhamSC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_SanPhamSC.Location = new System.Drawing.Point(2, 561);
             this.btn_SanPhamSC.Margin = new System.Windows.Forms.Padding(0);
             this.btn_SanPhamSC.Name = "btn_SanPhamSC";
-            this.btn_SanPhamSC.Size = new System.Drawing.Size(194, 107);
+            this.btn_SanPhamSC.Size = new System.Drawing.Size(194, 86);
             this.btn_SanPhamSC.TabIndex = 26;
             this.btn_SanPhamSC.Text = "Sản phẩm";
             this.btn_SanPhamSC.UseVisualStyleBackColor = false;
@@ -125,11 +124,11 @@
             this.btn_BanHangBH.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_BanHangBH.FlatAppearance.BorderSize = 0;
             this.btn_BanHangBH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_BanHangBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_BanHangBH.Location = new System.Drawing.Point(2, 381);
+            this.btn_BanHangBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_BanHangBH.Location = new System.Drawing.Point(2, 305);
             this.btn_BanHangBH.Margin = new System.Windows.Forms.Padding(0);
             this.btn_BanHangBH.Name = "btn_BanHangBH";
-            this.btn_BanHangBH.Size = new System.Drawing.Size(194, 107);
+            this.btn_BanHangBH.Size = new System.Drawing.Size(194, 86);
             this.btn_BanHangBH.TabIndex = 25;
             this.btn_BanHangBH.Text = "Bán hàng";
             this.btn_BanHangBH.UseVisualStyleBackColor = false;
@@ -142,11 +141,11 @@
             this.btn_CaNhan.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_CaNhan.FlatAppearance.BorderSize = 0;
             this.btn_CaNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CaNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CaNhan.Location = new System.Drawing.Point(0, 1727);
+            this.btn_CaNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_CaNhan.Location = new System.Drawing.Point(0, 1382);
             this.btn_CaNhan.Margin = new System.Windows.Forms.Padding(0);
             this.btn_CaNhan.Name = "btn_CaNhan";
-            this.btn_CaNhan.Size = new System.Drawing.Size(191, 107);
+            this.btn_CaNhan.Size = new System.Drawing.Size(191, 86);
             this.btn_CaNhan.TabIndex = 24;
             this.btn_CaNhan.Text = "Cá nhân";
             this.btn_CaNhan.UseVisualStyleBackColor = false;
@@ -158,11 +157,11 @@
             this.btn_ThongKe.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_ThongKe.FlatAppearance.BorderSize = 0;
             this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThongKe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ThongKe.Location = new System.Drawing.Point(0, 1620);
+            this.btn_ThongKe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_ThongKe.Location = new System.Drawing.Point(0, 1296);
             this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(0);
             this.btn_ThongKe.Name = "btn_ThongKe";
-            this.btn_ThongKe.Size = new System.Drawing.Size(191, 107);
+            this.btn_ThongKe.Size = new System.Drawing.Size(191, 86);
             this.btn_ThongKe.TabIndex = 23;
             this.btn_ThongKe.Text = "Thống kê";
             this.btn_ThongKe.UseVisualStyleBackColor = false;
@@ -174,11 +173,11 @@
             this.btn_BaoHanhSC.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_BaoHanhSC.FlatAppearance.BorderSize = 0;
             this.btn_BaoHanhSC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_BaoHanhSC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_BaoHanhSC.Location = new System.Drawing.Point(2, 595);
+            this.btn_BaoHanhSC.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_BaoHanhSC.Location = new System.Drawing.Point(2, 476);
             this.btn_BaoHanhSC.Margin = new System.Windows.Forms.Padding(0);
             this.btn_BaoHanhSC.Name = "btn_BaoHanhSC";
-            this.btn_BaoHanhSC.Size = new System.Drawing.Size(194, 107);
+            this.btn_BaoHanhSC.Size = new System.Drawing.Size(194, 86);
             this.btn_BaoHanhSC.TabIndex = 21;
             this.btn_BaoHanhSC.Text = "Bảo hành";
             this.btn_BaoHanhSC.UseVisualStyleBackColor = false;
@@ -191,11 +190,11 @@
             this.btn_HoaDonBH.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.btn_HoaDonBH.FlatAppearance.BorderSize = 0;
             this.btn_HoaDonBH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoaDonBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HoaDonBH.Location = new System.Drawing.Point(2, 488);
+            this.btn_HoaDonBH.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_HoaDonBH.Location = new System.Drawing.Point(2, 390);
             this.btn_HoaDonBH.Margin = new System.Windows.Forms.Padding(0);
             this.btn_HoaDonBH.Name = "btn_HoaDonBH";
-            this.btn_HoaDonBH.Size = new System.Drawing.Size(194, 107);
+            this.btn_HoaDonBH.Size = new System.Drawing.Size(194, 86);
             this.btn_HoaDonBH.TabIndex = 20;
             this.btn_HoaDonBH.Text = "Hóa đơn";
             this.btn_HoaDonBH.UseVisualStyleBackColor = false;
@@ -204,8 +203,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(11, 273);
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(11, 218);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 24);
@@ -215,8 +214,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(48, 155);
+            this.label1.Font = new System.Drawing.Font("Calibri", 12.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(48, 124);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 26);
@@ -227,11 +226,11 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::Do_An.Properties.Resources.logo_2;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(197, 213);
+            this.pictureBox2.Size = new System.Drawing.Size(197, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -245,16 +244,17 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(197, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1253, 72);
+            this.panel1.Size = new System.Drawing.Size(1253, 58);
             this.panel1.TabIndex = 8;
             // 
             // lb_Clock
             // 
             this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lb_Clock.AutoSize = true;
-            this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_Clock.Location = new System.Drawing.Point(957, 27);
+            this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.lb_Clock.Location = new System.Drawing.Point(957, 22);
             this.lb_Clock.Name = "lb_Clock";
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 87;
@@ -264,8 +264,8 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(572, 19);
+            this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(572, 15);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 41);
@@ -275,11 +275,11 @@
             // pictureBox8
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(882, 7);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox8.Image = global::Do_An.Properties.Resources.dongho;
+            this.pictureBox8.Location = new System.Drawing.Point(882, 6);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(69, 65);
+            this.pictureBox8.Size = new System.Drawing.Size(69, 52);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 86;
             this.pictureBox8.TabStop = false;
@@ -288,10 +288,10 @@
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::Do_An.Properties.Resources.xx;
-            this.pictureBox3.Location = new System.Drawing.Point(1185, 3);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(1185, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(66, 69);
+            this.pictureBox3.Size = new System.Drawing.Size(66, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 85;
             this.pictureBox3.TabStop = false;
@@ -300,20 +300,22 @@
             // pnl_MainSC
             // 
             this.pnl_MainSC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_MainSC.Location = new System.Drawing.Point(197, 72);
+            this.pnl_MainSC.Location = new System.Drawing.Point(197, 58);
+            this.pnl_MainSC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_MainSC.Name = "pnl_MainSC";
-            this.pnl_MainSC.Size = new System.Drawing.Size(1253, 891);
+            this.pnl_MainSC.Size = new System.Drawing.Size(1253, 712);
             this.pnl_MainSC.TabIndex = 9;
             // 
             // F_NhanVienSC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 963);
+            this.ClientSize = new System.Drawing.Size(1450, 770);
             this.Controls.Add(this.pnl_MainSC);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "F_NhanVienSC";
             this.Text = "F_NhanVienSC";
             this.TopMost = true;
