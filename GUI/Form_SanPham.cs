@@ -44,7 +44,7 @@ namespace Do_An
 
         private void Form_SanPham_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawRectangle(new Pen(Color.LightSeaGreen, 30), this.DisplayRectangle);
+            e.Graphics.DrawRectangle(new Pen(Color.Black, 30), this.DisplayRectangle);
         }
     }
 }

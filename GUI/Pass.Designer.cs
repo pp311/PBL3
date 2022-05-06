@@ -36,7 +36,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Huy = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -78,7 +78,7 @@
             this.panel2.Controls.Add(this.textBox7);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btn_Luu);
             this.panel2.Controls.Add(this.btn_Huy);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -128,20 +128,21 @@
             this.label13.TabIndex = 121;
             this.label13.Text = "Mật khẩu mới";
             // 
-            // button1
+            // btn_Luu
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(207, 412);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 53);
-            this.button1.TabIndex = 70;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Luu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btn_Luu.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Luu.FlatAppearance.BorderSize = 0;
+            this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Luu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Luu.Location = new System.Drawing.Point(207, 412);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(163, 53);
+            this.btn_Luu.TabIndex = 70;
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.UseVisualStyleBackColor = false;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // btn_Huy
             // 
@@ -204,7 +205,7 @@
         private Label label4;
         private Label label3;
         private Button btn_Huy;
-        private Button button1;
+        private Button btn_Luu;
         private TextBox textBox3;
         private TextBox textBox7;
         private Label label15;

@@ -117,7 +117,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(197, 944);
+            this.panel2.Size = new System.Drawing.Size(197, 916);
             this.panel2.TabIndex = 5;
             // 
             // btn_NhapHang
@@ -128,7 +128,7 @@
             this.btn_NhapHang.FlatAppearance.BorderSize = 0;
             this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhapHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_NhapHang.Location = new System.Drawing.Point(0, 302);
+            this.btn_NhapHang.Location = new System.Drawing.Point(0, 360);
             this.btn_NhapHang.Margin = new System.Windows.Forms.Padding(0);
             this.btn_NhapHang.Name = "btn_NhapHang";
             this.btn_NhapHang.Size = new System.Drawing.Size(197, 107);
@@ -145,7 +145,7 @@
             this.btn_CaNhan.FlatAppearance.BorderSize = 0;
             this.btn_CaNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CaNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CaNhan.Location = new System.Drawing.Point(0, 830);
+            this.btn_CaNhan.Location = new System.Drawing.Point(0, 888);
             this.btn_CaNhan.Margin = new System.Windows.Forms.Padding(0);
             this.btn_CaNhan.Name = "btn_CaNhan";
             this.btn_CaNhan.Size = new System.Drawing.Size(197, 107);
@@ -162,7 +162,7 @@
             this.btn_ThongKe.FlatAppearance.BorderSize = 0;
             this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThongKe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ThongKe.Location = new System.Drawing.Point(0, 723);
+            this.btn_ThongKe.Location = new System.Drawing.Point(0, 781);
             this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(0);
             this.btn_ThongKe.Name = "btn_ThongKe";
             this.btn_ThongKe.Size = new System.Drawing.Size(197, 107);
@@ -179,7 +179,7 @@
             this.btn_NhanVien.FlatAppearance.BorderSize = 0;
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_NhanVien.Location = new System.Drawing.Point(0, 616);
+            this.btn_NhanVien.Location = new System.Drawing.Point(0, 674);
             this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.btn_NhanVien.Name = "btn_NhanVien";
             this.btn_NhanVien.Size = new System.Drawing.Size(197, 107);
@@ -196,7 +196,7 @@
             this.btn_HoaDon.FlatAppearance.BorderSize = 0;
             this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HoaDon.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HoaDon.Location = new System.Drawing.Point(0, 511);
+            this.btn_HoaDon.Location = new System.Drawing.Point(0, 569);
             this.btn_HoaDon.Margin = new System.Windows.Forms.Padding(0);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(197, 107);
@@ -213,7 +213,7 @@
             this.btn_Kho.FlatAppearance.BorderSize = 0;
             this.btn_Kho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Kho.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Kho.Location = new System.Drawing.Point(0, 406);
+            this.btn_Kho.Location = new System.Drawing.Point(0, 464);
             this.btn_Kho.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Kho.Name = "btn_Kho";
             this.btn_Kho.Size = new System.Drawing.Size(197, 107);
@@ -277,7 +277,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(518, 27);
+            this.label2.Location = new System.Drawing.Point(843, 27);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 41);
@@ -290,14 +290,14 @@
             this.pnl_Main.Location = new System.Drawing.Point(197, 97);
             this.pnl_Main.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Main.Name = "pnl_Main";
-            this.pnl_Main.Size = new System.Drawing.Size(1253, 847);
+            this.pnl_Main.Size = new System.Drawing.Size(1253, 819);
             this.pnl_Main.TabIndex = 8;
             // 
             // F_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1450, 944);
+            this.ClientSize = new System.Drawing.Size(1450, 916);
             this.Controls.Add(this.pnl_Main);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -306,7 +306,6 @@
             this.Name = "F_Admin";
             this.Text = "F_NhanVien";
             this.TopMost = true;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);

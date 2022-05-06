@@ -13,7 +13,7 @@ namespace Do_An.DAL_ST
         public string conn;
         public Connect()
         {
-            conn= @"Data Source=DESKTOP-6DUEMNF\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
+            conn= @"Data Source=LAPTOP-H8F30CQH\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
         }
         public SqlConnection getConnect()
         {

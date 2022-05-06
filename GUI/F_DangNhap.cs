@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Do_An.DAL_ST;
-
+using Do_An.DTO_AD;
+using Do_An.BLL_AD;
 namespace Do_An
 {
     public partial class F_DangNhap : Form
@@ -24,12 +25,13 @@ namespace Do_An
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-6DUEMNF\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-H8F30CQH\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True");
             try
             {
                 conn.Open();
                 string tk = tb_TaiKhoan.Text;
                 string mk = tb_MatKhau.Text;
+             //   TaiKhoan log = BLL_TaiKhoan.Instance.BLL_GetTaiKhoanByTenTaiKhoan(tk);
                 string sql1 = "select Vitri from nhanvien inner join taikhoan on nhanvien.ID_TaiKhoan = taikhoan.ID_TaiKhoan where taikhoan.TenTaiKhoan = '" + tk + "'";
                 SqlCommand cmd1 = new SqlCommand(sql1, conn);
                 string s = (string)cmd1.ExecuteScalar();

@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BLL_AD",
     "\\DAL",
+    "\\DAL_AD",
+    "\\DAL_ST",
     "\\GUI"
   ],
+  "SelectedNode": "\\GUI\\SetPass.cs",
   "PreviewInSolutionExplorer": false
 }
