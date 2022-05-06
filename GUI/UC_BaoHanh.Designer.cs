@@ -70,8 +70,8 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(446, 11);
+            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(382, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(229, 33);
             this.label3.TabIndex = 128;
@@ -81,8 +81,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(18, 64);
+            this.label1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(15, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 22);
             this.label1.TabIndex = 134;
@@ -96,11 +96,11 @@
             this.button19.Enabled = false;
             this.button19.FlatAppearance.BorderSize = 0;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button19.Location = new System.Drawing.Point(477, 20);
+            this.button19.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.button19.Location = new System.Drawing.Point(409, 17);
             this.button19.Margin = new System.Windows.Forms.Padding(2);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(124, 53);
+            this.button19.Size = new System.Drawing.Size(106, 46);
             this.button19.TabIndex = 132;
             this.button19.Text = "Tạo mới ";
             this.button19.UseVisualStyleBackColor = false;
@@ -111,22 +111,22 @@
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(380, 59);
+            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.button16.Location = new System.Drawing.Point(326, 51);
             this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(98, 30);
+            this.button16.Size = new System.Drawing.Size(84, 30);
             this.button16.TabIndex = 131;
             this.button16.Text = "Tra cứu";
             this.button16.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(135, 59);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12.8F);
+            this.textBox1.Location = new System.Drawing.Point(116, 51);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 30);
+            this.textBox1.Size = new System.Drawing.Size(206, 30);
             this.textBox1.TabIndex = 135;
             // 
             // button1
@@ -136,11 +136,11 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(245, 288);
+            this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(210, 250);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 36);
+            this.button1.Size = new System.Drawing.Size(90, 31);
             this.button1.TabIndex = 136;
             this.button1.Text = "Lưu";
             this.button1.UseVisualStyleBackColor = false;
@@ -151,11 +151,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.button19);
-            this.groupBox1.Location = new System.Drawing.Point(527, 387);
+            this.groupBox1.Location = new System.Drawing.Point(452, 335);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(606, 252);
+            this.groupBox1.Size = new System.Drawing.Size(519, 218);
             this.groupBox1.TabIndex = 137;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lịch sử bảo hành";
@@ -166,12 +166,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 20);
+            this.dataGridView1.Location = new System.Drawing.Point(19, 17);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(443, 215);
+            this.dataGridView1.Size = new System.Drawing.Size(380, 186);
             this.dataGridView1.TabIndex = 130;
             // 
             // groupBox2
@@ -194,11 +194,11 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(527, 46);
+            this.groupBox2.Location = new System.Drawing.Point(452, 40);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(606, 337);
+            this.groupBox2.Size = new System.Drawing.Size(519, 292);
             this.groupBox2.TabIndex = 138;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin bảo hành sản phẩm";
@@ -206,8 +206,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(147, 21);
+            this.label4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(126, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 22);
             this.label4.TabIndex = 155;
@@ -216,8 +216,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(22, 21);
+            this.label5.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(19, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 22);
             this.label5.TabIndex = 154;
@@ -225,23 +225,23 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(145, 126);
+            this.dateTimePicker2.Location = new System.Drawing.Point(124, 109);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(153, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(132, 20);
             this.dateTimePicker2.TabIndex = 153;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(145, 168);
+            this.dateTimePicker1.Location = new System.Drawing.Point(124, 146);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(153, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(132, 20);
             this.dateTimePicker1.TabIndex = 152;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(18, 169);
+            this.label9.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(15, 146);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(120, 22);
             this.label9.TabIndex = 151;
@@ -250,8 +250,8 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(317, 21);
+            this.label14.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(272, 18);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(148, 22);
             this.label14.TabIndex = 150;
@@ -259,18 +259,18 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(317, 52);
+            this.textBox2.Location = new System.Drawing.Point(272, 45);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(272, 216);
+            this.textBox2.Size = new System.Drawing.Size(234, 188);
             this.textBox2.TabIndex = 149;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(143, 207);
+            this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(123, 179);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(81, 22);
             this.label13.TabIndex = 148;
@@ -279,8 +279,8 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(18, 207);
+            this.label12.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(15, 179);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(115, 22);
             this.label12.TabIndex = 147;
@@ -289,8 +289,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(18, 127);
+            this.label8.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(15, 110);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(130, 22);
             this.label8.TabIndex = 145;
@@ -299,16 +299,16 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(143, 245);
+            this.comboBox2.Location = new System.Drawing.Point(123, 212);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(155, 23);
+            this.comboBox2.Size = new System.Drawing.Size(133, 21);
             this.comboBox2.TabIndex = 144;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(18, 245);
+            this.label11.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(15, 212);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(87, 22);
             this.label11.TabIndex = 143;
@@ -317,8 +317,8 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(145, 91);
+            this.label10.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(124, 79);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 22);
             this.label10.TabIndex = 142;
@@ -327,8 +327,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(145, 52);
+            this.label7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(124, 45);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 22);
             this.label7.TabIndex = 139;
@@ -337,8 +337,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(18, 91);
+            this.label6.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(15, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 22);
             this.label6.TabIndex = 138;
@@ -347,8 +347,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(20, 52);
+            this.label2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(17, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 22);
             this.label2.TabIndex = 135;
@@ -360,10 +360,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(18, 397);
+            this.dataGridView2.Location = new System.Drawing.Point(15, 344);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(490, 242);
+            this.dataGridView2.Size = new System.Drawing.Size(420, 210);
             this.dataGridView2.TabIndex = 139;
             // 
             // contextMenuStrip1
@@ -376,9 +376,9 @@
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.dataGridView3);
-            this.groupBox3.Location = new System.Drawing.Point(18, 107);
+            this.groupBox3.Location = new System.Drawing.Point(15, 93);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(492, 274);
+            this.groupBox3.Size = new System.Drawing.Size(422, 237);
             this.groupBox3.TabIndex = 140;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Đang trong quá trình bảo hành";
@@ -388,15 +388,15 @@
             this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(16, 21);
+            this.dataGridView3.Location = new System.Drawing.Point(14, 18);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 25;
-            this.dataGridView3.Size = new System.Drawing.Size(461, 242);
+            this.dataGridView3.Size = new System.Drawing.Size(395, 210);
             this.dataGridView3.TabIndex = 140;
             // 
             // UC_BaoHanh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridView2);
@@ -409,7 +409,7 @@
             this.Location = new System.Drawing.Point(32, 333);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_BaoHanh";
-            this.Size = new System.Drawing.Size(1151, 658);
+            this.Size = new System.Drawing.Size(987, 570);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);

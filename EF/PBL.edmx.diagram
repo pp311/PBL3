@@ -13,7 +13,7 @@
         <EntityTypeShape EntityType="PBLModel.taikhoan" Width="1.5" PointX="1.5" PointY="18.625" IsExpanded="true" />
         <EntityTypeShape EntityType="PBLModel.thongtinbaohanh" Width="1.5" PointX="3" PointY="22" IsExpanded="true" />
         <EntityTypeShape EntityType="PBLModel.chitiethoadon" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBLModel.chitietsanpham" Width="1.5" PointX="3" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBLModel.chitietsanpham" Width="1.5" PointX="5.75" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="PBLModel.kho" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
         <AssociationConnector Association="PBLModel.FK_ChiTietHoaDon_HoaDon" ManuallyRouted="false" />
         <AssociationConnector Association="PBLModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />

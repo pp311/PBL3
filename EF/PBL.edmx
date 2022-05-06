@@ -242,30 +242,14 @@ warning 6002: The table/view 'PBL.dbo.kho' does not have a primary key defined. 
           <EntitySet Name="sanpham" EntityType="Self.sanpham" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="taikhoan" EntityType="Self.taikhoan" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="thongtinbaohanh" EntityType="Self.thongtinbaohanh" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="chitiethoadon" EntityType="Self.chitiethoadon" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [chitiethoadon].[ID_HoaDon] AS [ID_HoaDon], 
-    [chitiethoadon].[ID_SanPham] AS [ID_SanPham], 
-    [chitiethoadon].[SoLuongMua] AS [SoLuongMua], 
-    [chitiethoadon].[GiamGia] AS [GiamGia], 
-    [chitiethoadon].[DonGia] AS [DonGia]
-    FROM [dbo].[chitiethoadon] AS [chitiethoadon]</DefiningQuery>
+          <EntitySet Name="chitiethoadon" EntityType="Self.chitiethoadon" store:Type="Tables" Schema="dbo">
+            
           </EntitySet>
-          <EntitySet Name="chitietsanpham" EntityType="Self.chitietsanpham" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [chitietsanpham].[ID_SanPham] AS [ID_SanPham], 
-    [chitietsanpham].[NamSX] AS [NamSX], 
-    [chitietsanpham].[XuatXu] AS [XuatXu], 
-    [chitietsanpham].[TenHang] AS [TenHang], 
-    [chitietsanpham].[ThongSoKyThuat] AS [ThongSoKyThuat], 
-    [chitietsanpham].[ThoiHanBaoHanh] AS [ThoiHanBaoHanh]
-    FROM [dbo].[chitietsanpham] AS [chitietsanpham]</DefiningQuery>
+          <EntitySet Name="chitietsanpham" EntityType="Self.chitietsanpham" store:Type="Tables" Schema="dbo">
+            
           </EntitySet>
-          <EntitySet Name="kho" EntityType="Self.kho" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [kho].[ID_SanPham] AS [ID_SanPham], 
-    [kho].[SoLuong] AS [SoLuong]
-    FROM [dbo].[kho] AS [kho]</DefiningQuery>
+          <EntitySet Name="kho" EntityType="Self.kho" store:Type="Tables" Schema="dbo">
+            
           </EntitySet>
           <AssociationSet Name="FK_ChiTietHoaDon_HoaDon" Association="Self.FK_ChiTietHoaDon_HoaDon">
             <End Role="hoadon" EntitySet="hoadon" />

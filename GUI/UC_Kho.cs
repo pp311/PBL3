@@ -29,27 +29,23 @@ namespace Do_An
         public UC_Kho()
         {
             InitializeComponent();
-            foreach (DataGridViewColumn column in dgv_TableSanPham.Columns)
-            {
 
-                column.SortMode = DataGridViewColumnSortMode.Automatic;
-            }
             Show();
+            cbb_Type.SelectedIndex = 0;
 
         }
 
-        private void Show(string search = "")
+        public void Show(string search = "")
         {
-            PBLEntities db = new PBLEntities();
-            var l = db.sanphams.Select(p => p).ToList();
-            dgv_TableSanPham.DataSource = l;
+            dgv_TableSanPham.DataSource = BLL_SanPham.Instance.GetDataTableSanPham();
+            //dgv_TableSanPham.DataSource = l;
             //dgv_TableSanPham.DataSource = BLL_SanPham.Instance.GetDataTableSanPham();
             dgv_TableSanPham.Columns["ID_SanPham"].HeaderText = "ID Sản phẩm";
             dgv_TableSanPham.Columns["Ten"].HeaderText = "Tên Sản phẩm";
             dgv_TableSanPham.Columns["PhanLoai"].HeaderText = "Phân loại";
             dgv_TableSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
             dgv_TableSanPham.Columns["GiamGia"].HeaderText = "% giảm giá";
-            //dgv_TableSanPham.Columns["SoLuong"].HeaderText = "Số lượng";
+            dgv_TableSanPham.Columns["SoLuong"].HeaderText = "Số lượng";
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -70,7 +66,7 @@ namespace Do_An
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn đúng 1 hàng để xem chi tiết");
+                MessageBox.Show("Vui lòng chọn đúng 1 sản phẩm để xem chi tiết");
             }
         }
 
@@ -86,8 +82,42 @@ namespace Do_An
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn đúng 1 hàng để chỉnh sửa thông tin");
+                MessageBox.Show("Vui lòng chọn đúng 1 sản phẩm để chỉnh sửa thông tin");
             }
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            string msg;
+            if(dgv_TableSanPham.SelectedRows.Count >= 1)
+            {
+                List<int> delList = new List<int>();
+                foreach(DataGridViewRow row in dgv_TableSanPham.SelectedRows)
+                {
+                    delList.Add(Convert.ToInt32(row.Cells["ID_SanPham"].Value));
+                }
+                msg = BLL_SanPham.Instance.DeleteThongTinSanPham(delList);
+            }
+            else
+            {
+                msg = "Vui lòng chọn ít nhất 1 sản phẩm để xoá!";
+            }
+            MessageBox.Show(msg);
+            Show();
+        }
+
+        private void cbb_Type_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string type = cbb_Type.SelectedItem.ToString();
+            DataTable dt = BLL_SanPham.Instance.GetDataTableSanPhamByType(type);
+            dgv_TableSanPham.DataSource = dt;
+        }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+            string type = cbb_Type.SelectedItem.ToString();
+            string keyWord = tb_Search.Text;
+            dgv_TableSanPham.DataSource = BLL_SanPham.Instance.GetDataTableSanPhamByKeyWord(type, keyWord);
         }
     }
 }

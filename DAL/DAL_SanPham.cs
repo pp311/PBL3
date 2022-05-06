@@ -76,11 +76,11 @@ namespace Do_An.DAL
         }
         public void UpdateThongTinSanPham(ChiTietSanPhamView data)
         {
-            string query1 = $"update sanpham set Ten = '{data.Ten}', PhanLoai = '{data.PhanLoai}', " +
+            string query1 = $"update sanpham set Ten = N'{data.Ten}', PhanLoai = N'{data.PhanLoai}', " +
                 $" GiaBan = {data.GiaBan}, GiamGia = {data.GiamGia} where ID_SanPham = {data.ID_SanPham}";
             DBHelper.Instance.ExcuteDB(query1);
-            string query2 = $"update chitietsanpham set NamSX = {data.NamSX}, XuatXu = '{data.XuatXu}', " +
-                $" TenHang = '{data.TenHang}', ThongSoKyThuat = '{data.ThongSoKyThuat}', ThoiHanBaoHanh = {data.ThoiHanBaoHanh} " +
+            string query2 = $"update chitietsanpham set NamSX = {data.NamSX}, XuatXu = N'{data.XuatXu}', " +
+                $" TenHang = N'{data.TenHang}', ThongSoKyThuat = N'{data.ThongSoKyThuat}', ThoiHanBaoHanh = {data.ThoiHanBaoHanh} " +
                 $" where ID_SanPham = {data.ID_SanPham}";
             DBHelper.Instance.ExcuteDB(query2);
         }
@@ -92,10 +92,8 @@ namespace Do_An.DAL
             string query = "SELECT TOP 1 ID_SanPham FROM sanpham ORDER BY ID_SanPham DESC";
 
             int id = -1;
-            foreach (DataRow i in DBHelper.Instance.GetRecords(query).Rows)
-            {
-                id = Convert.ToInt32(i[0]);
-            }
+            DataRow i = DBHelper.Instance.GetRecords(query).Rows[0];        
+            id = Convert.ToInt32(i[0]);           
             string query2 = string.Format("insert into chitietsanpham values ({0}, {1}, N'{2}',N'{3}', N'{4}', {5})",
                 id, data.NamSX, data.XuatXu, data.TenHang, data.ThongSoKyThuat, data.ThoiHanBaoHanh);
             DBHelper.Instance.ExcuteDB(query2);

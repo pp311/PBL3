@@ -17,6 +17,8 @@ namespace Do_An
         {
             InitializeComponent();
             StartTimer();
+
+
         }
 
         private void StartTimer()
@@ -58,7 +60,10 @@ namespace Do_An
                 UC_Kho.Instance.BringToFront();
             }
             else
+            {
                 UC_Kho.Instance.BringToFront();
+                UC_Kho.Instance.Show();
+            }
         }
 
         private void btn_CaNhan_Click(object sender, EventArgs e)
@@ -94,7 +99,10 @@ namespace Do_An
                 UC_NhapHang.Instance.BringToFront();
             }
             else
+            {
                 UC_NhapHang.Instance.BringToFront();
+                UC_NhapHang.Instance.LoadTable();
+            }
 
         }
 

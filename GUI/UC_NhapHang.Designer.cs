@@ -32,22 +32,22 @@
             this.num_Gia = new System.Windows.Forms.NumericUpDown();
             this.num_SoLuongNhap = new System.Windows.Forms.NumericUpDown();
             this.dtp_NgayNhap = new System.Windows.Forms.DateTimePicker();
-            this.btn_Lưu = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.tb_IDSP = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_Table = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_SuaSP = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_NhapSP = new System.Windows.Forms.Button();
             this.btn_XemCT = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_SoLuongNhap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -55,65 +55,93 @@
             this.panel2.Controls.Add(this.num_Gia);
             this.panel2.Controls.Add(this.num_SoLuongNhap);
             this.panel2.Controls.Add(this.dtp_NgayNhap);
-            this.panel2.Controls.Add(this.btn_Lưu);
+            this.panel2.Controls.Add(this.btn_Save);
             this.panel2.Controls.Add(this.tb_IDSP);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Location = new System.Drawing.Point(32, 81);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(32, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1202, 231);
+            this.panel2.Size = new System.Drawing.Size(1202, 185);
             this.panel2.TabIndex = 129;
             // 
             // num_Gia
             // 
-            this.num_Gia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_Gia.Location = new System.Drawing.Point(843, 79);
+            this.num_Gia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.num_Gia.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.num_Gia.Location = new System.Drawing.Point(843, 63);
+            this.num_Gia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.num_Gia.Maximum = new decimal(new int[] {
+            2147483647,
+            0,
+            0,
+            0});
             this.num_Gia.Name = "num_Gia";
             this.num_Gia.Size = new System.Drawing.Size(290, 36);
             this.num_Gia.TabIndex = 139;
+            this.num_Gia.ThousandsSeparator = true;
             // 
             // num_SoLuongNhap
             // 
-            this.num_SoLuongNhap.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.num_SoLuongNhap.Location = new System.Drawing.Point(185, 79);
+            this.num_SoLuongNhap.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.num_SoLuongNhap.Location = new System.Drawing.Point(185, 63);
+            this.num_SoLuongNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.num_SoLuongNhap.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            0});
+            this.num_SoLuongNhap.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.num_SoLuongNhap.Name = "num_SoLuongNhap";
             this.num_SoLuongNhap.Size = new System.Drawing.Size(290, 36);
             this.num_SoLuongNhap.TabIndex = 138;
+            this.num_SoLuongNhap.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // dtp_NgayNhap
             // 
-            this.dtp_NgayNhap.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dtp_NgayNhap.Font = new System.Drawing.Font("Calibri", 13.8F);
             this.dtp_NgayNhap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_NgayNhap.Location = new System.Drawing.Point(843, 25);
+            this.dtp_NgayNhap.Location = new System.Drawing.Point(843, 20);
+            this.dtp_NgayNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
             this.dtp_NgayNhap.Size = new System.Drawing.Size(287, 35);
             this.dtp_NgayNhap.TabIndex = 137;
             // 
-            // btn_Lưu
+            // btn_Save
             // 
-            this.btn_Lưu.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_Lưu.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_Lưu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Lưu.FlatAppearance.BorderSize = 0;
-            this.btn_Lưu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Lưu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Lưu.Location = new System.Drawing.Point(546, 141);
-            this.btn_Lưu.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btn_Lưu.Name = "btn_Lưu";
-            this.btn_Lưu.Size = new System.Drawing.Size(149, 40);
-            this.btn_Lưu.TabIndex = 132;
-            this.btn_Lưu.Text = "Lưu";
-            this.btn_Lưu.UseVisualStyleBackColor = false;
-            this.btn_Lưu.Click += new System.EventHandler(this.btn_Lưu_Click);
+            this.btn_Save.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Save.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Save.FlatAppearance.BorderSize = 0;
+            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Save.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Save.Location = new System.Drawing.Point(546, 113);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(149, 32);
+            this.btn_Save.TabIndex = 132;
+            this.btn_Save.Text = "Lưu";
+            this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // tb_IDSP
             // 
-            this.tb_IDSP.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tb_IDSP.Location = new System.Drawing.Point(185, 25);
-            this.tb_IDSP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tb_IDSP.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.tb_IDSP.Location = new System.Drawing.Point(185, 20);
+            this.tb_IDSP.Margin = new System.Windows.Forms.Padding(2);
             this.tb_IDSP.Name = "tb_IDSP";
             this.tb_IDSP.Size = new System.Drawing.Size(290, 33);
             this.tb_IDSP.TabIndex = 87;
@@ -123,8 +151,8 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(731, 84);
+            this.label5.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(731, 67);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 27);
@@ -136,8 +164,8 @@
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(731, 28);
+            this.label14.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(731, 22);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(109, 27);
             this.label14.TabIndex = 114;
@@ -148,8 +176,8 @@
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(42, 29);
+            this.label15.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(42, 23);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(127, 27);
             this.label15.TabIndex = 113;
@@ -160,33 +188,39 @@
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(42, 83);
+            this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(42, 66);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(146, 27);
             this.label13.TabIndex = 116;
             this.label13.Text = "Số lượng nhập";
             // 
-            // dataGridView1
+            // dgv_Table
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_Table.AllowUserToAddRows = false;
+            this.dgv_Table.AllowUserToDeleteRows = false;
+            this.dgv_Table.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 333);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1050, 525);
-            this.dataGridView1.TabIndex = 130;
+            this.dgv_Table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Table.Location = new System.Drawing.Point(32, 266);
+            this.dgv_Table.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_Table.Name = "dgv_Table";
+            this.dgv_Table.ReadOnly = true;
+            this.dgv_Table.RowHeadersWidth = 51;
+            this.dgv_Table.RowTemplate.Height = 29;
+            this.dgv_Table.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_Table.Size = new System.Drawing.Size(1050, 420);
+            this.dgv_Table.TabIndex = 130;
+            this.dgv_Table.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Table_CellClick);
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(440, 19);
+            this.label3.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(440, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(479, 41);
             this.label3.TabIndex = 128;
@@ -200,31 +234,32 @@
             this.btn_SuaSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_SuaSP.FlatAppearance.BorderSize = 0;
             this.btn_SuaSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SuaSP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_SuaSP.Location = new System.Drawing.Point(1123, 431);
-            this.btn_SuaSP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_SuaSP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_SuaSP.Location = new System.Drawing.Point(1123, 345);
+            this.btn_SuaSP.Margin = new System.Windows.Forms.Padding(2);
             this.btn_SuaSP.Name = "btn_SuaSP";
-            this.btn_SuaSP.Size = new System.Drawing.Size(149, 71);
+            this.btn_SuaSP.Size = new System.Drawing.Size(149, 57);
             this.btn_SuaSP.TabIndex = 132;
             this.btn_SuaSP.Text = "Sửa thông tin nhập hàng";
             this.btn_SuaSP.UseVisualStyleBackColor = false;
             this.btn_SuaSP.Click += new System.EventHandler(this.btn_SuaSP_Click);
             // 
-            // button17
+            // btn_Delete
             // 
-            this.button17.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button17.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button17.Location = new System.Drawing.Point(1123, 533);
-            this.button17.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(149, 71);
-            this.button17.TabIndex = 133;
-            this.button17.Text = "Xoá thông tin nhập hàng";
-            this.button17.UseVisualStyleBackColor = false;
+            this.btn_Delete.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_Delete.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Delete.FlatAppearance.BorderSize = 0;
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Delete.Location = new System.Drawing.Point(1123, 426);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(149, 57);
+            this.btn_Delete.TabIndex = 133;
+            this.btn_Delete.Text = "Xoá thông tin nhập hàng";
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_NhapSP
             // 
@@ -233,11 +268,11 @@
             this.btn_NhapSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_NhapSP.FlatAppearance.BorderSize = 0;
             this.btn_NhapSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NhapSP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_NhapSP.Location = new System.Drawing.Point(1123, 333);
-            this.btn_NhapSP.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_NhapSP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_NhapSP.Location = new System.Drawing.Point(1123, 266);
+            this.btn_NhapSP.Margin = new System.Windows.Forms.Padding(2);
             this.btn_NhapSP.Name = "btn_NhapSP";
-            this.btn_NhapSP.Size = new System.Drawing.Size(149, 71);
+            this.btn_NhapSP.Size = new System.Drawing.Size(149, 57);
             this.btn_NhapSP.TabIndex = 131;
             this.btn_NhapSP.Text = "Nhập sản phẩm";
             this.btn_NhapSP.UseVisualStyleBackColor = false;
@@ -250,35 +285,34 @@
             this.btn_XemCT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_XemCT.FlatAppearance.BorderSize = 0;
             this.btn_XemCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XemCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_XemCT.Location = new System.Drawing.Point(1123, 635);
-            this.btn_XemCT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btn_XemCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_XemCT.Location = new System.Drawing.Point(1123, 508);
+            this.btn_XemCT.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XemCT.Name = "btn_XemCT";
-            this.btn_XemCT.Size = new System.Drawing.Size(149, 71);
+            this.btn_XemCT.Size = new System.Drawing.Size(149, 57);
             this.btn_XemCT.TabIndex = 136;
-            this.btn_XemCT.Text = "Xem chi tiết";
+            this.btn_XemCT.Text = "Xem thông tin sản phẩm";
             this.btn_XemCT.UseVisualStyleBackColor = false;
             this.btn_XemCT.Click += new System.EventHandler(this.btn_XemCT_Click);
             // 
             // UC_NhapHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btn_XemCT);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_Table);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_SuaSP);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_NhapSP);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_NhapHang";
-            this.Size = new System.Drawing.Size(1315, 877);
+            this.Size = new System.Drawing.Size(1315, 702);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_SoLuongNhap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,13 +326,13 @@
         private Label label14;
         private Label label15;
         private Label label13;
-        private DataGridView dataGridView1;
+        private DataGridView dgv_Table;
         private Label label3;
         private Button btn_SuaSP;
-        private Button button17;
+        private Button btn_Delete;
         private Button btn_NhapSP;
         private Button btn_XemCT;
-        private Button btn_Lưu;
+        private Button btn_Save;
         private DateTimePicker dtp_NgayNhap;
         private NumericUpDown num_SoLuongNhap;
         private NumericUpDown num_Gia;
