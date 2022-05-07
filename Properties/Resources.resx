@@ -151,4 +151,7 @@
   <data name="xe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\xe1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dongho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dongho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

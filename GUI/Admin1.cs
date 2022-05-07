@@ -24,8 +24,8 @@ namespace Do_An
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Pass p = new Pass();
-            p.Show();
+          /*  Pass p = new Pass();
+            p.Show();*/
         }
 
     
@@ -160,8 +160,8 @@ namespace Do_An
 
         private void button16_Click(object sender, EventArgs e)
         {
-            Pass p = new Pass();
-            p.Show();
+      /*      Pass p = new Pass();
+            p.Show();*/
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -183,8 +183,8 @@ namespace Do_An
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Pass p = new Pass();
-            p.Show();
+         /*   Pass p = new Pass();
+            p.Show();*/
         }
     }
 }
