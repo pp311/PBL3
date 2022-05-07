@@ -15,12 +15,12 @@ namespace Do_An.EF
     public partial class chitiethoadon
     {
         public int ID_HoaDon { get; set; }
-        public int ID_SanPham { get; set; }
+        public int ID_LoHang { get; set; }
         public int SoLuongMua { get; set; }
         public Nullable<int> GiamGia { get; set; }
         public int DonGia { get; set; }
     
         public virtual hoadon hoadon { get; set; }
-        public virtual sanpham sanpham { get; set; }
+        public virtual kho kho { get; set; }
     }
 }

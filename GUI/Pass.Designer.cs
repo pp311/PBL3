@@ -32,13 +32,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tb_Mk1 = new System.Windows.Forms.TextBox();
+            this.tb_Mk2 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Huy = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_Mk3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -74,8 +76,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MintCream;
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.tb_Mk3);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.tb_Mk1);
+            this.panel2.Controls.Add(this.tb_Mk2);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.btn_Luu);
@@ -88,22 +92,22 @@
             this.panel2.Size = new System.Drawing.Size(885, 593);
             this.panel2.TabIndex = 0;
             // 
-            // textBox3
+            // tb_Mk1
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(346, 224);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(290, 34);
-            this.textBox3.TabIndex = 119;
+            this.tb_Mk1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_Mk1.Location = new System.Drawing.Point(346, 224);
+            this.tb_Mk1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.tb_Mk1.Name = "tb_Mk1";
+            this.tb_Mk1.Size = new System.Drawing.Size(290, 34);
+            this.tb_Mk1.TabIndex = 119;
             // 
-            // textBox7
+            // tb_Mk2
             // 
-            this.textBox7.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(346, 283);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(290, 34);
-            this.textBox7.TabIndex = 122;
+            this.tb_Mk2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_Mk2.Location = new System.Drawing.Point(346, 283);
+            this.tb_Mk2.Name = "tb_Mk2";
+            this.tb_Mk2.Size = new System.Drawing.Size(290, 34);
+            this.tb_Mk2.TabIndex = 122;
             // 
             // label15
             // 
@@ -172,6 +176,25 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Đổi mật khẩu";
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(150, 348);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(196, 27);
+            this.label6.TabIndex = 123;
+            this.label6.Text = "Nhập mật khẩu mới";
+            // 
+            // tb_Mk3
+            // 
+            this.tb_Mk3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tb_Mk3.Location = new System.Drawing.Point(346, 348);
+            this.tb_Mk3.Name = "tb_Mk3";
+            this.tb_Mk3.Size = new System.Drawing.Size(290, 34);
+            this.tb_Mk3.TabIndex = 124;
+            // 
             // Pass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -206,9 +229,11 @@
         private Label label3;
         private Button btn_Huy;
         private Button btn_Luu;
-        private TextBox textBox3;
-        private TextBox textBox7;
+        private TextBox tb_Mk1;
+        private TextBox tb_Mk2;
         private Label label15;
         private Label label13;
+        private TextBox tb_Mk3;
+        private Label label6;
     }
 }

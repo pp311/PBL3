@@ -8,39 +8,72 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Do_An.BLL_AD;
-
+using Do_An.DTO_AD;
 namespace Do_An
 {
     public partial class Pass : Form
     {
-        public delegate void MyDel(int ID_TaiKhoan);
+
+        public delegate void MyDel(string txt);
+
         public MyDel d { get; set; }
-
-
-        public int id_taikhoan { get; set; }
-        // truyeen mk 
-
-        public Pass(int id)
+        private int idtaikhoan;
+        private string matkhaucu123;
+        public Pass(int idtk, string mk)
         {
             InitializeComponent();
-            id = id_taikhoan; 
-
+            this.idtaikhoan = idtk;
+            this.matkhaucu123 = mk;
+            GUI();
         }
 
-        
+
         private void btn_Huy_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-
+        public bool Validate()
+        {
+            string matkhaucu = tb_Mk1.Text;
+            string matkhaumoi1 = tb_Mk2.Text;
+            string matkhaumoi2 = tb_Mk3.Text;
+            bool isValid = true;
+            if (string.IsNullOrEmpty(matkhaucu)) isValid = false;
+            if (string.IsNullOrEmpty(matkhaumoi1)) isValid = false;
+            if (string.IsNullOrEmpty(matkhaumoi2)) isValid = false;
+            if (tb_Mk1.Text != matkhaucu123) isValid = false;
+            if (tb_Mk2.Text != tb_Mk3.Text) isValid = false;
+            if (!isValid)
+            {
+                isValid = false;
+                MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+            }
+            return isValid;
+        }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-          /*  int ID_NhanVien = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_Nhanvien"].Value);
-            // truyeeen id tai khoan de taoj taikhoan
-            int ID_TaiKhoan = BLL_NhanVien.Instance.BLL_GetNhanVienByID(ID_NhanVien);
-            BLL_TaiKhoan.Instance.BLL_GetTaiKhoanByID();*/
+          
+
+            if(Validate())
+            {
+                TaiKhoan tk = new TaiKhoan();
+                tk.MatKhau = tb_Mk2.Text;
+                tk.ID_TaiKhoan = idtaikhoan;
+
+
+                BLL_TaiKhoan.Instance.UpdatePass(tk);
+                MessageBox.Show("Bạn đã thay đổi mật khẩu nhân viên này thành công !! ");  
+                this.Dispose();
+            }
+ 
+
+        }
+        public void GUI()
+        {
+            tb_Mk1.Text = matkhaucu123;
+            tb_Mk1.Enabled = false;
         }
     }
 }

@@ -26,14 +26,13 @@ namespace Do_An.EF
         }
     
         public virtual DbSet<hoadon> hoadons { get; set; }
+        public virtual DbSet<kho> khoes { get; set; }
         public virtual DbSet<lichsubaohanh> lichsubaohanhs { get; set; }
         public virtual DbSet<nhanvien> nhanviens { get; set; }
-        public virtual DbSet<nhaphang> nhaphangs { get; set; }
         public virtual DbSet<sanpham> sanphams { get; set; }
         public virtual DbSet<taikhoan> taikhoans { get; set; }
         public virtual DbSet<thongtinbaohanh> thongtinbaohanhs { get; set; }
         public virtual DbSet<chitiethoadon> chitiethoadons { get; set; }
         public virtual DbSet<chitietsanpham> chitietsanphams { get; set; }
-        public virtual DbSet<kho> khoes { get; set; }
     }
 }

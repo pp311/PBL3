@@ -73,8 +73,11 @@ namespace Do_An.BLL_AD
         }
 
 
-    
+        public void UpdatePass(TaiKhoan tk)
+        {
+            DAL_TaiKhoan.Instance.DAL_UpdatePass(tk);
+        }
 
-        
+
     }
 }

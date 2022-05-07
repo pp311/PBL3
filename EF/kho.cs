@@ -17,14 +17,19 @@ namespace Do_An.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public kho()
         {
-            this.nhaphangs = new HashSet<nhaphang>();
+            this.chitiethoadons = new HashSet<chitiethoadon>();
         }
     
+        public int ID_LoHang { get; set; }
         public int ID_SanPham { get; set; }
+        public Nullable<System.DateTime> NgayNhap { get; set; }
+        public Nullable<int> GiamGia { get; set; }
+        public int SoLuongNhap { get; set; }
+        public int GiaMua { get; set; }
         public Nullable<int> SoLuong { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<nhaphang> nhaphangs { get; set; }
+        public virtual ICollection<chitiethoadon> chitiethoadons { get; set; }
         public virtual sanpham sanpham { get; set; }
     }
 }

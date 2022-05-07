@@ -24,13 +24,13 @@ namespace Do_An
             dt.Columns.Add("col0", typeof(String));
             dt.Columns.Add("col1", typeof(String));
             dgv_ThongSoKyThuat.DataSource = dt;
-            
-            if (id != 0 )
+
+            if (id != 0)
             {
                 ChiTietSanPhamView data = BLL_SanPham.Instance.GetChiTietSanPhamViewByIDSanPham(id);
                 GUI(data, mode);
             }
-            
+
         }
         private void GUI(ChiTietSanPhamView data, int mode)
         {
@@ -43,7 +43,6 @@ namespace Do_An
             cbb_PhanLoai.SelectedItem = data.PhanLoai;
             num_ThoiHanBaoHanh.Value = data.ThoiHanBaoHanh;
             num_GiaBan.Value = data.GiaBan;
-            num_GiamGia.Value = data.GiamGia;
             dgv_ThongSoKyThuat.DataSource = ReadCSVFormat(data.ThongSoKyThuat);
             if(mode == 0)
             {
@@ -54,7 +53,6 @@ namespace Do_An
                 cbb_PhanLoai.Enabled = false;
                 num_ThoiHanBaoHanh.Enabled = false;
                 num_GiaBan.Enabled = false;
-                num_GiamGia.Enabled = false;
                 btn_XacNhan.Visible = false;
                 btn_Huy.Text = "Tắt";
                 btn_Huy.Location = new Point(678, 661);
@@ -112,7 +110,6 @@ namespace Do_An
                     NamSX = Convert.ToInt32(tb_NamSX.Text),
                     XuatXu = tb_XuatXu.Text,
                     GiaBan = Convert.ToInt32(num_GiaBan.Value),
-                    GiamGia = Convert.ToInt32(num_GiamGia.Value),
                     ThongSoKyThuat = csv,
                     ThoiHanBaoHanh = Convert.ToInt32(num_ThoiHanBaoHanh.Value)
                 };
@@ -127,14 +124,13 @@ namespace Do_An
             bool check = true;
             int gia = (int)num_GiaBan.Value;
             int thbh = (int)num_ThoiHanBaoHanh.Value;
-            int giamgia = (int)num_GiamGia.Value;
             string ten = tb_TenSP.Text;
             string namsx = tb_NamSX.Text;
             bool isValid = true;
             if (!namsx.All(c => char.IsNumber(c))) isValid = false;
             if (string.IsNullOrEmpty(ten) || !ten.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))) isValid = false;
             if (cbb_PhanLoai.SelectedItem == null) isValid = false;
-            if(gia <= 0 || thbh < 0 || giamgia < 0) isValid = false;
+            if(gia <= 0 || thbh < 0) isValid = false;
             if (!isValid)
             {
                 check = false;
@@ -143,9 +139,6 @@ namespace Do_An
             return check;
         }
 
-        private void Form_SanPham_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.DrawRectangle(new Pen(Color.Black, 30), this.DisplayRectangle);
-        }
+
     }
 }

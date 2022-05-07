@@ -16,7 +16,6 @@ namespace Do_An.DTO
         public int ThoiHanBaoHanh { get; set; }
         public string ThongSoKyThuat { get; set; }
         public string PhanLoai { get; set; }
-        public int GiamGia { get; set; }
         public int GiaBan { get; set; }
     }
 }

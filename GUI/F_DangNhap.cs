@@ -11,6 +11,9 @@ using System.Data.SqlClient;
 using Do_An.DAL_ST;
 using Do_An.DTO_AD;
 using Do_An.BLL_AD;
+using Do_An.BLL;
+using Do_An.DTO;
+
 namespace Do_An
 {
     public partial class F_DangNhap : Form
@@ -25,55 +28,40 @@ namespace Do_An
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-V8TS0L2\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True");
-            try
+           
+
+            string tk = tb_TaiKhoan.Text;
+            string mk = tb_MatKhau.Text;
+            bool isLoginSuccess = BLL_DangNhap.Instance.DangNhap(tk, mk);
+            if (isLoginSuccess)
             {
-                conn.Open();
-                string tk = tb_TaiKhoan.Text;
-                string mk = tb_MatKhau.Text;
-             //   TaiKhoan log = BLL_TaiKhoan.Instance.BLL_GetTaiKhoanByTenTaiKhoan(tk);
-                string sql1 = "select Vitri from nhanvien inner join taikhoan on nhanvien.ID_TaiKhoan = taikhoan.ID_TaiKhoan where taikhoan.TenTaiKhoan = '" + tk + "'";
-                SqlCommand cmd1 = new SqlCommand(sql1, conn);
-                string s = (string)cmd1.ExecuteScalar();
-
-                string sql = "select * from taikhoan where TenTaiKhoan = '" + tk + "' and MatKhau = '" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader dtr = cmd.ExecuteReader();
-
-                
-                if (dtr.Read() == true)
+                string s = CurrentUser.ViTri;
+                if (s == "Quản lý")
                 {
-                    this.Hide();
-                    if (s == "Quản lý")
-                    {
-                        F_QuanLy f_admin = new F_QuanLy();
-                        f_admin.Closed += (s, args) => this.Close();
-                        f_admin.Show();
-                    }
-                    if (s == "Nhân viên bán hàng")
-                    {
-                        F_NhanVienBH f_NhanVienBH = new F_NhanVienBH();
-                        f_NhanVienBH.Closed += (s, args) => this.Close();
-                        f_NhanVienBH.Show();
-                    }
-                    if (s == "Nhân viên sửa chữa")
-                    {
-                        F_NhanVienSC f_NhanVienSC = new F_NhanVienSC();
-                        f_NhanVienSC.Closed += (s, args) => this.Close();
-                        f_NhanVienSC.Show();
-
-                    }
+                    F_QuanLy f_admin = new F_QuanLy();
+                    f_admin.Closed += (s, args) => this.Close();
+                    f_admin.Show();
                 }
-                else
+                if (s == "Nhân viên bán hàng")
                 {
-                    if(tk == "" || mk == "") MessageBox.Show("Vui lòng điền đầy đủ thông tin");
-                    else MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                    F_NhanVienBH f_NhanVienBH = new F_NhanVienBH();
+                    f_NhanVienBH.Closed += (s, args) => this.Close();
+                    f_NhanVienBH.Show();
+                }
+                if (s == "Nhân viên sửa chữa")
+                {
+                    F_NhanVienSC f_NhanVienSC = new F_NhanVienSC();
+                    f_NhanVienSC.Closed += (s, args) => this.Close();
+                    f_NhanVienSC.Show();
+
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                if (tk == "" || mk == "") MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                else MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
             }
+   
 
         }
 

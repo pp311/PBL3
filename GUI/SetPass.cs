@@ -27,12 +27,13 @@ namespace Do_An
         private DateTime ngaysinh;
         private string gioitinh;
         //  private int idtk;
+        public Action<string> load { get; set; }
 
         // truyen taikhoan qua , them matkhau 
         /*    public delegate void MyDel(string txt);*/
-      
-    //    public Form1( string ttk)
-      public SetPass(string ttk,string tnv,string dc,string sdt,string vt,DateTime ns,string gt)
+
+        //    public Form1( string ttk)
+        public SetPass(string ttk,string tnv,string dc,string sdt,string vt,DateTime ns,string gt)
 
         {
             InitializeComponent();
@@ -52,7 +53,8 @@ namespace Do_An
         }
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if(Validate())
+
+            if (Validate())
             {
                 TaiKhoan tk = new TaiKhoan();
                 tk.MatKhau = tb_Mk1.Text;
@@ -68,15 +70,11 @@ namespace Do_An
                 nv.ViTri = vitri;
                 nv.NgaySinh = ngaysinh;
 
-              BLL_NhanVien.Instance.AddNhanVien(nv,tk);
-                d("");
-                MessageBox.Show("Bạn đã thêm thông tin nhân viên này thành công !!! ");
-
+                BLL_NhanVien.Instance.AddNhanVien(nv, tk);
                 this.Dispose();
 
-            }
 
-           
+            }
         }
 
         private bool Validate()
@@ -85,18 +83,18 @@ namespace Do_An
             string matkhau2 = tb_Mk2.Text;
             bool check = true;
             bool isValid = true;
-            if (tb_Mk1.Text != tb_Mk2.Text) isValid = false;
             if (string.IsNullOrEmpty(matkhau1) || !matkhau1.All(c => char.IsLetterOrDigit(c))) isValid = false;
             if (string.IsNullOrEmpty(matkhau2) || !matkhau2.All(c => char.IsLetterOrDigit(c))) isValid = false;
             if (tb_Mk1.Text != tb_Mk2.Text) isValid = false;
 
             if (!isValid)
             {
-                check = false;
                 MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+                check = false;
             }
             return check;
-            }
+        }
+
 
 
 

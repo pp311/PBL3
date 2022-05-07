@@ -66,7 +66,6 @@ namespace Do_An.DAL
                 Ten = i["Ten"].ToString(),
                 PhanLoai = i["PhanLoai"].ToString(),
                 GiaBan = Convert.ToInt32(i["GiaBan"]),
-                GiamGia = Convert.ToInt32(i["GiamGia"]),
                 XuatXu = i["XuatXu"].ToString(),
                 NamSX = Convert.ToInt32(i["NamSX"]),
                 ThoiHanBaoHanh = Convert.ToInt32(i["ThoiHanBaoHanh"]),
@@ -77,7 +76,7 @@ namespace Do_An.DAL
         public void UpdateThongTinSanPham(ChiTietSanPhamView data)
         {
             string query1 = $"update sanpham set Ten = N'{data.Ten}', PhanLoai = N'{data.PhanLoai}', " +
-                $" GiaBan = {data.GiaBan}, GiamGia = {data.GiamGia} where ID_SanPham = {data.ID_SanPham}";
+                $" GiaBan = {data.GiaBan} where ID_SanPham = {data.ID_SanPham}";
             DBHelper.Instance.ExcuteDB(query1);
             string query2 = $"update chitietsanpham set NamSX = {data.NamSX}, XuatXu = N'{data.XuatXu}', " +
                 $" TenHang = N'{data.TenHang}', ThongSoKyThuat = N'{data.ThongSoKyThuat}', ThoiHanBaoHanh = {data.ThoiHanBaoHanh} " +
@@ -86,8 +85,8 @@ namespace Do_An.DAL
         }
         public void AddThongTinSanPham(ChiTietSanPhamView data)
         {
-            string query1 = string.Format("insert into sanpham values (N'{0}', N'{1}', {2}, {3})"
-                , data.Ten, data.PhanLoai, data.GiamGia, data.GiaBan);
+            string query1 = string.Format("insert into sanpham values (N'{0}', N'{1}', {2})"
+                , data.Ten, data.PhanLoai, data.GiaBan);
             DBHelper.Instance.ExcuteDB(query1);
             string query = "SELECT TOP 1 ID_SanPham FROM sanpham ORDER BY ID_SanPham DESC";
 

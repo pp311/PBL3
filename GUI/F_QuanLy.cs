@@ -95,16 +95,16 @@ namespace Do_An
 
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
-            if (!pnl_Main.Controls.Contains(UC_NhapHang.Instance))
+            if (!pnl_Main.Controls.Contains(UC_ThongTinSanPham.Instance))
             {
-                pnl_Main.Controls.Add(UC_NhapHang.Instance);
-                UC_NhapHang.Instance.Dock = DockStyle.Fill;
-                UC_NhapHang.Instance.BringToFront();
+                pnl_Main.Controls.Add(UC_ThongTinSanPham.Instance);
+                UC_ThongTinSanPham.Instance.Dock = DockStyle.Fill;
+                UC_ThongTinSanPham.Instance.BringToFront();
             }
             else
             {
-                UC_NhapHang.Instance.BringToFront();
-                UC_NhapHang.Instance.LoadTable();
+                UC_ThongTinSanPham.Instance.BringToFront();
+                UC_ThongTinSanPham.Instance.Show();
             }
 
         }

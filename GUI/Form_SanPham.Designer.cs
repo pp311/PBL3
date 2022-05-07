@@ -37,8 +37,6 @@
             this.tb_NamSX = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tb_XuatXu = new System.Windows.Forms.TextBox();
-            this.num_GiamGia = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
             this.num_GiaBan = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.num_ThoiHanBaoHanh = new System.Windows.Forms.NumericUpDown();
@@ -54,7 +52,6 @@
             this.dgv_ThongSoKyThuat = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_GiamGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_GiaBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_ThoiHanBaoHanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongSoKyThuat)).BeginInit();
@@ -82,8 +79,6 @@
             this.panel1.Controls.Add(this.tb_NamSX);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.tb_XuatXu);
-            this.panel1.Controls.Add(this.num_GiamGia);
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.num_GiaBan);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.num_ThoiHanBaoHanh);
@@ -173,26 +168,6 @@
             this.tb_XuatXu.Size = new System.Drawing.Size(249, 36);
             this.tb_XuatXu.TabIndex = 115;
             // 
-            // num_GiamGia
-            // 
-            this.num_GiamGia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.num_GiamGia.Location = new System.Drawing.Point(1065, 111);
-            this.num_GiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.num_GiamGia.Name = "num_GiamGia";
-            this.num_GiamGia.Size = new System.Drawing.Size(276, 36);
-            this.num_GiamGia.TabIndex = 113;
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(913, 114);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 29);
-            this.label7.TabIndex = 112;
-            this.label7.Text = "% giảm giá";
-            // 
             // num_GiaBan
             // 
             this.num_GiaBan.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
@@ -273,7 +248,7 @@
             "Phụ kiện",
             "Phụ tùng xe"});
             this.cbb_PhanLoai.Location = new System.Drawing.Point(631, 10);
-            this.cbb_PhanLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_PhanLoai.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_PhanLoai.Name = "cbb_PhanLoai";
             this.cbb_PhanLoai.Size = new System.Drawing.Size(249, 34);
             this.cbb_PhanLoai.TabIndex = 107;
@@ -319,7 +294,7 @@
             this.btn_Huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Huy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Huy.Location = new System.Drawing.Point(818, 663);
-            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(149, 57);
             this.btn_Huy.TabIndex = 104;
@@ -336,7 +311,7 @@
             this.btn_XacNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_XacNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_XacNhan.Location = new System.Drawing.Point(525, 663);
-            this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_XacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_XacNhan.Name = "btn_XacNhan";
             this.btn_XacNhan.Size = new System.Drawing.Size(149, 57);
             this.btn_XacNhan.TabIndex = 103;
@@ -354,7 +329,7 @@
             this.dgv_ThongSoKyThuat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ThongSoKyThuat.ColumnHeadersVisible = false;
             this.dgv_ThongSoKyThuat.Location = new System.Drawing.Point(218, 268);
-            this.dgv_ThongSoKyThuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_ThongSoKyThuat.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_ThongSoKyThuat.Name = "dgv_ThongSoKyThuat";
             this.dgv_ThongSoKyThuat.RowHeadersWidth = 51;
             this.dgv_ThongSoKyThuat.RowTemplate.Height = 29;
@@ -392,10 +367,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_SanPham";
             this.TopMost = true;
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form_SanPham_Paint);
+
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_GiamGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_GiaBan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_ThoiHanBaoHanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongSoKyThuat)).EndInit();
@@ -425,8 +399,6 @@
         private TextBox tb_NamSX;
         private Label label8;
         private TextBox tb_XuatXu;
-        private NumericUpDown num_GiamGia;
-        private Label label7;
         private NumericUpDown num_GiaBan;
         private Label label1;
         private Label label12;
