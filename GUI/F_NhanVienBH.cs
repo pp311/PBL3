@@ -83,7 +83,10 @@ namespace Do_An
             }
             else
                 UC_CaNhan.Instance.BringToFront();
+<<<<<<< HEAD
             UC_CaNhan.Instance.GUI();
+=======
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
         }
 
         private void picture_setting_Click(object sender, EventArgs e)

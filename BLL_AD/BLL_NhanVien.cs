@@ -57,7 +57,10 @@ namespace Do_An.BLL_AD
             }
             return nv;
         }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
 /*        public bool check(int ID_NhanVien)
         {
             foreach(NhanVien i in GetAllNhanVien())
@@ -75,7 +78,11 @@ namespace Do_An.BLL_AD
         {
             DAL_NhanVien.Instance.DAL_UpdateNhanVien(nv);
         }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
 
 
     }

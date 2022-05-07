@@ -150,7 +150,10 @@ namespace Do_An
                 {
                     nv.GioiTinh = "Nữ";
                 }
+<<<<<<< HEAD
                 nv.TaiKhoan = tb_TaiKhoan.Text;
+=======
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
                 BLL_NhanVien.Instance.Update(nv);
                 //  BLL_NhanVien.Instance.Update(GetNhanVien1());
                 dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();

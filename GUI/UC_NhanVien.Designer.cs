@@ -74,9 +74,15 @@
             // 
             this.tb_IdNhanVien.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_IdNhanVien.Location = new System.Drawing.Point(186, 13);
+<<<<<<< HEAD
             this.tb_IdNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.tb_IdNhanVien.Name = "tb_IdNhanVien";
             this.tb_IdNhanVien.Size = new System.Drawing.Size(290, 34);
+=======
+            this.tb_IdNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_IdNhanVien.Name = "tb_IdNhanVien";
+            this.tb_IdNhanVien.Size = new System.Drawing.Size(290, 33);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_IdNhanVien.TabIndex = 87;
             this.tb_IdNhanVien.TextChanged += new System.EventHandler(this.tb_IdNhanVien_TextChanged);
             // 
@@ -100,7 +106,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.label13.Location = new System.Drawing.Point(33, 112);
+=======
+            this.label13.Location = new System.Drawing.Point(43, 111);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 27);
@@ -115,9 +125,15 @@
             this.rb_Nam.AutoSize = true;
             this.rb_Nam.Font = new System.Drawing.Font("Calibri Light", 13.2F);
             this.rb_Nam.Location = new System.Drawing.Point(811, 10);
+<<<<<<< HEAD
             this.rb_Nam.Margin = new System.Windows.Forms.Padding(2);
             this.rb_Nam.Name = "rb_Nam";
             this.rb_Nam.Size = new System.Drawing.Size(74, 31);
+=======
+            this.rb_Nam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_Nam.Name = "rb_Nam";
+            this.rb_Nam.Size = new System.Drawing.Size(71, 31);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.rb_Nam.TabIndex = 91;
             this.rb_Nam.Text = "Nam";
             this.rb_Nam.UseVisualStyleBackColor = true;
@@ -128,7 +144,11 @@
             this.cbb_ViTri.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.cbb_ViTri.FormattingEnabled = true;
             this.cbb_ViTri.Location = new System.Drawing.Point(186, 109);
+<<<<<<< HEAD
             this.cbb_ViTri.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.cbb_ViTri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.cbb_ViTri.Name = "cbb_ViTri";
             this.cbb_ViTri.Size = new System.Drawing.Size(290, 34);
             this.cbb_ViTri.TabIndex = 92;
@@ -141,9 +161,15 @@
             this.rb_Nu.AutoSize = true;
             this.rb_Nu.Font = new System.Drawing.Font("Calibri Light", 13.2F);
             this.rb_Nu.Location = new System.Drawing.Point(727, 10);
+<<<<<<< HEAD
             this.rb_Nu.Margin = new System.Windows.Forms.Padding(2);
             this.rb_Nu.Name = "rb_Nu";
             this.rb_Nu.Size = new System.Drawing.Size(60, 31);
+=======
+            this.rb_Nu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_Nu.Name = "rb_Nu";
+            this.rb_Nu.Size = new System.Drawing.Size(57, 31);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.rb_Nu.TabIndex = 89;
             this.rb_Nu.Text = "Nữ";
             this.rb_Nu.UseVisualStyleBackColor = true;
@@ -153,9 +179,15 @@
             // 
             this.tb_TenNhanVien.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_TenNhanVien.Location = new System.Drawing.Point(186, 60);
+<<<<<<< HEAD
             this.tb_TenNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.tb_TenNhanVien.Name = "tb_TenNhanVien";
             this.tb_TenNhanVien.Size = new System.Drawing.Size(290, 34);
+=======
+            this.tb_TenNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_TenNhanVien.Name = "tb_TenNhanVien";
+            this.tb_TenNhanVien.Size = new System.Drawing.Size(290, 33);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_TenNhanVien.TabIndex = 90;
             this.tb_TenNhanVien.TextChanged += new System.EventHandler(this.tb_TenNhanVien_TextChanged);
             // 
@@ -179,7 +211,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.label14.Location = new System.Drawing.Point(33, 60);
+=======
+            this.label14.Location = new System.Drawing.Point(43, 60);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(139, 27);
@@ -207,7 +243,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.label15.Location = new System.Drawing.Point(33, 13);
+=======
+            this.label15.Location = new System.Drawing.Point(43, 13);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(129, 27);
@@ -219,9 +259,15 @@
             // 
             this.tb_SoDienThoai.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_SoDienThoai.Location = new System.Drawing.Point(727, 50);
+<<<<<<< HEAD
             this.tb_SoDienThoai.Margin = new System.Windows.Forms.Padding(2);
             this.tb_SoDienThoai.Name = "tb_SoDienThoai";
             this.tb_SoDienThoai.Size = new System.Drawing.Size(274, 34);
+=======
+            this.tb_SoDienThoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_SoDienThoai.Name = "tb_SoDienThoai";
+            this.tb_SoDienThoai.Size = new System.Drawing.Size(274, 33);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_SoDienThoai.TabIndex = 86;
             this.tb_SoDienThoai.TextChanged += new System.EventHandler(this.tb_SoDienThoai_TextChanged);
             // 
@@ -229,9 +275,15 @@
             // 
             this.tb_DiaChi.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_DiaChi.Location = new System.Drawing.Point(727, 100);
+<<<<<<< HEAD
             this.tb_DiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(274, 34);
+=======
+            this.tb_DiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_DiaChi.Name = "tb_DiaChi";
+            this.tb_DiaChi.Size = new System.Drawing.Size(274, 33);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_DiaChi.TabIndex = 84;
             this.tb_DiaChi.TextChanged += new System.EventHandler(this.tb_DiaChi_TextChanged);
             // 
@@ -245,7 +297,11 @@
             this.dtlv_nv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtlv_nv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtlv_nv.Location = new System.Drawing.Point(32, 266);
+<<<<<<< HEAD
             this.dtlv_nv.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.dtlv_nv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.dtlv_nv.Name = "dtlv_nv";
             this.dtlv_nv.ReadOnly = true;
             this.dtlv_nv.RowHeadersWidth = 51;
@@ -264,7 +320,11 @@
             this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Add.Location = new System.Drawing.Point(1125, 266);
+<<<<<<< HEAD
             this.btn_Add.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(149, 57);
             this.btn_Add.TabIndex = 95;
@@ -281,7 +341,11 @@
             this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Edit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Edit.Location = new System.Drawing.Point(1125, 345);
+<<<<<<< HEAD
             this.btn_Edit.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(149, 57);
             this.btn_Edit.TabIndex = 96;
@@ -298,7 +362,11 @@
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Delete.Location = new System.Drawing.Point(1125, 426);
+<<<<<<< HEAD
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(149, 57);
             this.btn_Delete.TabIndex = 97;
@@ -315,7 +383,11 @@
             this.btn_ResetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ResetPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_ResetPassword.Location = new System.Drawing.Point(1125, 508);
+<<<<<<< HEAD
             this.btn_ResetPassword.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.btn_ResetPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.btn_ResetPassword.Name = "btn_ResetPassword";
             this.btn_ResetPassword.Size = new System.Drawing.Size(149, 58);
             this.btn_ResetPassword.TabIndex = 98;
@@ -353,9 +425,15 @@
             // 
             this.tb_TaiKhoan.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_TaiKhoan.Location = new System.Drawing.Point(727, 150);
+<<<<<<< HEAD
             this.tb_TaiKhoan.Margin = new System.Windows.Forms.Padding(2);
             this.tb_TaiKhoan.Name = "tb_TaiKhoan";
             this.tb_TaiKhoan.Size = new System.Drawing.Size(274, 34);
+=======
+            this.tb_TaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_TaiKhoan.Name = "tb_TaiKhoan";
+            this.tb_TaiKhoan.Size = new System.Drawing.Size(274, 33);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_TaiKhoan.TabIndex = 137;
             this.tb_TaiKhoan.TextChanged += new System.EventHandler(this.tb_TaiKhoan_TextChanged);
             // 
@@ -390,7 +468,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(33, 157);
+=======
+            this.label1.Location = new System.Drawing.Point(43, 157);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 27);
@@ -407,7 +489,11 @@
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Save.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Save.Location = new System.Drawing.Point(509, 185);
+<<<<<<< HEAD
             this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+=======
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(149, 32);
             this.btn_Save.TabIndex = 133;

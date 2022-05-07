@@ -116,11 +116,19 @@
             // 
             this.tb_MatKhau.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb_MatKhau.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             this.tb_MatKhau.Location = new System.Drawing.Point(221, 85);
             this.tb_MatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_MatKhau.Name = "tb_MatKhau";
             this.tb_MatKhau.PasswordChar = '*';
             this.tb_MatKhau.Size = new System.Drawing.Size(211, 22);
+=======
+            this.tb_MatKhau.Location = new System.Drawing.Point(193, 86);
+            this.tb_MatKhau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_MatKhau.Name = "tb_MatKhau";
+            this.tb_MatKhau.PasswordChar = '*';
+            this.tb_MatKhau.Size = new System.Drawing.Size(185, 23);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_MatKhau.TabIndex = 1;
             // 
             // label3
@@ -149,10 +157,17 @@
             // 
             this.tb_TaiKhoan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tb_TaiKhoan.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+<<<<<<< HEAD
             this.tb_TaiKhoan.Location = new System.Drawing.Point(221, 46);
             this.tb_TaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_TaiKhoan.Name = "tb_TaiKhoan";
             this.tb_TaiKhoan.Size = new System.Drawing.Size(211, 22);
+=======
+            this.tb_TaiKhoan.Location = new System.Drawing.Point(193, 50);
+            this.tb_TaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_TaiKhoan.Name = "tb_TaiKhoan";
+            this.tb_TaiKhoan.Size = new System.Drawing.Size(185, 23);
+>>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
             this.tb_TaiKhoan.TabIndex = 0;
             // 
             // panel1
