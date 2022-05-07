@@ -48,7 +48,10 @@ namespace Do_An
                 UC_NhanVien.Instance.BringToFront();
             }
             else
+            {
                 UC_NhanVien.Instance.BringToFront();
+                UC_NhanVien.Instance.show("");
+            }    
         }
 
         private void btn_Kho_Click(object sender, EventArgs e)

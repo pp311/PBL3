@@ -21,7 +21,8 @@ namespace Do_An
             //Application.Run(new F_NhanVienSC());
             // Application.Run(new Form2());
             Application.Run(new F_DangNhap());
-            //Application.Run(new Form_SanPham());
+
+            //   Application.Run(new F_Quanly());
 
         }
     }

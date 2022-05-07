@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Do_An.DAL_ST;
+using Do_An.DTO_AD;
+using Do_An.BLL_AD;
 namespace Do_An
 {
     public partial class UC_CaNhan : UserControl
@@ -15,6 +17,7 @@ namespace Do_An
         public UC_CaNhan()
         {
             InitializeComponent();
+           GUI();
         }
 
         private static UC_CaNhan _instance;
@@ -30,10 +33,41 @@ namespace Do_An
 
         private void btn_DMK_Click(object sender, EventArgs e)
         {
-            Pass p = new Pass();
-            p.Show();
+        /*    Pass p = new Pass();
+            p.Show();*/
         }
+        public void GUI()
+        {
+            foreach (DataRow i in Login_DAL.Instance.GetThongTinCaNhan().Rows)
+            {
 
+       
+
+            }
+        }
+     
+        public void GUI_Edit(NhanVien nv, TaiKhoan tk)
+        {
+            tb_HoTen.Text = Convert.ToString(nv.TenNhanVien);
+     /*       tb_IdNhanVien.Text = Convert.ToString(nv.ID_NhanVien);
+            tb_SoDienThoai.Text = nv.SĐT;
+            tb_DiaChi.Text = nv.DiaChi;
+            tb_TenNhanVien.Text = nv.TenNhanVien;
+            cbb_ViTri.SelectedItem = nv.ViTri;
+            dtp_NgaySinh.Value = nv.NgaySinh;
+            if (nv.GioiTinh == "Nam")
+            {
+                rb_Nam.Checked = true;
+            }
+            else
+            {
+                rb_Nu.Checked = true;
+            }
+            //b_TaiKhoan.Text=nv.
+            tb_TaiKhoan.Text = tk.TenTaiKhoan;
+*/
+
+        }
         private void btn_Save_Click(object sender, EventArgs e)
         {
             Validate();

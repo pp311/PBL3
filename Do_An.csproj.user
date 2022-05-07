@@ -31,6 +31,9 @@
     <Compile Update="GUI\Pass.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GUI\SetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GUI\test.cs">
       <SubType>Form</SubType>
     </Compile>

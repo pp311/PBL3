@@ -125,13 +125,16 @@ namespace Do_An
         private bool Validate()
         {
             bool check = true;
-
+            int gia = (int)num_GiaBan.Value;
+            int thbh = (int)num_ThoiHanBaoHanh.Value;
+            int giamgia = (int)num_GiamGia.Value;
             string ten = tb_TenSP.Text;
             string namsx = tb_NamSX.Text;
             bool isValid = true;
             if (!namsx.All(c => char.IsNumber(c))) isValid = false;
             if (string.IsNullOrEmpty(ten) || !ten.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))) isValid = false;
             if (cbb_PhanLoai.SelectedItem == null) isValid = false;
+            if(gia <= 0 || thbh < 0 || giamgia < 0) isValid = false;
             if (!isValid)
             {
                 check = false;
