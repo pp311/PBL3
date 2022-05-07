@@ -14,6 +14,7 @@ namespace Do_An
 {
     public partial class UC_NhanVien : UserControl
     {
+        public Action<string> loadTable { get; set; }
         private static UC_NhanVien _instance;
         public static UC_NhanVien Instance
         {
@@ -99,35 +100,34 @@ namespace Do_An
         
         private void btn_Save_Click(object sender, EventArgs e)
         {
-             //Validate();
             if (tb_IdNhanVien.Text == "")
             {
-                string s = tb_TaiKhoan.Text;
-
-                NhanVien nv = new NhanVien();
-                nv.TenNhanVien = tb_TenNhanVien.Text;
-                nv.DiaChi = tb_DiaChi.Text;
-                nv.SoDienThoai = tb_SoDienThoai.Text;
-                nv.ViTri = cbb_ViTri.Text;
-                nv.NgaySinh = Convert.ToDateTime(dtp_NgaySinh.Value);
-                if (rb_Nam.Checked == true)
+                if (Validate())
                 {
-                    nv.GioiTinh = "Nam";
-                }
-                else
-                {
-                    nv.GioiTinh = "Nữ";
+                    string s = tb_TaiKhoan.Text;
+                    NhanVien nv = new NhanVien();
+                    nv.TenNhanVien = tb_TenNhanVien.Text;
+                    nv.DiaChi = tb_DiaChi.Text;
+                    nv.SoDienThoai = tb_SoDienThoai.Text;
+                    nv.ViTri = cbb_ViTri.Text;
+                    nv.NgaySinh = Convert.ToDateTime(dtp_NgaySinh.Value);
+                    if (rb_Nam.Checked == true)
+                    {
+                        nv.GioiTinh = "Nam";
+                    }
+                    else
+                    {
+                        nv.GioiTinh = "Nữ";
+                    }
+                   
+                    SetPass f1 = new SetPass(s, nv.TenNhanVien, nv.DiaChi, nv.SoDienThoai, nv.ViTri, nv.NgaySinh, nv.GioiTinh);
+                
+                    f1.Show();
+                    f1.load = new Action<string>(show);
+                    ResetGUI();
+                    EnableEdit(false);
                 }
 
-                SetPass f1 = new SetPass(s, nv.TenNhanVien, nv.DiaChi, nv.SoDienThoai, nv.ViTri, nv.NgaySinh, nv.GioiTinh);
-                f1.d = new SetPass.MyDel(show);
-                f1.Show();
-               
-                //  dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();
-                 
-                ResetGUI();
-                dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();
-                MessageBox.Show("Bạn đã thêm thông tin nhân viên này thành công !!! ");
             }
             else
             {
@@ -135,6 +135,7 @@ namespace Do_An
                 // chỉnh sửa thông tin nhân viên 
                 int idnv = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_Nhanvien"].Value);
                 NhanVien nv = BLL_NhanVien.Instance.BLL_GetNhanVienByID(idnv);
+                //   NhanVien nv = BLL_NhanVien.Instance.
                 nv.ID_NhanVien = idnv;
                 nv.TenNhanVien = tb_TenNhanVien.Text;
                 nv.DiaChi = tb_DiaChi.Text;
@@ -149,13 +150,18 @@ namespace Do_An
                 {
                     nv.GioiTinh = "Nữ";
                 }
-                BLL_NhanVien.Instance.Update(nv);
-                //  BLL_NhanVien.Instance.Update(GetNhanVien1());
-                dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();
-                // show("");
-                MessageBox.Show("Bạn đã sửa thông tin nhân viên này thành công !!! ");
+             //   nv.TaiKhoan = tb_TaiKhoan.Text;
+                if (Validate())
+                {
+                    BLL_NhanVien.Instance.Update(nv);
+                    MessageBox.Show("Bạn đã chỉnh sửa thông tin nhân viên này thành công !! ");
+                    dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();
+                    ResetGUI();
+                    EnableEdit(false);
+                }
+
             }
-            }
+        }
   
         private void btn_Edit_Click(object sender, EventArgs e)
         {
@@ -168,10 +174,15 @@ namespace Do_An
                 int idnv = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_Nhanvien"].Value);
                 int idtk = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_TaiKhoan"].Value);
                 NhanVien nv = BLL_NhanVien.Instance.BLL_GetNhanVienByID(idnv);
-
                 TaiKhoan tk = BLL_TaiKhoan.Instance.BLL_GetTaiKhoanByID(idtk);
                 GUI_Edit(nv, tk);
             }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn 1 nhân viên để chỉnh sửa thông tin !!! ");
+
+            } 
+                
            
         }
         public void GUI_Edit(NhanVien nv, TaiKhoan tk) // hieenj thong tin len bang 
@@ -190,7 +201,6 @@ namespace Do_An
             {
                 rb_Nu.Checked = true;
             }
-            //b_TaiKhoan.Text=nv.
             tb_TaiKhoan.Text = tk.TenTaiKhoan;
         }
        
@@ -205,20 +215,29 @@ namespace Do_An
             dtp_NgaySinh.Enabled = b;
             tb_TaiKhoan.Enabled = b;
         }
-        private void Validate()
+        private bool Validate()
         {
+
             string tenNhanVien = tb_TenNhanVien.Text;
             string soDienThoai = tb_SoDienThoai.Text;
             string diaChi = tb_DiaChi.Text;
             string taiKhoan = tb_TaiKhoan.Text;
             bool isValid = true;
-            if (string.IsNullOrEmpty(tenNhanVien) || !tenNhanVien.All(c => char.IsLetter(c))) isValid = false;
+          //  if (string.IsNullOrEmpty(tenNhanVien) || !tenNhanVien.All(c => char.IsLetter(c))) isValid = false;
             if (string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
-            if (string.IsNullOrEmpty(diaChi) || !diaChi.All(c => char.IsLetterOrDigit(c))) isValid = false;
-            if(!rb_Nam.Checked && !rb_Nu.Checked) isValid = false;
+
+            if (!rb_Nam.Checked && !rb_Nu.Checked) isValid = false;
             //if(cbb_ViTri.SelectedItem == null) isValid = false;
-            if(string.IsNullOrEmpty(taiKhoan)) isValid = false;
-            if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+            if (string.IsNullOrEmpty(taiKhoan)) isValid = false;
+            if (string.IsNullOrEmpty(diaChi)) isValid = false;
+            if (tenNhanVien=="") isValid = false;
+            if (!isValid)
+            {
+                isValid = false;
+                MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+            }
+            return isValid;
+
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
@@ -229,7 +248,6 @@ namespace Do_An
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            EnableEdit(true);
             DialogResult dia = MessageBox.Show("Bạn có chắc muốn xóa nhân viên này không ?", "xác nhận xóa", MessageBoxButtons.YesNo);
 
             if (dia == DialogResult.Yes)
@@ -246,15 +264,24 @@ namespace Do_An
                     dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();
                 }
             }
+            EnableEdit(false);
         }
 
         private void btn_ResetPassword_Click(object sender, EventArgs e)
         {
-          
-
             if (dtlv_nv.SelectedRows.Count == 1)
             {
-              
+                int idtk = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_TaiKhoan"].Value);
+                TaiKhoan tk = BLL_TaiKhoan.Instance.BLL_GetTaiKhoanByID(idtk);
+                string mktk = tk.MatKhau;
+                // truyền idtk với mk tk 
+                Pass p1 = new Pass(idtk, mktk);
+                p1.d = new Pass.MyDel(show);
+                p1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn 1 nhân viên để đổi mật khẩu !!! ");
             }
         }
 
@@ -351,6 +378,11 @@ namespace Do_An
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UC_NhanVien_Load(object sender, EventArgs e)
+        {
+            BLL_NhanVien.Instance.GetAllNhanVien();
         }
     }
 }

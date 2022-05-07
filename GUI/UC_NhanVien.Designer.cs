@@ -426,6 +426,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_NhanVien";
             this.Size = new System.Drawing.Size(1315, 877);
+            this.Load += new System.EventHandler(this.UC_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtlv_nv)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

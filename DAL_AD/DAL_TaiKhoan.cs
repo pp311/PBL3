@@ -57,15 +57,20 @@ namespace Do_An.DAL_AD
             }
             return data;
         }
-       /* public void DAL_AddTaiKhoan(TaiKhoan tk)
+        /* public void DAL_AddTaiKhoan(TaiKhoan tk)
+         {
+             //  string query_add_idtk = "insert into taikhoan values ('{0}','{1}')" + tk.TenTaiKhoan + tk.MatKhau;
+
+             string query = $"insert into taikhoan " +
+                  $"values ('{tk.TenTaiKhoan}', '{tk.MatKhau}')";
+             // add nhanvien bang id tk 
+
+             DBHelper.Instance.ExcuteDB(query);
+         }*/
+        public void DAL_UpdatePass(TaiKhoan tk)
         {
-            //  string query_add_idtk = "insert into taikhoan values ('{0}','{1}')" + tk.TenTaiKhoan + tk.MatKhau;
-
-            string query = $"insert into taikhoan " +
-                 $"values ('{tk.TenTaiKhoan}', '{tk.MatKhau}')";
-            // add nhanvien bang id tk 
-
+            string query = $"update taikhoan set MatKhau = N'{tk.MatKhau}' where ID_TaiKhoan ='{tk.ID_TaiKhoan}'";
             DBHelper.Instance.ExcuteDB(query);
-        }*/
+        }
     }
 }

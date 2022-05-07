@@ -27,12 +27,13 @@ namespace Do_An
         private DateTime ngaysinh;
         private string gioitinh;
         //  private int idtk;
+        public Action<string> load { get; set; }
 
         // truyen taikhoan qua , them matkhau 
         /*    public delegate void MyDel(string txt);*/
-      
-    //    public Form1( string ttk)
-      public SetPass(string ttk,string tnv,string dc,string sdt,string vt,DateTime ns,string gt)
+
+        //    public Form1( string ttk)
+        public SetPass(string ttk,string tnv,string dc,string sdt,string vt,DateTime ns,string gt)
 
         {
             InitializeComponent();
@@ -52,39 +53,47 @@ namespace Do_An
         }
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            Validate();
-            TaiKhoan tk = new TaiKhoan();
-            tk.MatKhau = tb_Mk1.Text;
-            tk.TenTaiKhoan = tentaikhoan;
-            // tk.ID_TaiKhoan = idtk;
+
+            if (Validate())
+            {
+                TaiKhoan tk = new TaiKhoan();
+                tk.MatKhau = tb_Mk1.Text;
+                tk.TenTaiKhoan = tentaikhoan;
+                // tk.ID_TaiKhoan = idtk;
 
 
-            NhanVien nv = new NhanVien();
-            nv.TenNhanVien = tennhanvien;
-            nv.DiaChi = diachi;
-            nv.GioiTinh = gioitinh;
-            nv.SoDienThoai = sodienthoai;
-            nv.ViTri = vitri;
-            nv.NgaySinh = ngaysinh;
+                NhanVien nv = new NhanVien();
+                nv.TenNhanVien = tennhanvien;
+                nv.DiaChi = diachi;
+                nv.GioiTinh = gioitinh;
+                nv.SoDienThoai = sodienthoai;
+                nv.ViTri = vitri;
+                nv.NgaySinh = ngaysinh;
 
-          BLL_NhanVien.Instance.AddNhanVien(nv,tk);
-            this.Dispose();
-
-           
+               // MessageBox.Show("Thay ");
+                BLL_NhanVien.Instance.AddNhanVien(nv, tk);
+                load("");
+                this.Dispose();
+            }
         }
+        
 
-        private void Validate()
+        private bool Validate()
         {
             string matkhau1 = tb_Mk1.Text;
             string matkhau2 = tb_Mk2.Text;
            
             bool isValid = true;
-            if (tb_Mk1.Text != tb_Mk2.Text) isValid = false;
             if (string.IsNullOrEmpty(matkhau1) || !matkhau1.All(c => char.IsLetterOrDigit(c))) isValid = false;
             if (string.IsNullOrEmpty(matkhau2) || !matkhau2.All(c => char.IsLetterOrDigit(c))) isValid = false;
             if (tb_Mk1.Text != tb_Mk2.Text) isValid = false;
 
-            if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+            if (!isValid)
+            {
+                isValid = false;
+                MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+            }
+            return isValid;
         }
 
 

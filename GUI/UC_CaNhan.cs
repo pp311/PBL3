@@ -33,8 +33,7 @@ namespace Do_An
 
         private void btn_DMK_Click(object sender, EventArgs e)
         {
-        /*    Pass p = new Pass();
-            p.Show();*/
+            
         }
         public void GUI()
         {
