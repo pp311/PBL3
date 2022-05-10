@@ -21,11 +21,9 @@ namespace Do_An.DAL_AD
             {
                 if (_Instance == null)
                 {
-<<<<<<< HEAD
-                    string cnnstr = @"Data Source=LAPTOP-H8F30CQH\SQLEXPRESS;Initial Catalog=PBL3;Integrated Security=True";
-=======
+
                     string cnnstr = @"Data Source=DESKTOP-V8TS0L2\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
+
                     _Instance = new DBHelper(cnnstr);
                 }
                 return _Instance;

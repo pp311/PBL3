@@ -13,10 +13,7 @@ namespace Do_An
     public partial class F_QuanLy : Form
     {
         System.Windows.Forms.Timer t = null;
-<<<<<<< HEAD
 
-=======
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
         public F_QuanLy()
         {
             InitializeComponent();
@@ -82,11 +79,13 @@ namespace Do_An
                 UC_CaNhan.Instance.BringToFront();
             }
             else
+            {
                 UC_CaNhan.Instance.BringToFront();
-<<<<<<< HEAD
                 UC_CaNhan.Instance.GUI();
-=======
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
+
+            }
+
+
         }
 
         private void btn_HoaDon_Click(object sender, EventArgs e)

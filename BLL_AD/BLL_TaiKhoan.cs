@@ -6,10 +6,7 @@ using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Do_An.DTO_AD;
 using Do_An.DAL_AD;
-<<<<<<< HEAD
 
-=======
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
 namespace Do_An.BLL_AD
 {
     public class BLL_TaiKhoan
@@ -58,16 +55,13 @@ namespace Do_An.BLL_AD
             }
             return tk;
         }
-<<<<<<< HEAD
+
         public TaiKhoan BLL_GetTaiKhoanByIDNV(NhanVien nv)
-=======
-  /*      public TaiKhoan BLL_GetTaiKhoanByTenTaiKhoan(string s)
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
+
         {
             TaiKhoan tk = new TaiKhoan();
             foreach (TaiKhoan i in GetAllTaiKhoan())
             {
-<<<<<<< HEAD
                 if (i.ID_TaiKhoan == nv.ID_TaiKhoan)
                     tk = i;
             }
@@ -85,15 +79,7 @@ namespace Do_An.BLL_AD
                   }
                   return tk;
               }*/
-=======
-                if (i.TenTaiKhoan == s)
-                {
-                    tk = i;
-                }
-            }
-            return tk;
-        }*/
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
+
         public void AddTaiKhoan(TaiKhoan tk)
         {
             DAL_TaiKhoan.Instance.DAL_AddTaiKhoan(tk);

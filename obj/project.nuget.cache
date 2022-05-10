@@ -1,20 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "hWkoRsS3jfBNri/kLigw0u2+US/xzaT5NiAik9u7fdmwMMXkvJ5MM7634kn7qsFuEYIb5UoDGQnDUCsI4PBlWA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\hanhn\\Music\\PBL3-gui\\Do_An.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\hanhn\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
-    "C:\\Users\\hanhn\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
-=======
   "dgSpecHash": "JoiVKLbSsekXj5wfPuDfs1D52xehN540EZ2wBkPVas5Rw8cuDiwsOPNDoCtB2yUPcRVktf9829NTohU+rgMBQA==",
   "success": true,
   "projectFilePath": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PhucPhan\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\PhucPhan\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -57,15 +57,13 @@ namespace Do_An.DAL_AD
         // 
 
         //
-<<<<<<< HEAD
+
         public void DAL_GetNhanVienByID(int id)
         {
             string query = "select * from nhanvien where ID_NhanVien=" + id;
             DBHelper.Instance.ExcuteDB(query);
         }
-=======
 
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
         public void DAL_AddNhanVien(NhanVien nv, TaiKhoan tk)
         {
 

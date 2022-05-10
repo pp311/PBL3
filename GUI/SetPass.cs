@@ -18,10 +18,6 @@ namespace Do_An
         public MyDel d { get; set; }
         private string tentaikhoan;
         private string idnhanvien;
-<<<<<<< HEAD
-=======
-        //
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
         private string tennhanvien;
         private string diachi;
         private string vitri;
@@ -31,34 +27,28 @@ namespace Do_An
         private string gioitinh;
         //  private int idtk;
         public Action<string> load { get; set; }
-<<<<<<< HEAD
-=======
+
 
         // truyen taikhoan qua , them matkhau 
         /*    public delegate void MyDel(string txt);*/
 
         //    public Form1( string ttk)
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
-        public SetPass(string ttk,string tnv,string dc,string sdt,string vt,DateTime ns,string gt)
+
+        public SetPass(string ttk, string tnv, string dc, string sdt, string vt, DateTime ns, string gt)
 
         {
             InitializeComponent();
-              this.tentaikhoan= ttk;
+            this.tentaikhoan = ttk;
             //
             this.tennhanvien = tnv;
-            this.diachi= dc;
+            this.diachi = dc;
             this.sodienthoai = sdt;
             this.vitri = vt;
             this.ngaysinh = ns;
             this.gioitinh = gt;
-<<<<<<< HEAD
-        }  
-       private void btn_Huy_Click(object sender, EventArgs e)
-=======
+
         }
-    
         private void btn_Huy_Click(object sender, EventArgs e)
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
         {
             this.Dispose();
         }
@@ -82,11 +72,10 @@ namespace Do_An
                 nv.NgaySinh = ngaysinh;
 
                 BLL_NhanVien.Instance.AddNhanVien(nv, tk);
-<<<<<<< HEAD
+
                 MessageBox.Show("Bạn đã thêm nhân viên này thành công !!! ");
                 load("");
-=======
->>>>>>> 39bd742a88e038cf788aeeb430f6043d93765d80
+
                 this.Dispose();
 
 
