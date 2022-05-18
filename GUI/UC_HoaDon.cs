@@ -1,6 +1,8 @@
+
 ﻿using Do_An.BLL;
 using Do_An.DTO;
 using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,8 +17,10 @@ namespace Do_An
 {
     public partial class UC_HoaDon : UserControl
     {
+
         public Action<string> loadTable { get; set; }
         private static UC_HoaDon _Instance;
+
         public static UC_HoaDon Instance
         {
             get
@@ -82,22 +86,26 @@ namespace Do_An
                 
         }
         private bool Validate()
+
         {
             string tenKhachHang = tb_KhachHang.Text;
             string soDienThoai = tb_SoDienThoai.Text;
             bool isValid = true;
             if (string.IsNullOrEmpty(tenKhachHang) || !tenKhachHang.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             if(string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
+
             if (!isValid)
             {
                 isValid = false;
                 MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
             }
             return isValid;
+
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
+
             if (dataGridView1.SelectedRows.Count == 1)
             {
                 EnableEdit(true);
@@ -164,5 +172,6 @@ namespace Do_An
             }
             
         }
+
     }
 }

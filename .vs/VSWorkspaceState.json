@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+<<<<<<< HEAD
+    ""
+=======
+    "",
+    "\\BLL_AD",
+    "\\DAL",
+    "\\DAL_AD",
+    "\\DAL_ST",
+    "\\GUI"
+>>>>>>> 87efd01fb4bc387dc92a294c6395677a198b2b22
+  ],
+  "SelectedNode": "\\DAL_AD\\DBHelper.cs",
+  "PreviewInSolutionExplorer": false
+}

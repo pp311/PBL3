@@ -1,6 +1,8 @@
+
 ﻿using Do_An.BLL;
 using Do_An.DTO;
 using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +31,7 @@ namespace Do_An
             tb_TenKhachHang.Text = data.TenKhachHang.ToString();
             tb_SoDienThoai.Text = data.SDT.ToString();
             dtp_NgayTao.Value = data.NgayTao;
+
         }
 
         private void btn_Huy_Click(object sender, EventArgs e)
@@ -42,10 +45,12 @@ namespace Do_An
 
         }
 
+
         private void btn_XacNhan_Click(object sender, EventArgs e)
         {
 
         }
  
+
     }
 }

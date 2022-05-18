@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BdksRXEr7qYTuf6d/rdvroXWmk8xnxAJdVlqFd4RCawE/QQg16QTUbvr3PfSZAYydEa4Gv6MKs+YzRlDdHTTug==",
+  "success": true,
+  "projectFilePath": "D:\\PBL3-gui\\Do_An.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FPT\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\FPT\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
+  ],
+  "logs": []
+}
