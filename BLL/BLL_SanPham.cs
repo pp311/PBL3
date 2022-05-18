@@ -43,7 +43,7 @@ namespace Do_An.BLL
         {
             if (type != "Tất cả")
             {
-                DataTable dt = BLL_SanPham.Instance.GetDataTableSanPham();
+                DataTable dt = Instance.GetDataTableSanPham();
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     if (!(dt.Rows[i]["PhanLoai"].ToString() == type))
@@ -57,7 +57,7 @@ namespace Do_An.BLL
             }
             else
             {
-                return BLL_SanPham.Instance.GetDataTableSanPham();
+                return Instance.GetDataTableSanPham();
             }
         }
         public DataTable GetDataTableSanPhamByKeyWord(string type, string keyWord)

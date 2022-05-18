@@ -14,7 +14,7 @@ namespace Do_An
 {
     public partial class Form_SanPham : Form
     {
-        public Action<string> loadTable { get; set; }
+        public Action loadTable { get; set; }
         //mode 1: cho phép edit, mode 0: không cho phép edit (khi nhấn "xem chi tiết")
         public Form_SanPham(int id = 0, int mode = 1)
         {
@@ -114,7 +114,7 @@ namespace Do_An
                     ThoiHanBaoHanh = Convert.ToInt32(num_ThoiHanBaoHanh.Value)
                 };
                 BLL_SanPham.Instance.ExcuteDB(data);
-                loadTable("");
+                loadTable();
                 this.Close();
             }
             

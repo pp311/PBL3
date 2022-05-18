@@ -128,59 +128,28 @@ namespace Do_An
                 UC_ThongKe.Instance.BringToFront();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void btn_BanHang_Click(object sender, EventArgs e)
         {
-
+            if (!pnl_Main.Controls.Contains(UC_BanHang.Instance))
+            {
+                pnl_Main.Controls.Add(UC_BanHang.Instance);
+                UC_BanHang.Instance.Dock = DockStyle.Fill;
+                UC_BanHang.Instance.BringToFront();
+            }
+            else
+            {
+                UC_BanHang.Instance.BringToFront();
+                UC_BanHang.Instance.Show();
+            }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lb_Clock_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void pnl_Main_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

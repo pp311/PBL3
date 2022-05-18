@@ -23,7 +23,7 @@ namespace Do_An.DAL_AD
                 {
 
 
-                    string cnnstr = @"Data Source=DESKTOP-HK4MB89\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
+                    string cnnstr = @"Data Source=DESKTOP-V8TS0L2\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
 
 
                     _Instance = new DBHelper(cnnstr);

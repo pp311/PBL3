@@ -19,7 +19,7 @@ namespace Do_An.DAL
                 if(_Instance == null)
                 {
 
-                    string s = @"Data Source=DESKTOP-HK4MB89\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
+                    string s = @"Data Source=DESKTOP-V8TS0L2\SQLEXPRESS;Initial Catalog=PBL;Integrated Security=True";
 
                     _Instance = new DBHelper(s);
                 }

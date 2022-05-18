@@ -41,7 +41,6 @@ namespace Do_An
         public void ResetGUI()
         {
             tb_IdNhanVien.Text = "";
-            num_TongTien.Value = 0;
             dtp_NgayTao.Value = DateTime.Now;
             tb_KhachHang.Text = "";
             tb_SoDienThoai.Text = "";
@@ -50,7 +49,6 @@ namespace Do_An
         {
             HoaDon hd = new HoaDon();
             hd.NgayTao = Convert.ToDateTime(dtp_NgayTao);
-            hd.TongTien = (int)num_TongTien.Value;
             hd.TenKhachHang = tb_KhachHang.Text;
             hd.SoDienThoai = tb_SoDienThoai.Text;
             return hd;
@@ -59,7 +57,7 @@ namespace Do_An
         {
 
             dataGridView1.DataSource = BLL_HoaDon.Instance.GetAllHoaDon();
-            dataGridView1.Columns[0].HeaderText = "ID Hóa đơn";
+            dataGridView1.Columns["ID_HoaDon"].HeaderText = "ID Hóa đơn";
             dataGridView1.Columns[1].HeaderText = "ID Nhân viên";
             dataGridView1.Columns[2].HeaderText = "Ngày Tạo";
             dataGridView1.Columns[3].HeaderText = "Tên Khách Hàng";
@@ -75,7 +73,6 @@ namespace Do_An
                 hd.ID_HoaDon = IDHoaDon;
                 hd.ID_NhanVien = Convert.ToInt32(tb_IdNhanVien.Text);
                 hd.NgayTao = Convert.ToDateTime(dtp_NgayTao.Value);
-                hd.TongTien = (int)num_TongTien.Value;
                 hd.TenKhachHang = tb_KhachHang.Text;
                 hd.SoDienThoai = tb_SoDienThoai.Text;
                 BLL_HoaDon.Instance.UpdateHoaDon(hd);
@@ -121,7 +118,8 @@ namespace Do_An
             
             if (dataGridView1.SelectedRows.Count == 1)
             {
-                Form_HoaDon f = new Form_HoaDon();
+                int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID_HoaDon"].Value.ToString());
+                Form_HoaDon f = new Form_HoaDon(0, id );
                 f.Show();
             }
             else
@@ -133,7 +131,6 @@ namespace Do_An
         {
             tb_IdNhanVien.Enabled = b;
             dtp_NgayTao.Enabled = b;
-            num_TongTien.Enabled = b;
             tb_KhachHang.Enabled = b;
             tb_SoDienThoai.Enabled = b;
         }
@@ -148,7 +145,7 @@ namespace Do_An
             String SDT = dr.Cells["SoDienThoai"].ToString();
             tb_IdNhanVien.Text = IDNhanVien;
             //dtp_NgayTao.Value = Ngaytao;
-            num_TongTien.Value = Tongtien;
+
             tb_KhachHang.Text = dr.Cells["TenKhachHang"].Value.ToString();
             tb_SoDienThoai.Text = dr.Cells["SoDienThoai"].Value.ToString();
             EnableEdit(false);
@@ -156,19 +153,23 @@ namespace Do_An
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            DialogResult dia = MessageBox.Show("Bạn có muốn xóa hóa đơn này không ?", "Xác nhận xóa", MessageBoxButtons.YesNo);
-            if (dia == DialogResult.Yes)
+            if(dataGridView1.SelectedRows.Count > 0)
             {
-                if (dataGridView1.SelectedRows.Count > 0)
+                DialogResult dia = MessageBox.Show("Bạn chắc chắn muốn xóa hóa đơn này?", "Xác nhận xóa", MessageBoxButtons.YesNo);
+                if (dia == DialogResult.Yes)
                 {
-                    List<string> list = new List<string>();
-                    foreach (DataGridViewRow i in dataGridView1.SelectedRows)
+                    if (dataGridView1.SelectedRows.Count > 0)
                     {
-                        list.Add(i.Cells["ID_HoaDon"].Value.ToString());
+                        List<string> list = new List<string>();
+                        foreach (DataGridViewRow i in dataGridView1.SelectedRows)
+                        {
+                            list.Add(i.Cells["ID_HoaDon"].Value.ToString());
+                        }
+                        BLL_HoaDon.Instance.DelHoaDon(list);
+                        dataGridView1.DataSource = BLL_HoaDon.Instance.GetAllHoaDon();
                     }
-                    BLL_HoaDon.Instance.DelHoaDon(list);
-                    dataGridView1.DataSource = BLL_HoaDon.Instance.GetAllHoaDon();
                 }
+
             }
             
         }

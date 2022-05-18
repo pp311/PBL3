@@ -14,8 +14,8 @@ namespace Do_An
 {
     public partial class UC_Kho : UserControl
     {
-        //1 = add, 0 = update
-        public static int mode = 1; 
+        //1 = add, 0 = update, 2 = khong dc thay doi 
+        public static int mode = 2; 
         private static UC_Kho _instance;
         public static UC_Kho Instance
         {
@@ -39,6 +39,11 @@ namespace Do_An
         {
             EnableEdit(true);
             mode = 1;
+            tb_IDSP.Text = "";
+            dtp_NgayNhap.Value = DateTime.Now.Date;
+            num_SoLuongNhap.Value = num_SoLuongNhap.Minimum;
+            num_GiamGia.Value = num_GiamGia.Minimum;
+            num_Gia.Value = num_Gia.Minimum;
         }
 
         public void LoadTable()
@@ -91,6 +96,7 @@ namespace Do_An
             num_SoLuongNhap.Enabled = b;
             dtp_NgayNhap.Enabled=b;
             num_Gia.Enabled = b;
+            num_GiamGia.Enabled = b;
         }
 
         private void btn_XemCT_Click(object sender, EventArgs e)
@@ -105,13 +111,13 @@ namespace Do_An
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (Validate())
+            if (Validate() && mode != 2)
             {
                 int IDSP = Convert.ToInt32(tb_IDSP.Text);
                 DateTime NgayNhap = dtp_NgayNhap.Value;
                 int SoLuong = (int)num_SoLuongNhap.Value;
                 int Gia = (int)num_Gia.Value;
-                int GiamGia = (int)num_Gia.Value;
+                int GiamGia = (int)num_GiamGia.Value;
                 int IDLoHang = 0;
                 if (dgv_Table.SelectedRows.Count == 1 && mode == 0)
                 {
@@ -129,7 +135,7 @@ namespace Do_An
                 string msg = BLL_Kho.Instance.ExcuteKho(data);
                 MessageBox.Show(msg);
                 LoadTable();
-
+                mode = 2;
             }
         }
 
@@ -147,6 +153,7 @@ namespace Do_An
             num_Gia.Value = GiaMua;
             num_GiamGia.Value = GiamGia;
             EnableEdit(false);
+            mode = 2;
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
