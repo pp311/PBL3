@@ -70,7 +70,10 @@ namespace Do_An
                 UC_SanPham.Instance.BringToFront();
             }
             else
+            {
                 UC_SanPham.Instance.BringToFront();
+                UC_SanPham.Instance.Show();
+            }
         }
 
         private void btn_CaNhanBH_Click(object sender, EventArgs e)
