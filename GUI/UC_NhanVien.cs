@@ -7,13 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
 using Do_An.DTO;
 using Do_An.BLL;
-=======
-using Do_An.DTO_AD;
-using Do_An.BLL_AD;
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 
 namespace Do_An
 {
@@ -124,13 +119,8 @@ namespace Do_An
                     {
                         nv.GioiTinh = "Nữ";
                     }
-<<<<<<< HEAD
                     int tos = -1;
                     SetPass f1 = new SetPass(s, nv.TenNhanVien, nv.DiaChi, nv.SoDienThoai, nv.ViTri, nv.NgaySinh, nv.GioiTinh,tos);
-=======
-                   
-                    SetPass f1 = new SetPass(s, nv.TenNhanVien, nv.DiaChi, nv.SoDienThoai, nv.ViTri, nv.NgaySinh, nv.GioiTinh);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 
                     f1.Show();
                     f1.load = new Action<string>(show);
@@ -279,17 +269,12 @@ namespace Do_An
         {
             if (dtlv_nv.SelectedRows.Count == 1)
             {
-<<<<<<< HEAD
                /* int idtk = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_TaiKhoan"].Value);
-=======
-                int idtk = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_TaiKhoan"].Value);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 TaiKhoan tk = BLL_TaiKhoan.Instance.BLL_GetTaiKhoanByID(idtk);
                 string mktk = tk.MatKhau;
                 // truyền idtk với mk tk 
                 Pass p1 = new Pass(idtk, mktk);
                 p1.d = new Pass.MyDel(show);
-<<<<<<< HEAD
                 p1.Show();*/
 
                 int idnv = Convert.ToInt32(dtlv_nv.SelectedRows[0].Cells["ID_Nhanvien"].Value);
@@ -321,12 +306,6 @@ namespace Do_An
         }
             else
             {
-=======
-                p1.Show();
-            }
-            else
-            {
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 MessageBox.Show("Vui lòng chọn 1 nhân viên để đổi mật khẩu !!! ");
             }
         }

@@ -1,13 +1,10 @@
-<<<<<<< HEAD
+
 
 ﻿using Do_An.BLL;
 using Do_An.DTO;
 using Do_An.EF;
 using System;
 
-=======
-﻿using System;
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +18,6 @@ namespace Do_An
 {
     public partial class Form_HoaDon : Form
     {
-<<<<<<< HEAD
         public Action loadTable { get; set; }
         public DataTable dt;
         decimal TongTien;
@@ -82,11 +78,7 @@ namespace Do_An
             }
             return isValid;
 
-=======
-        public Form_HoaDon()
-        {
-            InitializeComponent();
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
+
         }
 
         private void btn_Huy_Click(object sender, EventArgs e)
@@ -96,7 +88,6 @@ namespace Do_An
 
         private void Form_HoaDon_Paint(object sender, PaintEventArgs e)
         {
-<<<<<<< HEAD
             e.Graphics.DrawRectangle(new Pen(Color.Black, 10), this.DisplayRectangle);
 
         }
@@ -119,12 +110,5 @@ namespace Do_An
                 this.Close();
             }
         }
-
-      
-=======
-            e.Graphics.DrawRectangle(new Pen(Color.Black, 30), this.DisplayRectangle);
-
-        }
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
     }
 }

@@ -14,13 +14,8 @@ namespace Do_An
 {
     public partial class UC_Kho : UserControl
     {
-<<<<<<< HEAD
         //1 = add, 0 = update, 2 = khong dc thay doi 
         public static int mode = 2; 
-=======
-        //1 = add, 0 = update
-        public static int mode = 1; 
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         private static UC_Kho _instance;
         public static UC_Kho Instance
         {
@@ -44,14 +39,11 @@ namespace Do_An
         {
             EnableEdit(true);
             mode = 1;
-<<<<<<< HEAD
             tb_IDSP.Text = "";
             dtp_NgayNhap.Value = DateTime.Now.Date;
             num_SoLuongNhap.Value = num_SoLuongNhap.Minimum;
             num_GiamGia.Value = num_GiamGia.Minimum;
             num_Gia.Value = num_Gia.Minimum;
-=======
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
 
         public void LoadTable()
@@ -104,10 +96,7 @@ namespace Do_An
             num_SoLuongNhap.Enabled = b;
             dtp_NgayNhap.Enabled=b;
             num_Gia.Enabled = b;
-<<<<<<< HEAD
             num_GiamGia.Enabled = b;
-=======
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
 
         private void btn_XemCT_Click(object sender, EventArgs e)
@@ -122,21 +111,13 @@ namespace Do_An
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             if (Validate() && mode != 2)
-=======
-            if (Validate())
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             {
                 int IDSP = Convert.ToInt32(tb_IDSP.Text);
                 DateTime NgayNhap = dtp_NgayNhap.Value;
                 int SoLuong = (int)num_SoLuongNhap.Value;
                 int Gia = (int)num_Gia.Value;
-<<<<<<< HEAD
                 int GiamGia = (int)num_GiamGia.Value;
-=======
-                int GiamGia = (int)num_Gia.Value;
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 int IDLoHang = 0;
                 if (dgv_Table.SelectedRows.Count == 1 && mode == 0)
                 {
@@ -154,11 +135,7 @@ namespace Do_An
                 string msg = BLL_Kho.Instance.ExcuteKho(data);
                 MessageBox.Show(msg);
                 LoadTable();
-<<<<<<< HEAD
                 mode = 2;
-=======
-
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             }
         }
 
@@ -176,10 +153,7 @@ namespace Do_An
             num_Gia.Value = GiaMua;
             num_GiamGia.Value = GiamGia;
             EnableEdit(false);
-<<<<<<< HEAD
             mode = 2;
-=======
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)

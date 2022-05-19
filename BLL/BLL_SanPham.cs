@@ -43,11 +43,7 @@ namespace Do_An.BLL
         {
             if (type != "Tất cả")
             {
-<<<<<<< HEAD
                 DataTable dt = Instance.GetDataTableSanPham();
-=======
-                DataTable dt = BLL_SanPham.Instance.GetDataTableSanPham();
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     if (!(dt.Rows[i]["PhanLoai"].ToString() == type))
@@ -61,11 +57,7 @@ namespace Do_An.BLL
             }
             else
             {
-<<<<<<< HEAD
                 return Instance.GetDataTableSanPham();
-=======
-                return BLL_SanPham.Instance.GetDataTableSanPham();
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             }
         }
         public DataTable GetDataTableSanPhamByKeyWord(string type, string keyWord)

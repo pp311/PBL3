@@ -48,9 +48,9 @@ namespace Do_An
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_ThoatCT_Click(object sender, EventArgs e)
         {
-            //
+            this.Close();
         }
     }
 }

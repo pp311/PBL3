@@ -32,11 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
             this.tb_Mk3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-=======
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.tb_Mk1 = new System.Windows.Forms.TextBox();
             this.tb_Mk2 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -44,8 +41,6 @@
             this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Huy = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb_Mk3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,30 +48,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(457, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
-=======
-            this.label1.Location = new System.Drawing.Point(457, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(613, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
-=======
-            this.label2.Location = new System.Drawing.Point(613, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             // 
@@ -87,11 +70,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(885, 474);
-=======
-            this.panel1.Size = new System.Drawing.Size(885, 593);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.panel1.TabIndex = 2;
             // 
             // panel2
@@ -110,14 +89,13 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-<<<<<<< HEAD
             this.panel2.Size = new System.Drawing.Size(885, 474);
             this.panel2.TabIndex = 0;
             // 
             // tb_Mk3
             // 
             this.tb_Mk3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.tb_Mk3.Location = new System.Drawing.Point(346, 278);
+            this.tb_Mk3.Location = new System.Drawing.Point(345, 281);
             this.tb_Mk3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Mk3.Name = "tb_Mk3";
             this.tb_Mk3.PasswordChar = '*';
@@ -129,7 +107,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(150, 278);
+            this.label6.Location = new System.Drawing.Point(150, 281);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 27);
             this.label6.TabIndex = 123;
@@ -139,7 +117,7 @@
             // 
             this.tb_Mk1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_Mk1.Location = new System.Drawing.Point(346, 179);
-            this.tb_Mk1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_Mk1.Margin = new System.Windows.Forms.Padding(2);
             this.tb_Mk1.Name = "tb_Mk1";
             this.tb_Mk1.PasswordChar = '*';
             this.tb_Mk1.Size = new System.Drawing.Size(290, 33);
@@ -180,70 +158,16 @@
             // 
             // btn_Luu
             // 
-=======
-            this.panel2.Size = new System.Drawing.Size(885, 593);
-            this.panel2.TabIndex = 0;
-            // 
-            // tb_Mk1
-            // 
-            this.tb_Mk1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tb_Mk1.Location = new System.Drawing.Point(346, 224);
-            this.tb_Mk1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.tb_Mk1.Name = "tb_Mk1";
-            this.tb_Mk1.Size = new System.Drawing.Size(290, 34);
-            this.tb_Mk1.TabIndex = 119;
-            // 
-            // tb_Mk2
-            // 
-            this.tb_Mk2.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tb_Mk2.Location = new System.Drawing.Point(346, 283);
-            this.tb_Mk2.Name = "tb_Mk2";
-            this.tb_Mk2.Size = new System.Drawing.Size(290, 34);
-            this.tb_Mk2.TabIndex = 122;
-            // 
-            // label15
-            // 
-            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(203, 228);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 27);
-            this.label15.TabIndex = 120;
-            this.label15.Text = "Mật khẩu cũ";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(203, 286);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(143, 27);
-            this.label13.TabIndex = 121;
-            this.label13.Text = "Mật khẩu mới";
-            // 
-            // btn_Luu
-            // 
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_Luu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.btn_Luu.BackColor = System.Drawing.Color.DarkGray;
             this.btn_Luu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Luu.FlatAppearance.BorderSize = 0;
             this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-<<<<<<< HEAD
             this.btn_Luu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_Luu.Location = new System.Drawing.Point(207, 330);
+            this.btn_Luu.Location = new System.Drawing.Point(228, 363);
             this.btn_Luu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(163, 42);
-=======
-            this.btn_Luu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Luu.Location = new System.Drawing.Point(207, 412);
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(163, 53);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_Luu.TabIndex = 70;
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.UseVisualStyleBackColor = false;
@@ -256,18 +180,11 @@
             this.btn_Huy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_Huy.FlatAppearance.BorderSize = 0;
             this.btn_Huy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-<<<<<<< HEAD
             this.btn_Huy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_Huy.Location = new System.Drawing.Point(456, 330);
+            this.btn_Huy.Location = new System.Drawing.Point(508, 363);
             this.btn_Huy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(163, 42);
-=======
-            this.btn_Huy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Huy.Location = new System.Drawing.Point(456, 412);
-            this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(163, 53);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_Huy.TabIndex = 69;
             this.btn_Huy.Text = "Hủy";
             this.btn_Huy.UseVisualStyleBackColor = false;
@@ -278,56 +195,23 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.MintCream;
-<<<<<<< HEAD
             this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(338, 97);
-=======
-            this.label3.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(338, 121);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(183, 37);
             this.label3.TabIndex = 0;
             this.label3.Text = "Đổi mật khẩu";
             // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(150, 348);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(196, 27);
-            this.label6.TabIndex = 123;
-            this.label6.Text = "Nhập mật khẩu mới";
-            // 
-            // tb_Mk3
-            // 
-            this.tb_Mk3.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tb_Mk3.Location = new System.Drawing.Point(346, 348);
-            this.tb_Mk3.Name = "tb_Mk3";
-            this.tb_Mk3.Size = new System.Drawing.Size(290, 34);
-            this.tb_Mk3.TabIndex = 124;
-            // 
             // Pass
             // 
-<<<<<<< HEAD
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 474);
-=======
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 593);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-=======
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.Name = "Pass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pass";

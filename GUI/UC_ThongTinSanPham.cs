@@ -35,11 +35,7 @@ namespace Do_An
 
         }
 
-<<<<<<< HEAD
         public void Show()
-=======
-        public void Show(string search = "")
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         {
             dgv_TableSanPham.DataSource = BLL_SanPham.Instance.GetDataTableSanPham();
             dgv_TableSanPham.Columns["ID_SanPham"].HeaderText = "ID Sản phẩm";
@@ -51,11 +47,7 @@ namespace Do_An
         private void button16_Click(object sender, EventArgs e)
         {
             Form_SanPham fsp = new Form_SanPham();
-<<<<<<< HEAD
             fsp.loadTable = new Action(Show);
-=======
-            fsp.loadTable = new Action<string>(Show);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             fsp.Show();
         }
 
@@ -80,11 +72,7 @@ namespace Do_An
             {
                 int id = Convert.ToInt32(dgv_TableSanPham.SelectedRows[0].Cells["ID_SanPham"].Value.ToString());
                 Form_SanPham f = new Form_SanPham(id);
-<<<<<<< HEAD
                 f.loadTable = new Action(Show);
-=======
-                f.loadTable = new Action<string>(Show);
->>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 f.Show();
 
             }
