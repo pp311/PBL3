@@ -38,8 +38,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(187, 35);
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(187, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 37);
             this.label1.TabIndex = 0;
@@ -51,9 +51,10 @@
             this.panel1.Controls.Add(this.btn_ThoatCT);
             this.panel1.Controls.Add(this.button16);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(27, 11);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(626, 333);
+            this.panel1.Size = new System.Drawing.Size(626, 266);
             this.panel1.TabIndex = 3;
             // 
             // btn_ThoatCT
@@ -63,14 +64,15 @@
             this.btn_ThoatCT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_ThoatCT.FlatAppearance.BorderSize = 0;
             this.btn_ThoatCT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThoatCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_ThoatCT.Location = new System.Drawing.Point(364, 163);
+            this.btn_ThoatCT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_ThoatCT.Location = new System.Drawing.Point(364, 130);
+            this.btn_ThoatCT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ThoatCT.Name = "btn_ThoatCT";
-            this.btn_ThoatCT.Size = new System.Drawing.Size(189, 69);
+            this.btn_ThoatCT.Size = new System.Drawing.Size(200, 55);
             this.btn_ThoatCT.TabIndex = 71;
             this.btn_ThoatCT.Text = "Thoát chương trình";
             this.btn_ThoatCT.UseVisualStyleBackColor = false;
-            this.btn_ThoatCT.Click += new System.EventHandler(this.button1_Click);
+            this.btn_ThoatCT.Click += new System.EventHandler(this.btn_ThoatCT_Click);
             // 
             // button16
             // 
@@ -79,22 +81,25 @@
             this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button16.FlatAppearance.BorderSize = 0;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button16.Location = new System.Drawing.Point(78, 161);
+            this.button16.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.button16.Location = new System.Drawing.Point(78, 129);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(163, 69);
+            this.button16.Size = new System.Drawing.Size(163, 55);
             this.button16.TabIndex = 69;
             this.button16.Text = "Đăng xuất";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // X
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(628, 339);
+            this.ClientSize = new System.Drawing.Size(702, 271);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "X";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exit";

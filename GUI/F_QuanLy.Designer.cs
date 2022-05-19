@@ -66,7 +66,7 @@
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Quản lý";
-    
+   
             // 
             // label1
             // 
@@ -100,7 +100,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 770);
             this.panel2.TabIndex = 5;
-  
             // 
             // btn_NhapHang
             // 
@@ -214,7 +213,6 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
-     
             // 
             // pictureBox2
             // 
@@ -228,7 +226,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
-
             // 
             // panel3
             // 
@@ -242,7 +239,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1253, 58);
             this.panel3.TabIndex = 7;
-          
             // 
             // lb_Clock
             // 
@@ -254,7 +250,6 @@
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 84;
             this.lb_Clock.Text = "00:00:00 AM";
-       
             // 
             // pictureBox8
             // 
@@ -267,7 +262,6 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 83;
             this.pictureBox8.TabStop = false;
-        
             // 
             // pictureBox1
             // 
@@ -294,7 +288,6 @@
             this.label2.Size = new System.Drawing.Size(225, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "Bike Shop QHP";
-     
             // 
             // pnl_Main
             // 

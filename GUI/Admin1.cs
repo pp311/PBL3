@@ -148,8 +148,8 @@ namespace Do_An
 
         private void button9_Click(object sender, EventArgs e)
         {
-            X x = new X();
-            x.Show();
+         //   X x = new X();
+            //x.Show();
         }
 
      
@@ -166,8 +166,8 @@ namespace Do_An
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            X x = new X();
-            x.Show();
+           // X x = new X();
+          //  x.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)

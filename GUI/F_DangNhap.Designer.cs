@@ -169,6 +169,7 @@
             this.tb_TaiKhoan.Name = "tb_TaiKhoan";
             this.tb_TaiKhoan.Size = new System.Drawing.Size(237, 26);
 
+
             this.tb_TaiKhoan.TabIndex = 0;
             // 
             // panel1

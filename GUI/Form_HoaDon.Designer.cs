@@ -34,6 +34,7 @@
             this.tb_IDHoaDon = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tb_SoDienThoai = new System.Windows.Forms.TextBox();
+
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -87,6 +88,7 @@
             this.dtp_NgayTao.Name = "dtp_NgayTao";
             this.dtp_NgayTao.Size = new System.Drawing.Size(297, 26);
             this.dtp_NgayTao.TabIndex = 120;
+
             // 
             // label11
             // 
@@ -364,6 +366,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).EndInit();
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -376,9 +379,7 @@
         private Label label4;
         private TextBox textBox3;
         private Label label8;
-
         private TextBox tb_TenKhachHang;
-
         private Label label2;
         private Label label6;
         private TextBox textBox5;
@@ -387,7 +388,6 @@
         private Label label5;
         private Label label9;
         private DataGridView dgv_Table;
-
         private TextBox tb_SoDienThoai;
         private Button btn_Huy;
         private Button btn_XacNhan;
@@ -397,5 +397,6 @@
         private DateTimePicker dtp_NgayTao;
         private Label label7;
         private Label lb_TongTien;
+
     }
 }

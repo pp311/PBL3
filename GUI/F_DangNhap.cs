@@ -10,8 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 
-using Do_An.DTO_AD;
-using Do_An.BLL_AD;
+
 using Do_An.BLL;
 using Do_An.DTO;
 
@@ -22,17 +21,21 @@ namespace Do_An
         public F_DangNhap()
         {
             InitializeComponent();
-            
         }
 
-       
+       public void reSet()
+        {
+            tb_MatKhau.Text = "";
+            tb_TaiKhoan.Text = "";
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
            
 
             string tk = tb_TaiKhoan.Text;
-            string mk = tb_MatKhau.Text;
+            string mk = BLL_TaiKhoan.EncodePass(tb_MatKhau.Text);
+            // string mk = tb_MatKhau.Text;
             bool isLoginSuccess = BLL_DangNhap.Instance.DangNhap(tk, mk);
             if (isLoginSuccess)
             {
@@ -41,7 +44,12 @@ namespace Do_An
                 {
                     F_QuanLy f_admin = new F_QuanLy();
                     f_admin.Closed += (s, args) => this.Close();
+                    this.Hide();
                     f_admin.Show();
+                  //  f_admin.ShowDialog();
+                    //this.Close();
+                    
+                   
                 }
                 if (s == "Nhân viên bán hàng")
                 {

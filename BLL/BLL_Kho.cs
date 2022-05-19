@@ -123,6 +123,7 @@ namespace Do_An.BLL
                 {
                     msg += $"Không thể xoá lô hàng có id: '{lh.ID_LoHang}' do có sản phẩm đã được bán đi.\n";
                     errCount++;
+
                 }
                 else
                 {
@@ -139,6 +140,7 @@ namespace Do_An.BLL
                 }
             }
              return msg == "" ? msg + $"Xoá thành công {IDList.Count - errCount} lô hàng" : msg;
+
         }
     }
 }

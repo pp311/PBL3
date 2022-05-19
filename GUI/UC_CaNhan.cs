@@ -8,8 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Do_An.DTO_AD;
-using Do_An.BLL_AD;
+
+using Do_An.BLL;
+
 using Do_An.DTO;
 
 

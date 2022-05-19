@@ -146,10 +146,12 @@ namespace Do_An
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        
+            X x = new X(this);
+            x.Show();
+          //  this.Dispose();
+           
+        }
 
     }
 }

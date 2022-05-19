@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Do_An.BLL_AD;
-using Do_An.DTO_AD;
+using Do_An.BLL;
+using Do_An.DTO;
+
 namespace Do_An
 {
     public partial class Pass : Form
@@ -24,7 +25,8 @@ namespace Do_An
             InitializeComponent();
             this.idtaikhoan = idtk;
             this.matkhaucu123 = mk;
-            GUI();
+           // GUI();
+
         }
 
 
@@ -42,8 +44,10 @@ namespace Do_An
             if (string.IsNullOrEmpty(matkhaucu)) isValid = false;
             if (string.IsNullOrEmpty(matkhaumoi1)) isValid = false;
             if (string.IsNullOrEmpty(matkhaumoi2)) isValid = false;
-            if (tb_Mk1.Text != matkhaucu123) isValid = false;
+            if (BLL_TaiKhoan.EncodePass(tb_Mk1.Text) != matkhaucu123) isValid = false;
             if (tb_Mk2.Text != tb_Mk3.Text) isValid = false;
+            if (matkhaumoi1.Length < 4) isValid = false;
+
             if (!isValid)
             {
                 isValid = false;
@@ -59,7 +63,9 @@ namespace Do_An
             if(Validate())
             {
                 TaiKhoan tk = new TaiKhoan();
-                tk.MatKhau = tb_Mk2.Text;
+               // tk.MatKhau = tb_Mk2.Text;
+                tk.MatKhau = BLL_TaiKhoan.EncodePass(tb_Mk2.Text);
+
                 tk.ID_TaiKhoan = idtaikhoan;
 
 
@@ -72,8 +78,9 @@ namespace Do_An
         }
         public void GUI()
         {
-            tb_Mk1.Text = matkhaucu123;
-            tb_Mk1.Enabled = false;
+          //  tb_Mk1.Text = matkhaucu123;
+         //   tb_Mk1.Enabled = false;
+
         }
     }
 }
