@@ -10,21 +10,27 @@ using System.Windows.Forms;
 
 namespace Do_An
 {
-    public partial class UC_NhapHang : UserControl
+    public partial class UC_SanPham : UserControl
     {
-        private static UC_NhapHang _instance;
-        public static UC_NhapHang Instance
+        private static UC_SanPham _instance;
+        public static UC_SanPham Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new UC_NhapHang();
+                    _instance = new UC_SanPham();
                 return _instance;
             }
         }
-        public UC_NhapHang()
+        public UC_SanPham()
         {
             InitializeComponent();
+        }
+
+        private void btn_XemCT_Click(object sender, EventArgs e)
+        {
+            Form_SanPham f = new Form_SanPham();
+            f.Show();
         }
     }
 }

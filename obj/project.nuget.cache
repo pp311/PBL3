@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6rMtShqitlKIbqPJ6BFLVW/4q7M1+rkQhuSP/fq564o/SbShFvCFocAelBxp363yLYN2BN785Q5+A4ThZi16IQ==",
+  "dgSpecHash": "BA7SNODjAy7F8q6lgFvOqlU3Dvr4xJgX6QFdoaiSZ+mnpfa/PiRNfHs5yKeCCQTj2d+2xLayrgr0KRg6h5I8VA==",
   "success": true,
-  "projectFilePath": "E:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\PBL3-gui\\Do_An.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hanhn\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\hanhn\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
+  ],
   "logs": []
 }
