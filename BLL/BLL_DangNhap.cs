@@ -6,8 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Do_An.DTO;
+<<<<<<< HEAD
 using System.Security.Cryptography;
 
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 
 namespace Do_An.BLL
 {
@@ -34,6 +37,7 @@ namespace Do_An.BLL
         //true => không có lỗi
         public bool DangNhap(string tk, string mk)
         {
+<<<<<<< HEAD
 
   
             bool isError = false;
@@ -47,6 +51,11 @@ namespace Do_An.BLL
                     hasPass += item;
                 }
 
+=======
+            bool isError = false;
+            try
+            {
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 int idtk = db.taikhoans.Where(p => p.TenTaiKhoan == tk && p.MatKhau == mk).First().ID_TaiKhoan;
                 nhanvien nhanVien = db.nhanviens.Where(p => p.ID_TaiKhoan == idtk).First();
                 CurrentUser.ID_NhanVien = nhanVien.ID_NhanVien;

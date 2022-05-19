@@ -92,6 +92,7 @@ namespace Do_An
 
         private void picture_setting_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //this.Close();
             DialogResult dlr = MessageBox.Show("Bạn muốn thoát chương trình?",
          "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -101,6 +102,9 @@ namespace Do_An
             }
 
 
+=======
+            this.Close();
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
     }
 }

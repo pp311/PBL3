@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "BA7SNODjAy7F8q6lgFvOqlU3Dvr4xJgX6QFdoaiSZ+mnpfa/PiRNfHs5yKeCCQTj2d+2xLayrgr0KRg6h5I8VA==",
   "success": true,
   "projectFilePath": "D:\\PBL3-gui\\Do_An.csproj",
@@ -8,4 +9,21 @@
     "C:\\Users\\hanhn\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
   ],
   "logs": []
+=======
+  "dgSpecHash": "JoiVKLbSsekXj5wfPuDfs1D52xehN540EZ2wBkPVas5Rw8cuDiwsOPNDoCtB2yUPcRVktf9829NTohU+rgMBQA==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PhucPhan\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\PhucPhan\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 }

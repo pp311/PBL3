@@ -17,10 +17,23 @@ namespace Do_An
 {
     public partial class UC_HoaDon : UserControl
     {
+<<<<<<< HEAD
 
         public Action<string> loadTable { get; set; }
         private static UC_HoaDon _Instance;
 
+=======
+        public UC_HoaDon()
+        {
+            InitializeComponent();
+            tb_IdHoaDon.Enabled = false;
+            dtp_NgayTao.Enabled = false;
+            num_TongTien.Enabled = false;
+            tb_KhachHang.Enabled = false;
+            tb_SoDienThoai.Enabled = false;
+        }
+        private static UC_HoaDon _instance;
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         public static UC_HoaDon Instance
         {
             get
@@ -30,6 +43,7 @@ namespace Do_An
                 return _Instance;
             }
         }
+<<<<<<< HEAD
         public UC_HoaDon()
         {
             InitializeComponent();
@@ -84,12 +98,21 @@ namespace Do_An
         }
         private bool Validate()
 
+=======
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Validate();
+        }
+        private void Validate()
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         {
             string tenKhachHang = tb_KhachHang.Text;
             string soDienThoai = tb_SoDienThoai.Text;
             bool isValid = true;
             if (string.IsNullOrEmpty(tenKhachHang) || !tenKhachHang.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             if(string.IsNullOrEmpty(soDienThoai) || !soDienThoai.All(c => char.IsNumber(c))) isValid = false;
+<<<<<<< HEAD
 
             if (!isValid)
             {
@@ -98,10 +121,14 @@ namespace Do_An
             }
             return isValid;
 
+=======
+            if (!isValid) MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
             if (dataGridView1.SelectedRows.Count == 1)
             {
@@ -174,5 +201,13 @@ namespace Do_An
             
         }
 
+=======
+            dtp_NgayTao.Enabled = true;
+            tb_KhachHang.Enabled = true;
+            tb_SoDienThoai.Enabled = true;
+        }
+
+     
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
     }
 }

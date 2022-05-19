@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 ﻿using Do_An.BLL;
 using System;
+=======
+﻿using System;
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +17,18 @@ namespace Do_An
 {
     public partial class UC_BanHang : UserControl
     {
+<<<<<<< HEAD
         DataTable danhSachMuaHang;
         public UC_BanHang()
         {
             InitializeComponent();
             Show();
             cbb_Type.SelectedIndex = 0;
+=======
+        public UC_BanHang()
+        {
+            InitializeComponent();
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
         private static UC_BanHang _instance;
         public static UC_BanHang Instance
@@ -33,6 +43,7 @@ namespace Do_An
 
         private void btn_LapHD_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Form_HoaDon fhd = new Form_HoaDon(1, 0, danhSachMuaHang);
             fhd.loadTable = new Action(Show);
             fhd.Show();
@@ -156,5 +167,12 @@ namespace Do_An
             string keyWord = tb_Search.Text;
             dgv_SanPham.DataSource = BLL_BanHang.Instance.GetDataTableBanHangByKeyWord(type, keyWord);
         }
+=======
+            Form_HoaDon fhd = new Form_HoaDon();
+            fhd.Show();
+        }
+
+       
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
     }
 }

@@ -61,7 +61,11 @@ namespace Do_An.BLL
         }
         public string AddKho(kho data)
         {
+<<<<<<< HEAD
             data.SoLuong = data.SoLuongNhap;
+=======
+            data.SoLuong = 0;
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             db.khoes.Add(data);
             db.SaveChanges();
             return "Thêm thông tin nhập hàng thành công";
@@ -122,7 +126,10 @@ namespace Do_An.BLL
                 if (lh.SoLuongNhap != lh.SoLuong)
                 {
                     msg += $"Không thể xoá lô hàng có id: '{lh.ID_LoHang}' do có sản phẩm đã được bán đi.\n";
+<<<<<<< HEAD
                     errCount++;
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 }
                 else
                 {
@@ -138,7 +145,11 @@ namespace Do_An.BLL
                     }
                 }
             }
+<<<<<<< HEAD
              return msg == "" ? msg + $"Xoá thành công {IDList.Count - errCount} lô hàng" : msg;
+=======
+             return msg + $"Xoá thành công {IDList.Count - errCount} lô hàng";
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
     }
 }

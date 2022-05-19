@@ -7,9 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using Do_An.DAL;
 using Do_An.BLL;
 using Do_An.DTO;
+=======
+using Do_An.DAL_AD;
+using Do_An.BLL_AD;
+using Do_An.DTO_AD;
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 namespace Do_An
 {
     public partial class SetPass : Form
@@ -17,7 +23,11 @@ namespace Do_An
         public delegate void MyDel(string txt);
         public MyDel d { get; set; }
         private string tentaikhoan;
+<<<<<<< HEAD
         private int tos;
+=======
+        private string idnhanvien;
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         private string tennhanvien;
         private string diachi;
         private string vitri;
@@ -33,14 +43,22 @@ namespace Do_An
         /*    public delegate void MyDel(string txt);*/
 
         //    public Form1( string ttk)
+<<<<<<< HEAD
        
         public SetPass( string ttk, string tnv, string dc, string sdt, string vt, DateTime ns, string gt,int tos)
+=======
+
+        public SetPass(string ttk, string tnv, string dc, string sdt, string vt, DateTime ns, string gt)
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 
         {
             InitializeComponent();
             this.tentaikhoan = ttk;
             //
+<<<<<<< HEAD
             this.tos = tos;
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.tennhanvien = tnv;
             this.diachi = dc;
             this.sodienthoai = sdt;
@@ -48,7 +66,10 @@ namespace Do_An
             this.ngaysinh = ns;
             this.gioitinh = gt;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
         private void btn_Huy_Click(object sender, EventArgs e)
         {
@@ -59,6 +80,7 @@ namespace Do_An
 
             if (Validate())
             {
+<<<<<<< HEAD
                 if(tos!=-1)
                 {
                     // cap nhat mk 
@@ -75,6 +97,8 @@ namespace Do_An
                 }
                 else
                 {
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
                 TaiKhoan tk = new TaiKhoan();
                 tk.MatKhau = tb_Mk1.Text;
                 tk.TenTaiKhoan = tentaikhoan;
@@ -95,8 +119,11 @@ namespace Do_An
                 load("");
 
                 this.Dispose();
+<<<<<<< HEAD
                 }
               
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 
 
             }
@@ -111,7 +138,10 @@ namespace Do_An
             if (string.IsNullOrEmpty(matkhau1) || !matkhau1.All(c => char.IsLetterOrDigit(c))) isValid = false;
             if (string.IsNullOrEmpty(matkhau2) || !matkhau2.All(c => char.IsLetterOrDigit(c))) isValid = false;
             if (tb_Mk1.Text != tb_Mk2.Text) isValid = false;
+<<<<<<< HEAD
             if (tb_Mk1.Text.Length < 4) isValid = false;
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
 
             if (!isValid)
             {

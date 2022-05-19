@@ -41,10 +41,17 @@
             // 
             this.tb_Mk1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_Mk1.Location = new System.Drawing.Point(374, 164);
+<<<<<<< HEAD
             this.tb_Mk1.Margin = new System.Windows.Forms.Padding(2);
             this.tb_Mk1.Name = "tb_Mk1";
             this.tb_Mk1.PasswordChar = '*';
             this.tb_Mk1.Size = new System.Drawing.Size(290, 34);
+=======
+            this.tb_Mk1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_Mk1.Name = "tb_Mk1";
+            this.tb_Mk1.PasswordChar = '*';
+            this.tb_Mk1.Size = new System.Drawing.Size(290, 33);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.tb_Mk1.TabIndex = 126;
             // 
             // tb_Mk2
@@ -54,7 +61,11 @@
             this.tb_Mk2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Mk2.Name = "tb_Mk2";
             this.tb_Mk2.PasswordChar = '*';
+<<<<<<< HEAD
             this.tb_Mk2.Size = new System.Drawing.Size(290, 34);
+=======
+            this.tb_Mk2.Size = new System.Drawing.Size(290, 33);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.tb_Mk2.TabIndex = 129;
             // 
             // label15
@@ -142,7 +153,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SetPass";
+<<<<<<< HEAD
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+=======
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.Text = "SetPass";
             this.TopMost = true;
             this.ResumeLayout(false);

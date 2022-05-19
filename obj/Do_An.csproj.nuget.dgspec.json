@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\PBL3-gui\\Do_An.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "D:\\PBL3-gui\\Do_An.csproj",
         "packagesPath": "C:\\Users\\hanhn\\.nuget\\packages\\",
         "outputPath": "D:\\PBL3-gui\\obj\\",
+=======
+    "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj": {}
+  },
+  "projects": {
+    "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
+        "projectName": "Do_An",
+        "projectPath": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\Do_An.csproj",
+        "packagesPath": "C:\\Users\\PhucPhan\\.nuget\\packages\\",
+        "outputPath": "D:\\OneDrive - The University of Technology\\Hoc\\Do_An\\obj\\",
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\hanhn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\PhucPhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -53,7 +71,11 @@
               "version": "[4.8.3, )"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
         }
       },
       "runtimes": {

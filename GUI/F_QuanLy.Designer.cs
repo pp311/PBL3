@@ -47,7 +47,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+<<<<<<< HEAD
             this.btn_BanHang = new System.Windows.Forms.Button();
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,7 +69,11 @@
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Quản lý";
+<<<<<<< HEAD
     
+=======
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // label1
             // 
@@ -78,12 +85,19 @@
             this.label1.Size = new System.Drawing.Size(97, 26);
             this.label1.TabIndex = 17;
             this.label1.Text = "Bike Shop";
+<<<<<<< HEAD
       
+=======
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+<<<<<<< HEAD
             this.panel2.Controls.Add(this.btn_BanHang);
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.panel2.Controls.Add(this.btn_NhapHang);
             this.panel2.Controls.Add(this.btn_CaNhan);
             this.panel2.Controls.Add(this.btn_ThongKe);
@@ -100,7 +114,11 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 770);
             this.panel2.TabIndex = 5;
+<<<<<<< HEAD
   
+=======
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // btn_NhapHang
             // 
@@ -110,10 +128,17 @@
             this.btn_NhapHang.FlatAppearance.BorderSize = 0;
             this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhapHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.btn_NhapHang.Location = new System.Drawing.Point(0, 257);
             this.btn_NhapHang.Margin = new System.Windows.Forms.Padding(0);
             this.btn_NhapHang.Name = "btn_NhapHang";
             this.btn_NhapHang.Size = new System.Drawing.Size(197, 72);
+=======
+            this.btn_NhapHang.Location = new System.Drawing.Point(0, 249);
+            this.btn_NhapHang.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_NhapHang.Name = "btn_NhapHang";
+            this.btn_NhapHang.Size = new System.Drawing.Size(197, 86);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_NhapHang.TabIndex = 25;
             this.btn_NhapHang.Text = "Sản phẩm";
             this.btn_NhapHang.UseVisualStyleBackColor = false;
@@ -127,10 +152,17 @@
             this.btn_CaNhan.FlatAppearance.BorderSize = 0;
             this.btn_CaNhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CaNhan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.btn_CaNhan.Location = new System.Drawing.Point(0, 689);
             this.btn_CaNhan.Margin = new System.Windows.Forms.Padding(0);
             this.btn_CaNhan.Name = "btn_CaNhan";
             this.btn_CaNhan.Size = new System.Drawing.Size(197, 72);
+=======
+            this.btn_CaNhan.Location = new System.Drawing.Point(0, 671);
+            this.btn_CaNhan.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_CaNhan.Name = "btn_CaNhan";
+            this.btn_CaNhan.Size = new System.Drawing.Size(197, 86);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_CaNhan.TabIndex = 24;
             this.btn_CaNhan.Text = "Cá nhân";
             this.btn_CaNhan.UseVisualStyleBackColor = false;
@@ -144,10 +176,17 @@
             this.btn_ThongKe.FlatAppearance.BorderSize = 0;
             this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThongKe.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.btn_ThongKe.Location = new System.Drawing.Point(0, 617);
             this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(0);
             this.btn_ThongKe.Name = "btn_ThongKe";
             this.btn_ThongKe.Size = new System.Drawing.Size(197, 72);
+=======
+            this.btn_ThongKe.Location = new System.Drawing.Point(0, 586);
+            this.btn_ThongKe.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_ThongKe.Name = "btn_ThongKe";
+            this.btn_ThongKe.Size = new System.Drawing.Size(197, 86);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_ThongKe.TabIndex = 23;
             this.btn_ThongKe.Text = "Thống kê";
             this.btn_ThongKe.UseVisualStyleBackColor = false;
@@ -161,10 +200,17 @@
             this.btn_NhanVien.FlatAppearance.BorderSize = 0;
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.btn_NhanVien.Location = new System.Drawing.Point(0, 545);
             this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.btn_NhanVien.Name = "btn_NhanVien";
             this.btn_NhanVien.Size = new System.Drawing.Size(197, 72);
+=======
+            this.btn_NhanVien.Location = new System.Drawing.Point(0, 500);
+            this.btn_NhanVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_NhanVien.Name = "btn_NhanVien";
+            this.btn_NhanVien.Size = new System.Drawing.Size(197, 86);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_NhanVien.TabIndex = 22;
             this.btn_NhanVien.Text = "Nhân viên";
             this.btn_NhanVien.UseVisualStyleBackColor = false;
@@ -178,10 +224,17 @@
             this.btn_HoaDon.FlatAppearance.BorderSize = 0;
             this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HoaDon.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.btn_HoaDon.Location = new System.Drawing.Point(0, 473);
             this.btn_HoaDon.Margin = new System.Windows.Forms.Padding(0);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(197, 72);
+=======
+            this.btn_HoaDon.Location = new System.Drawing.Point(0, 416);
+            this.btn_HoaDon.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_HoaDon.Name = "btn_HoaDon";
+            this.btn_HoaDon.Size = new System.Drawing.Size(197, 86);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_HoaDon.TabIndex = 21;
             this.btn_HoaDon.Text = "Hóa Đơn";
             this.btn_HoaDon.UseVisualStyleBackColor = false;
@@ -195,10 +248,17 @@
             this.btn_Kho.FlatAppearance.BorderSize = 0;
             this.btn_Kho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Kho.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.btn_Kho.Location = new System.Drawing.Point(0, 401);
             this.btn_Kho.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Kho.Name = "btn_Kho";
             this.btn_Kho.Size = new System.Drawing.Size(197, 72);
+=======
+            this.btn_Kho.Location = new System.Drawing.Point(0, 332);
+            this.btn_Kho.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Kho.Name = "btn_Kho";
+            this.btn_Kho.Size = new System.Drawing.Size(197, 86);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             this.btn_Kho.TabIndex = 20;
             this.btn_Kho.Text = "Kho";
             this.btn_Kho.UseVisualStyleBackColor = false;
@@ -214,7 +274,11 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
+<<<<<<< HEAD
      
+=======
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // pictureBox2
             // 
@@ -228,7 +292,11 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+<<<<<<< HEAD
 
+=======
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // panel3
             // 
@@ -242,7 +310,11 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1253, 58);
             this.panel3.TabIndex = 7;
+<<<<<<< HEAD
           
+=======
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // lb_Clock
             // 
@@ -254,7 +326,11 @@
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 84;
             this.lb_Clock.Text = "00:00:00 AM";
+<<<<<<< HEAD
        
+=======
+            this.lb_Clock.Click += new System.EventHandler(this.lb_Clock_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // pictureBox8
             // 
@@ -267,7 +343,11 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 83;
             this.pictureBox8.TabStop = false;
+<<<<<<< HEAD
         
+=======
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // pictureBox1
             // 
@@ -294,7 +374,11 @@
             this.label2.Size = new System.Drawing.Size(225, 41);
             this.label2.TabIndex = 3;
             this.label2.Text = "Bike Shop QHP";
+<<<<<<< HEAD
      
+=======
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // pnl_Main
             // 
@@ -303,12 +387,17 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(1253, 712);
             this.pnl_Main.TabIndex = 8;
+<<<<<<< HEAD
             
+=======
+            this.pnl_Main.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Main_Paint);
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+<<<<<<< HEAD
             // btn_BanHang
             // 
             this.btn_BanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -326,6 +415,8 @@
             this.btn_BanHang.UseVisualStyleBackColor = false;
             this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
             // 
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
             // F_QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,6 +462,9 @@
         private Panel pnl_Main;
         private System.Windows.Forms.Timer timer1;
         private Label lb_Clock;
+<<<<<<< HEAD
         private Button btn_BanHang;
+=======
+>>>>>>> 33903dd8391e673206b1354cd8dda36707fc3556
     }
 }
