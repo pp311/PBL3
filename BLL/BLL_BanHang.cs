@@ -108,26 +108,7 @@ namespace Do_An.BLL
             }
             return msg;
         }
-        public DataTable GetDataTableChiTietHoaDonByIDHoaDon(int idhd)
-        {
-            var l = from cthd in db.chitiethoadons
-                    where cthd.ID_HoaDon == idhd
-                    select new
-                    {
-                        ID_LoHang = cthd.ID_LoHang,
-                        ID_SanPham = cthd.kho.ID_SanPham,
-                        TenSanPham = cthd.kho.sanpham.Ten,
-                        SoLuongMua = cthd.SoLuongMua,
-                        GiamGia = cthd.GiamGia,
-                        DonGia = cthd.DonGia,
-                    };
-            return Helper.ToDataTable(l.ToList());
-        }
-        public hoadon GetThongTinHoaDonByIDHoaDon(int id)
-        {
-            var l = db.hoadons.Where(h => h.ID_HoaDon == id).First();
-            return l;
-        }
+        
 
     }
 }

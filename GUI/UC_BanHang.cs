@@ -34,9 +34,17 @@ namespace Do_An
 
         private void btn_LapHD_Click(object sender, EventArgs e)
         {
-            Form_HoaDon fhd = new Form_HoaDon(1, 0, danhSachMuaHang);
-            fhd.loadTable = new Action(Show);
-            fhd.Show();
+            if(dgv_DanhSachMua.Rows.Count > 0)
+            {
+                Form_HoaDon fhd = new Form_HoaDon(1, 0, danhSachMuaHang);
+                fhd.loadTable = new Action(Show);
+                fhd.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất 1 sản phẩm");
+            }
         }
         public void Show()
         {

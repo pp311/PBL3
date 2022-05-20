@@ -146,11 +146,13 @@ namespace Do_An
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            DialogResult dlr = MessageBox.Show("Bạn muốn thoát chương trình?",
+                       "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
+            {
+                this.Close();
+            }
 
-            X x = new X(this);
-            x.Show();
-          //  this.Dispose();
-           
         }
 
     }

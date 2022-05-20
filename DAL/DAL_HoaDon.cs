@@ -93,8 +93,20 @@ namespace Do_An.DAL
 
         public void DelHoaDon(string id_hd)
         {
+            string q1 = "select ID_LoHang from chitiethoadon where chitiethoadon.ID_HoaDon=" + id_hd;
+            DataTable dt = DBHelper.Instance.GetRecords(q1);
+            int id_lh = -1;
+            foreach (DataRow i in dt.Rows)
+            {
+                id_lh = Convert.ToInt32(i["ID_LoHang"]);
+            }
+            //them san pham vao lai kho
+            string q2 = "update kho set SoLuong = SoLuong + (select SoLuongMua from chitiethoadon where ID_LoHang =" + id_lh + "and ID_HoaDon =" + id_hd + " ) where ID_LoHang =" + id_lh;
+            DBHelper.Instance.ExcuteDB(q2);
+            //xoa chi tiet hoa don
             string query = "delete from chitiethoadon where ID_HoaDon =" + id_hd;
             DBHelper.Instance.ExcuteDB(query);
+            //xoa hoa don
             string query_delidhd = "delete from hoadon where ID_HoaDon =" + id_hd;
             DBHelper.Instance.ExcuteDB(query_delidhd);
         }

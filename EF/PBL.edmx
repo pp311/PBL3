@@ -101,10 +101,12 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Key>
             <PropertyRef Name="ID_BaoHanh" />
           </Key>
-          <Property Name="ID_BaoHanh" Type="int" Nullable="false" />
+          <Property Name="ID_BaoHanh" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_HoaDon" Type="int" Nullable="false" />
+          <Property Name="ID_LoHang" Type="int" Nullable="false" />
           <Property Name="ID_SanPham" Type="int" Nullable="false" />
           <Property Name="HanBaoHanh" Type="date" />
+          <Property Name="Serial" Type="nvarchar" MaxLength="255" Nullable="false" />
         </EntityType>
         <Association Name="FK_ChiTietHoaDon_HoaDon">
           <End Role="hoadon" Type="Self.hoadon" Multiplicity="1" />
@@ -202,7 +204,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ThongTinBaoHanh_HoaDon">
+        <Association Name="FK_thongtinbaohanh_hoadon">
           <End Role="hoadon" Type="Self.hoadon" Multiplicity="1" />
           <End Role="thongtinbaohanh" Type="Self.thongtinbaohanh" Multiplicity="*" />
           <ReferentialConstraint>
@@ -260,7 +262,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
             <End Role="taikhoan" EntitySet="taikhoan" />
             <End Role="nhanvien" EntitySet="nhanvien" />
           </AssociationSet>
-          <AssociationSet Name="FK_ThongTinBaoHanh_HoaDon" Association="Self.FK_ThongTinBaoHanh_HoaDon">
+          <AssociationSet Name="FK_thongtinbaohanh_hoadon" Association="Self.FK_thongtinbaohanh_hoadon">
             <End Role="hoadon" EntitySet="hoadon" />
             <End Role="thongtinbaohanh" EntitySet="thongtinbaohanh" />
           </AssociationSet>
@@ -282,7 +284,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Property Name="TongTien" Type="Int32" Nullable="false" />
           <NavigationProperty Name="chitiethoadons" Relationship="Self.FK_ChiTietHoaDon_HoaDon" FromRole="hoadon" ToRole="chitiethoadon" />
           <NavigationProperty Name="nhanvien" Relationship="Self.FK_HoaDon_NhanVien" FromRole="hoadon" ToRole="nhanvien" />
-          <NavigationProperty Name="thongtinbaohanhs" Relationship="Self.FK_ThongTinBaoHanh_HoaDon" FromRole="hoadon" ToRole="thongtinbaohanh" />
+          <NavigationProperty Name="thongtinbaohanhs" Relationship="Self.FK_thongtinbaohanh_hoadon" FromRole="hoadon" ToRole="thongtinbaohanh" />
         </EntityType>
         <EntityType Name="kho">
           <Key>
@@ -351,11 +353,13 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Key>
             <PropertyRef Name="ID_BaoHanh" />
           </Key>
-          <Property Name="ID_BaoHanh" Type="Int32" Nullable="false" />
+          <Property Name="ID_BaoHanh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_HoaDon" Type="Int32" Nullable="false" />
+          <Property Name="ID_LoHang" Type="Int32" Nullable="false" />
           <Property Name="ID_SanPham" Type="Int32" Nullable="false" />
           <Property Name="HanBaoHanh" Type="DateTime" />
-          <NavigationProperty Name="hoadon" Relationship="Self.FK_ThongTinBaoHanh_HoaDon" FromRole="thongtinbaohanh" ToRole="hoadon" />
+          <Property Name="Serial" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="hoadon" Relationship="Self.FK_thongtinbaohanh_hoadon" FromRole="thongtinbaohanh" ToRole="hoadon" />
           <NavigationProperty Name="lichsubaohanhs" Relationship="Self.FK_LichSuBaoHanh_ThongTinBaoHanh" FromRole="thongtinbaohanh" ToRole="lichsubaohanh" />
         </EntityType>
         <EntityType Name="chitiethoadon">
@@ -409,7 +413,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_ThongTinBaoHanh_HoaDon">
+        <Association Name="FK_thongtinbaohanh_hoadon">
           <End Role="hoadon" Type="Self.hoadon" Multiplicity="1" />
           <End Role="thongtinbaohanh" Type="Self.thongtinbaohanh" Multiplicity="*" />
           <ReferentialConstraint>
@@ -511,7 +515,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
             <End Role="nhanvien" EntitySet="nhanviens" />
             <End Role="hoadon" EntitySet="hoadons" />
           </AssociationSet>
-          <AssociationSet Name="FK_ThongTinBaoHanh_HoaDon" Association="Self.FK_ThongTinBaoHanh_HoaDon">
+          <AssociationSet Name="FK_thongtinbaohanh_hoadon" Association="Self.FK_thongtinbaohanh_hoadon">
             <End Role="hoadon" EntitySet="hoadons" />
             <End Role="thongtinbaohanh" EntitySet="thongtinbaohanhs" />
           </AssociationSet>
@@ -621,8 +625,10 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
               <MappingFragment StoreEntitySet="thongtinbaohanh">
                 <ScalarProperty Name="ID_BaoHanh" ColumnName="ID_BaoHanh" />
                 <ScalarProperty Name="ID_HoaDon" ColumnName="ID_HoaDon" />
+                <ScalarProperty Name="ID_LoHang" ColumnName="ID_LoHang" />
                 <ScalarProperty Name="ID_SanPham" ColumnName="ID_SanPham" />
                 <ScalarProperty Name="HanBaoHanh" ColumnName="HanBaoHanh" />
+                <ScalarProperty Name="Serial" ColumnName="Serial" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

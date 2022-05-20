@@ -27,9 +27,9 @@ namespace Do_An
             tb_IDHoaDon.Enabled = false;
             if (ID_HoaDon != 0)
             {
-                dt = BLL_BanHang.Instance.GetDataTableChiTietHoaDonByIDHoaDon(ID_HoaDon);
+                dt = BLL_HoaDon.Instance.GetDataTableChiTietHoaDonByIDHoaDon(ID_HoaDon);
                 tb_IDHoaDon.Text = ID_HoaDon.ToString();
-                hoadon hd = BLL_BanHang.Instance.GetThongTinHoaDonByIDHoaDon(ID_HoaDon);
+                hoadon hd = BLL_HoaDon.Instance.GetThongTinHoaDonByIDHoaDon(ID_HoaDon);
                 tb_TenKhachHang.Text = hd.TenKhachHang;
                 tb_SoDienThoai.Text = hd.SoDienThoai;
             }
@@ -38,6 +38,14 @@ namespace Do_An
                 dt = danhSachMuaHang;
             }
             dgv_Table.DataSource = dt;
+            dgv_Table.Columns["ID_LoHang"].HeaderText = "ID lô hàng";
+            dgv_Table.Columns["ID_SanPham"].HeaderText = "ID sản phẩm";
+            dgv_Table.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
+            dgv_Table.Columns["SoLuongMua"].HeaderText = "Số lượng mua";
+            dgv_Table.Columns["GiamGia"].HeaderText = "% Giảm giá";
+            dgv_Table.Columns["DonGia"].HeaderText = "Đơn giá";
+
+
             GUI(mode);
         }
         private void GUI(int mode)
@@ -68,7 +76,7 @@ namespace Do_An
             string tenKhachHang = tb_TenKhachHang.Text;
             string soDienThoai = tb_SoDienThoai.Text;
             bool isValid = true;
-            if (!tenKhachHang.All(c => char.IsLetter(c))) isValid = false;
+            if (!tenKhachHang.All(c => char.IsLetter(c) || char.IsWhiteSpace(c))) isValid = false;
             if (!soDienThoai.All(c => char.IsNumber(c))) isValid = false;
             if (!isValid)
             {

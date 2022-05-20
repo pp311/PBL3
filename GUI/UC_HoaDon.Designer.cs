@@ -43,6 +43,7 @@
             this.tb_KhachHang = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_AddThongTinBaoHanh = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +105,7 @@
             this.tb_IdNhanVien.Location = new System.Drawing.Point(205, 20);
             this.tb_IdNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_IdNhanVien.Name = "tb_IdNhanVien";
-            this.tb_IdNhanVien.Size = new System.Drawing.Size(289, 33);
+            this.tb_IdNhanVien.Size = new System.Drawing.Size(289, 34);
             this.tb_IdNhanVien.TabIndex = 87;
             // 
             // label5
@@ -125,7 +126,7 @@
             this.tb_SoDienThoai.Location = new System.Drawing.Point(784, 62);
             this.tb_SoDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_SoDienThoai.Name = "tb_SoDienThoai";
-            this.tb_SoDienThoai.Size = new System.Drawing.Size(289, 33);
+            this.tb_SoDienThoai.Size = new System.Drawing.Size(289, 34);
             this.tb_SoDienThoai.TabIndex = 86;
             // 
             // panel2
@@ -140,18 +141,19 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.tb_KhachHang);
             this.panel2.Location = new System.Drawing.Point(32, 60);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1203, 201);
             this.panel2.TabIndex = 120;
             // 
             // dtp_NgayTao
             // 
+            this.dtp_NgayTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayTao.Location = new System.Drawing.Point(205, 70);
             this.dtp_NgayTao.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.dtp_NgayTao.MaxDate = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
             this.dtp_NgayTao.Name = "dtp_NgayTao";
-            this.dtp_NgayTao.Size = new System.Drawing.Size(289, 22);
+            this.dtp_NgayTao.Size = new System.Drawing.Size(289, 26);
             this.dtp_NgayTao.TabIndex = 141;
             this.dtp_NgayTao.Value = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
             // 
@@ -217,7 +219,7 @@
             this.tb_KhachHang.Location = new System.Drawing.Point(784, 18);
             this.tb_KhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_KhachHang.Name = "tb_KhachHang";
-            this.tb_KhachHang.Size = new System.Drawing.Size(289, 33);
+            this.tb_KhachHang.Size = new System.Drawing.Size(289, 34);
             this.tb_KhachHang.TabIndex = 117;
             // 
             // dataGridView1
@@ -232,6 +234,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(32, 267);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -252,17 +255,35 @@
             this.label3.Text = "Quản lí hoá đơn";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btn_AddThongTinBaoHanh
+            // 
+            this.btn_AddThongTinBaoHanh.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_AddThongTinBaoHanh.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_AddThongTinBaoHanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_AddThongTinBaoHanh.FlatAppearance.BorderSize = 0;
+            this.btn_AddThongTinBaoHanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AddThongTinBaoHanh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_AddThongTinBaoHanh.Location = new System.Drawing.Point(1124, 510);
+            this.btn_AddThongTinBaoHanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_AddThongTinBaoHanh.Name = "btn_AddThongTinBaoHanh";
+            this.btn_AddThongTinBaoHanh.Size = new System.Drawing.Size(148, 57);
+            this.btn_AddThongTinBaoHanh.TabIndex = 125;
+            this.btn_AddThongTinBaoHanh.Text = "Thêm thông tin bảo hành";
+            this.btn_AddThongTinBaoHanh.UseVisualStyleBackColor = false;
+            this.btn_AddThongTinBaoHanh.Click += new System.EventHandler(this.btn_AddThongTinBaoHanh_Click);
+            // 
             // UC_HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btn_AddThongTinBaoHanh);
             this.Controls.Add(this.btn_Detail);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_HoaDon";
             this.Size = new System.Drawing.Size(1316, 702);
             this.panel2.ResumeLayout(false);
@@ -291,5 +312,6 @@
         private Label label3;
         private Button btn_Save;
         private DateTimePicker dtp_NgayTao;
+        private Button btn_AddThongTinBaoHanh;
     }
 }

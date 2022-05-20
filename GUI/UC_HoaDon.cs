@@ -1,6 +1,7 @@
 
 ﻿using Do_An.BLL;
 using Do_An.DTO;
+using Do_An.GUI;
 using System;
 
 using System.Collections.Generic;
@@ -174,5 +175,14 @@ namespace Do_An
             
         }
 
+        private void btn_AddThongTinBaoHanh_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count == 1)
+            {
+                int idhd = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID_HoaDon"].Value.ToString());
+                Form_AddSanPhamBaoHanh f = new Form_AddSanPhamBaoHanh(idhd);
+                f.Show();
+            } 
+        }
     }
 }

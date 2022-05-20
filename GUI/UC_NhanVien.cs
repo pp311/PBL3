@@ -86,15 +86,15 @@ namespace Do_An
         {
 
             dtlv_nv.DataSource = BLL_NhanVien.Instance.GetAllNhanVien();
-            dtlv_nv.Columns[0].HeaderText = "ID_NhanVien";
-            dtlv_nv.Columns[1].HeaderText = "ID_TaiKhoan";
-            dtlv_nv.Columns[2].HeaderText = "TenNhanVien";
-            dtlv_nv.Columns[3].HeaderText = "NgaySinh";
-            dtlv_nv.Columns[4].HeaderText = "GioiTinh";
-            dtlv_nv.Columns[5].HeaderText = "ViTri";
-            dtlv_nv.Columns[6].HeaderText = "SoDienThoai";
-            dtlv_nv.Columns[7].HeaderText = "DiaChi";
-            dtlv_nv.Columns[8].HeaderText = "TaiKhoan";
+            dtlv_nv.Columns[0].HeaderText = "ID nhân viên";
+            dtlv_nv.Columns[1].HeaderText = "ID tài khoản";
+            dtlv_nv.Columns[2].HeaderText = "tên nhân viên";
+            dtlv_nv.Columns[3].HeaderText = "Ngày sinh";
+            dtlv_nv.Columns[4].HeaderText = "Giới tính";
+            dtlv_nv.Columns[5].HeaderText = "Vị trí";
+            dtlv_nv.Columns[6].HeaderText = "Số điện thoại";
+            dtlv_nv.Columns[7].HeaderText = "Địa chỉ";
+            dtlv_nv.Columns[8].HeaderText = "Tên tài khoản";
             //dataGridView1.Columns[0].HeaderText = "ID_NhanVien";
         }
         
@@ -310,101 +310,7 @@ namespace Do_An
             }
         }
 
-        private void dtlv_nv_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tb_TaiKhoan_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_DiaChi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_SoDienThoai_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rb_Nam_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rb_Nu_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtp_NgaySinh_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbb_ViTri_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_TenNhanVien_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_IdNhanVien_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void UC_NhanVien_Load(object sender, EventArgs e)
         {
             BLL_NhanVien.Instance.GetAllNhanVien();

@@ -5,10 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Do_An.DTO;
 using Do_An.DAL;
+using Do_An.EF;
+
 namespace Do_An.BLL
 {
    public class BLL_NhanVien
     {
+        PBLEntities db;
         private static BLL_NhanVien _instance;
         public static BLL_NhanVien Instance
         {
@@ -22,7 +25,9 @@ namespace Do_An.BLL
             }
             private set { }
         }
-        private BLL_NhanVien() { }
+        private BLL_NhanVien() {
+            db = new PBLEntities();
+        }
 
 
         DAL_NhanVien dsnv = new DAL_NhanVien();
@@ -75,6 +80,11 @@ namespace Do_An.BLL
         public void Update(NhanVien nv)
         {
             DAL_NhanVien.Instance.DAL_UpdateNhanVien(nv);
+        }
+
+        public string GetTenNhanVien(int id)
+        {
+            return db.nhanviens.Where(p => p.ID_NhanVien == id).First()?.TenNhanVien ?? "";
         }
 
 

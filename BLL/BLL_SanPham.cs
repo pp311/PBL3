@@ -175,5 +175,13 @@ namespace Do_An.BLL
                 AddThongTinSanPham(data);
             }
         }    
+        public int GetThoiHanBaoHanh(int ID_SanPham)
+        {
+            return db.chitietsanphams.Where(p => p.ID_SanPham == ID_SanPham).First()?.ThoiHanBaoHanh ?? 0;
+        }
+        public string GetTenSanPham(int ID_SanPham)
+        {
+            return db.sanphams.Where(p => p.ID_SanPham == ID_SanPham).First()?.Ten ?? "";
+        }
     }
 }

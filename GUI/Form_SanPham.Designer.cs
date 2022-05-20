@@ -333,7 +333,7 @@
             this.dgv_ThongSoKyThuat.Name = "dgv_ThongSoKyThuat";
             this.dgv_ThongSoKyThuat.RowHeadersWidth = 51;
             this.dgv_ThongSoKyThuat.RowTemplate.Height = 29;
-            this.dgv_ThongSoKyThuat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_ThongSoKyThuat.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgv_ThongSoKyThuat.Size = new System.Drawing.Size(1018, 379);
             this.dgv_ThongSoKyThuat.TabIndex = 131;
             // 
@@ -367,7 +367,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_SanPham";
             this.TopMost = true;
-
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_GiaBan)).EndInit();

@@ -22,8 +22,10 @@ namespace Do_An.EF
     
         public int ID_BaoHanh { get; set; }
         public int ID_HoaDon { get; set; }
+        public int ID_LoHang { get; set; }
         public int ID_SanPham { get; set; }
         public Nullable<System.DateTime> HanBaoHanh { get; set; }
+        public string Serial { get; set; }
     
         public virtual hoadon hoadon { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
