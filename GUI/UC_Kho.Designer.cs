@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.num_GiamGia = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.num_Gia = new System.Windows.Forms.NumericUpDown();
             this.num_SoLuongNhap = new System.Windows.Forms.NumericUpDown();
             this.dtp_NgayNhap = new System.Windows.Forms.DateTimePicker();
@@ -44,13 +46,11 @@
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_NhapSP = new System.Windows.Forms.Button();
             this.btn_XemCT = new System.Windows.Forms.Button();
-            this.num_GiamGia = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_GiamGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_SoLuongNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_GiamGia)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -70,6 +70,27 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1202, 185);
             this.panel2.TabIndex = 129;
+            // 
+            // num_GiamGia
+            // 
+            this.num_GiamGia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.num_GiamGia.Location = new System.Drawing.Point(185, 113);
+            this.num_GiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.num_GiamGia.Name = "num_GiamGia";
+            this.num_GiamGia.Size = new System.Drawing.Size(290, 36);
+            this.num_GiamGia.TabIndex = 141;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(42, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 27);
+            this.label1.TabIndex = 140;
+            this.label1.Text = "% giảm giá";
             // 
             // num_Gia
             // 
@@ -122,7 +143,7 @@
             this.dtp_NgayNhap.Location = new System.Drawing.Point(843, 20);
             this.dtp_NgayNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_NgayNhap.Name = "dtp_NgayNhap";
-            this.dtp_NgayNhap.Size = new System.Drawing.Size(287, 35);
+            this.dtp_NgayNhap.Size = new System.Drawing.Size(287, 36);
             this.dtp_NgayNhap.TabIndex = 137;
             // 
             // btn_Save
@@ -148,7 +169,7 @@
             this.tb_IDSP.Location = new System.Drawing.Point(185, 20);
             this.tb_IDSP.Margin = new System.Windows.Forms.Padding(2);
             this.tb_IDSP.Name = "tb_IDSP";
-            this.tb_IDSP.Size = new System.Drawing.Size(290, 33);
+            this.tb_IDSP.Size = new System.Drawing.Size(290, 34);
             this.tb_IDSP.TabIndex = 87;
             // 
             // label5
@@ -300,32 +321,6 @@
             this.btn_XemCT.UseVisualStyleBackColor = false;
             this.btn_XemCT.Click += new System.EventHandler(this.btn_XemCT_Click);
             // 
-            // num_GiamGia
-            // 
-            this.num_GiamGia.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.num_GiamGia.Location = new System.Drawing.Point(185, 113);
-            this.num_GiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.num_GiamGia.Maximum = new decimal(new int[] {
-            99999999,
-            0,
-            0,
-            0});
-            this.num_GiamGia.Name = "num_GiamGia";
-            this.num_GiamGia.Size = new System.Drawing.Size(290, 36);
-            this.num_GiamGia.TabIndex = 141;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(42, 116);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 27);
-            this.label1.TabIndex = 140;
-            this.label1.Text = "% giảm giá";
-            // 
             // UC_Kho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -341,10 +336,10 @@
             this.Size = new System.Drawing.Size(1315, 702);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_GiamGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_Gia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_SoLuongNhap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_GiamGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
