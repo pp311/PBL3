@@ -164,16 +164,26 @@ namespace Do_An.BLL
             if (msg == "") return $"Xoá thành công {IDList.Count - errorCount} sản phẩm";
             return msg;
         }
-        public void ExcuteDB(ChiTietSanPhamView data)
+        public string ExcuteDB(ChiTietSanPhamView data)
         {
+            string msg = "";
             if(data.ID_SanPham != 0)
             {
+                if (db.sanphams.Any(p => p.Ten == data.Ten && p.ID_SanPham != data.ID_SanPham))
+                {
+                    return "Thông tin sản phẩm này đã tồn tại";
+                }
                 UpdateThongTinSanPham(data);
             }
             else
             {
+                if (db.sanphams.Any(p => p.Ten == data.Ten))
+                {
+                    return "Thông tin sản phẩm này đã tồn tại";
+                }
                 AddThongTinSanPham(data);
             }
+            return msg;
         }    
         public int GetThoiHanBaoHanh(int ID_SanPham)
         {
@@ -182,6 +192,10 @@ namespace Do_An.BLL
         public string GetTenSanPham(int ID_SanPham)
         {
             return db.sanphams.Where(p => p.ID_SanPham == ID_SanPham).First()?.Ten ?? "";
+        }
+        public string GetThongSoKyThuatByIDSanPham(int ID_SanPham)
+        {
+            return db.chitietsanphams.FirstOrDefault(p => p.ID_SanPham == ID_SanPham)?.ThongSoKyThuat ?? "";
         }
     }
 }

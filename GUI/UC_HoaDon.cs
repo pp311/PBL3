@@ -64,10 +64,15 @@ namespace Do_An
             dataGridView1.Columns[3].HeaderText = "Tên Khách Hàng";
             dataGridView1.Columns[4].HeaderText = "Số điện thoại";
             dataGridView1.Columns[5].HeaderText = "Tổng Tiền";
+            dataGridView1.Columns[5].DefaultCellStyle.Format = "N0";
         }
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if (Validate())
+            if(Convert.ToInt32(tb_IdNhanVien.Text) != CurrentUser.ID_NhanVien || CurrentUser.ViTri != "Quản lý")
+            {
+                MessageBox.Show("Lỗi phân quyền: Không thể chỉnh sửa hóa đơn do nhân viên khác tạo nếu không phải là quản lý");
+            }
+            else if (Validate())
             {
                 int IDHoaDon = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID_HoaDon"].Value);
                 HoaDon hd = BLL_HoaDon.Instance.GetHoaDonByID(IDHoaDon);
@@ -159,20 +164,29 @@ namespace Do_An
                 DialogResult dia = MessageBox.Show("Bạn chắc chắn muốn xóa hóa đơn này?", "Xác nhận xóa", MessageBoxButtons.YesNo);
                 if (dia == DialogResult.Yes)
                 {
-                    if (dataGridView1.SelectedRows.Count > 0)
+                    List<string> list = new List<string>();
+                    foreach (DataGridViewRow i in dataGridView1.SelectedRows)
                     {
-                        List<string> list = new List<string>();
-                        foreach (DataGridViewRow i in dataGridView1.SelectedRows)
+                        string id_nv = i.Cells["ID_NhanVien"].Value.ToString();
+                        if (id_nv == CurrentUser.ID_NhanVien.ToString() || CurrentUser.ViTri == "Quản lý")
                         {
                             list.Add(i.Cells["ID_HoaDon"].Value.ToString());
                         }
-                        BLL_HoaDon.Instance.DelHoaDon(list);
-                        dataGridView1.DataSource = BLL_HoaDon.Instance.GetAllHoaDon();
+                        else
+                        {
+                            MessageBox.Show("Lỗi phân quyền: Không thể xóa hóa đơn do nhân viên khác tạo nếu không phải là quản lý");
+                            return;
+                        }
                     }
+                    BLL_HoaDon.Instance.DelHoaDon(list);
+                    dataGridView1.DataSource = BLL_HoaDon.Instance.GetAllHoaDon();
                 }
-
             }
-            
+            else
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất 1 hóa đơn để xoá!");
+            }
+
         }
 
         private void btn_AddThongTinBaoHanh_Click(object sender, EventArgs e)

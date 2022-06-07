@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Do_An.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,13 @@ namespace Do_An
         {
             InitializeComponent();
             StartTimer();
-
+            lb_Name.Text = CurrentUser.Name;
+            lb_ID.Text = CurrentUser.ID_NhanVien.ToString();
         }
-
+        public void ChangeName()
+        {
+            lb_Name.Text = CurrentUser.Name;
+        }
         private void StartTimer()
         {
             t = new System.Windows.Forms.Timer();
@@ -46,7 +51,10 @@ namespace Do_An
                 UC_HoaDon.Instance.BringToFront();
             }
             else
+            {
                 UC_HoaDon.Instance.BringToFront();
+                UC_HoaDon.Instance.Show();
+            }
         }
 
         private void btn_BanHangBH_Click(object sender, EventArgs e)
@@ -58,7 +66,10 @@ namespace Do_An
                 UC_BanHang.Instance.BringToFront();
             }
             else
+            {
                 UC_BanHang.Instance.BringToFront();
+                UC_BanHang.Instance.Show();
+            }
         }
 
         private void btn_SanPhamBH_Click(object sender, EventArgs e)
@@ -80,6 +91,7 @@ namespace Do_An
         {
             if (!pnl_MainBH.Controls.Contains(UC_CaNhan.Instance))
             {
+                UC_CaNhan.Instance.changeName += ChangeName;
                 pnl_MainBH.Controls.Add(UC_CaNhan.Instance);
                 UC_CaNhan.Instance.Dock = DockStyle.Fill;
                 UC_CaNhan.Instance.BringToFront();

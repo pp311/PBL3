@@ -151,7 +151,7 @@
             this.dtp_NgayTao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgayTao.Location = new System.Drawing.Point(205, 70);
             this.dtp_NgayTao.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dtp_NgayTao.MaxDate = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
+            this.dtp_NgayTao.MaxDate = new System.DateTime(2999, 12, 31, 0, 0, 0, 0);
             this.dtp_NgayTao.Name = "dtp_NgayTao";
             this.dtp_NgayTao.Size = new System.Drawing.Size(289, 26);
             this.dtp_NgayTao.TabIndex = 141;

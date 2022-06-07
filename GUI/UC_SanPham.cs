@@ -52,6 +52,7 @@ namespace Do_An
             dgv_TableSanPham.Columns["Ten"].HeaderText = "Tên Sản phẩm";
             dgv_TableSanPham.Columns["PhanLoai"].HeaderText = "Phân loại";
             dgv_TableSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
+            dgv_TableSanPham.Columns["GiaBan"].DefaultCellStyle.Format = "N0";
         }
 
         private void cbb_Type_SelectedIndexChanged(object sender, EventArgs e)

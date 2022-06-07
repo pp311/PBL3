@@ -38,6 +38,7 @@ namespace Do_An
             dgv_DanhSachBaoHanh.Columns["ID_HoaDon"].HeaderText = "ID bóa đơn";
             dgv_DanhSachBaoHanh.Columns["ID_LoHang"].HeaderText = "ID lô hàng";
             dgv_DanhSachBaoHanh.Columns["ID_SanPham"].HeaderText = "ID sản phẩm";
+            dgv_DanhSachBaoHanh.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
             dgv_DanhSachBaoHanh.Columns["HanBaoHanh"].HeaderText = "Hạn bảo hành";
             dgv_DanhSachBaoHanh.Columns["Serial"].HeaderText = "Serial";
 
@@ -55,6 +56,7 @@ namespace Do_An
         {
             dgv_DangBaoHanh.DataSource = BLL_BaoHanh.Instance.GetSanPhamDangBaoHanh();
             dgv_DangBaoHanh.Columns["ID_BaoHanh"].HeaderText = "ID bảo hành";
+            dgv_DangBaoHanh.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
             dgv_DangBaoHanh.Columns["ID_NhanVien"].HeaderText = "ID nhân viên";
             dgv_DangBaoHanh.Columns["TinhTrang"].HeaderText = "Tình trạng";
             dgv_DangBaoHanh.Columns["NgayBaoHanh"].HeaderText = "Ngày bảo hành";
@@ -66,6 +68,7 @@ namespace Do_An
             lb_HanBaoHanh.Text = Convert.ToDateTime(dr.Cells["HanBaoHanh"].Value).ToString("dd/MM/yyyy");
             lb_IDBaoHanh.Text = dr.Cells["ID_BaoHanh"].Value.ToString();
             lb_Serial.Text = dr.Cells["Serial"].Value.ToString();
+            lb_TenSP.Text = dr.Cells["TenSanPham"].Value.ToString();
             EnableEdit(false);
             int ID_BaoHanh = Convert.ToInt32(dr.Cells["ID_BaoHanh"].Value.ToString());
             LoadTableLichSuBaoHanh(ID_BaoHanh);
@@ -175,6 +178,7 @@ namespace Do_An
             int stt = Convert.ToInt32(dr.Cells["STT"].Value.ToString());
             lichsubaohanh lsbh = BLL_BaoHanh.Instance.GetLichSuBaoHanhBySTT(stt);
             lb_STT.Text = dr.Cells["STT"].Value.ToString();
+            lb_TenSP.Text = dr.Cells["TenSanPham"].Value.ToString();
             tb_IDNhanVien.Text = lsbh.ID_NhanVien.ToString();
             tb_GhiChuBaoHanh.Text = lsbh.GhiChuBaoHanh;
             cbb_TinhTrang.SelectedItem = lsbh.TinhTrang;

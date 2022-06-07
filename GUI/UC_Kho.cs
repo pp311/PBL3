@@ -51,11 +51,19 @@ namespace Do_An
             dgv_Table.DataSource = BLL_Kho.Instance.GetDataTableKho();
             dgv_Table.Columns["ID_LoHang"].HeaderText = "ID lô hàng";
             dgv_Table.Columns["ID_SanPham"].HeaderText = "ID sản phẩm";
+            dgv_Table.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
             dgv_Table.Columns["NgayNhap"].HeaderText = "Ngày nhập";
             dgv_Table.Columns["SoLuongNhap"].HeaderText = "Số lượng nhập";
+            dgv_Table.Columns["SoLuongNhap"].DefaultCellStyle.Format = "N0";
             dgv_Table.Columns["GiaMua"].HeaderText = "Giá nhập";
+            dgv_Table.Columns["GiaMua"].DefaultCellStyle.Format = "N0";
+            dgv_Table.Columns["GiaBan"].HeaderText = "Giá bán";
+            dgv_Table.Columns["GiaBan"].DefaultCellStyle.Format = "N0";
+            dgv_Table.Columns["GiaKhuyenMai"].HeaderText = "Giá khuyến mãi";
+            dgv_Table.Columns["GiaKhuyenMai"].DefaultCellStyle.Format = "N0";
             dgv_Table.Columns["GiamGia"].HeaderText = "% giảm giá";
             dgv_Table.Columns["SoLuong"].HeaderText = "Số lượng còn";
+            dgv_Table.Columns["SoLuong"].DefaultCellStyle.Format = "N0";
         }
 
 
@@ -87,7 +95,7 @@ namespace Do_An
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn đúng 1 hàng để chỉnh sửa");
+                MessageBox.Show("Vui lòng chọn đúng 1 lô hàng để chỉnh sửa");
             }
         }
         private void EnableEdit(bool b)
@@ -134,6 +142,7 @@ namespace Do_An
                 };
                 string msg = BLL_Kho.Instance.ExcuteKho(data);
                 MessageBox.Show(msg);
+                EnableEdit(false);
                 LoadTable();
                 mode = 2;
             }
@@ -161,19 +170,24 @@ namespace Do_An
             string msg;
             if (dgv_Table.SelectedRows.Count >= 1)
             {
-                List<int> delList = new List<int>();
-                foreach (DataGridViewRow row in dgv_Table.SelectedRows)
+                DialogResult dia = MessageBox.Show("Bạn chắc chắn muốn xóa lô hàng này?", "Xác nhận xóa", MessageBoxButtons.YesNo);
+                if (dia == DialogResult.Yes)
                 {
-                    delList.Add(Convert.ToInt32(row.Cells["ID_LoHang"].Value));
+                    List<int> delList = new List<int>();
+                    foreach (DataGridViewRow row in dgv_Table.SelectedRows)
+                    {
+                        delList.Add(Convert.ToInt32(row.Cells["ID_LoHang"].Value));
+                    }
+                    msg = BLL_Kho.Instance.DeleteThongTinNhapHang(delList);
+                    MessageBox.Show(msg);
+                    LoadTable();
                 }
-                msg = BLL_Kho.Instance.DeleteThongTinNhapHang(delList);
             }
             else
             {
-                msg = "Vui lòng chọn ít nhất 1 hàng để xoá!";
+                msg = "Vui lòng chọn ít nhất 1 lô hàng để xoá!";
+                MessageBox.Show(msg);
             }
-            MessageBox.Show(msg);
-            LoadTable();
         }
     }
 }

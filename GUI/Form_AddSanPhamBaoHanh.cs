@@ -77,8 +77,12 @@ namespace Do_An.GUI
             }
             if(allValid)
             {
-                BLL_HoaDon.Instance.SaveThongTinBaoHanh(data);
-                this.Close();
+                var (isSuccess, msg) = BLL_HoaDon.Instance.SaveThongTinBaoHanh(data);
+                MessageBox.Show(msg);
+                if (isSuccess)
+                {
+                    this.Close();
+                }
             }
             else
             {

@@ -36,13 +36,16 @@ namespace Do_An.BLL
             var l = from lh in db.khoes
                     select new
                     {
-                            ID_LoHang = lh.ID_LoHang,
-                            ID_SanPham = lh.ID_SanPham,
-                            GiaMua = lh.GiaMua,
-                            NgayNhap = lh.NgayNhap,
-                            SoLuongNhap = lh.SoLuongNhap,
-                            GiamGia = lh.GiamGia,
-                            SoLuong = lh.SoLuong,
+                        ID_LoHang = lh.ID_LoHang,
+                        ID_SanPham = lh.ID_SanPham,
+                        TenSanPham = lh.sanpham.Ten,
+                        NgayNhap = lh.NgayNhap,
+                        SoLuongNhap = lh.SoLuongNhap,
+                        SoLuong = lh.SoLuong,
+                        GiaMua = lh.GiaMua,
+                        GiaBan = lh.sanpham.GiaBan,
+                        GiamGia = lh.GiamGia,
+                        GiaKhuyenMai = lh.sanpham.GiaBan - lh.sanpham.GiaBan * lh.GiamGia / 100
                         };
                 return Helper.ToDataTable(l.ToList());
             }

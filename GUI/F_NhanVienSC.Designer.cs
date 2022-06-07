@@ -46,6 +46,9 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pnl_MainSC = new System.Windows.Forms.Panel();
+            this.lb_Name = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb_ID = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,6 +60,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.lb_ID);
+            this.panel2.Controls.Add(this.lb_Name);
             this.panel2.Controls.Add(this.btn_CaNhanSC);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_SanPhamSC);
@@ -93,10 +99,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(59, 169);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 174);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 47);
+            this.pictureBox1.Size = new System.Drawing.Size(54, 47);
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
@@ -204,7 +210,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(11, 218);
+            this.label4.Location = new System.Drawing.Point(11, 268);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 24);
@@ -228,7 +234,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = global::Do_An.Properties.Resources.logo_2;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(197, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,7 +260,7 @@
             this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lb_Clock.AutoSize = true;
             this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lb_Clock.Location = new System.Drawing.Point(957, 22);
+            this.lb_Clock.Location = new System.Drawing.Point(956, 15);
             this.lb_Clock.Name = "lb_Clock";
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 87;
@@ -277,7 +283,7 @@
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox8.Image = global::Do_An.Properties.Resources.dongho;
             this.pictureBox8.Location = new System.Drawing.Point(882, 6);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(69, 52);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -289,7 +295,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.Image = global::Do_An.Properties.Resources.xx;
             this.pictureBox3.Location = new System.Drawing.Point(1185, 2);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(66, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -305,6 +311,40 @@
             this.pnl_MainSC.Name = "pnl_MainSC";
             this.pnl_MainSC.Size = new System.Drawing.Size(1253, 712);
             this.pnl_MainSC.TabIndex = 9;
+            // 
+            // lb_Name
+            // 
+            this.lb_Name.AllowDrop = true;
+            this.lb_Name.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.lb_Name.Location = new System.Drawing.Point(11, 172);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(178, 63);
+            this.lb_Name.TabIndex = 29;
+            this.lb_Name.Text = "Name";
+            this.lb_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(11, 235);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 24);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "ID: ";
+            // 
+            // lb_ID
+            // 
+            this.lb_ID.AutoSize = true;
+            this.lb_ID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.lb_ID.Location = new System.Drawing.Point(86, 235);
+            this.lb_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_ID.Name = "lb_ID";
+            this.lb_ID.Size = new System.Drawing.Size(20, 24);
+            this.lb_ID.TabIndex = 32;
+            this.lb_ID.Text = "0";
             // 
             // F_NhanVienSC
             // 
@@ -353,5 +393,8 @@
         private PictureBox pictureBox8;
         private PictureBox pictureBox3;
         private Button btn_CaNhanSC;
+        private Label lb_Name;
+        private Label label5;
+        private Label lb_ID;
     }
 }

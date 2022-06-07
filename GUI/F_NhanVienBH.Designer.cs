@@ -43,6 +43,9 @@
             this.picture_setting = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_MainBH = new System.Windows.Forms.Panel();
+            this.lb_Name = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lb_ID = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,6 +57,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.lb_ID);
+            this.panel2.Controls.Add(this.lb_Name);
             this.panel2.Controls.Add(this.btn_CaNhanBH);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_BanHangBH);
@@ -149,7 +155,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(11, 218);
+            this.label4.Location = new System.Drawing.Point(11, 265);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(178, 24);
@@ -173,7 +179,7 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = global::Do_An.Properties.Resources.logo_2;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(197, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -199,7 +205,7 @@
             this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lb_Clock.AutoSize = true;
             this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lb_Clock.Location = new System.Drawing.Point(939, 22);
+            this.lb_Clock.Location = new System.Drawing.Point(939, 15);
             this.lb_Clock.Name = "lb_Clock";
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 87;
@@ -210,7 +216,7 @@
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox8.Image = global::Do_An.Properties.Resources.dongho;
             this.pictureBox8.Location = new System.Drawing.Point(865, 3);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(69, 52);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,7 +228,7 @@
             this.picture_setting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picture_setting.Image = global::Do_An.Properties.Resources.xx;
             this.picture_setting.Location = new System.Drawing.Point(1174, 0);
-            this.picture_setting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picture_setting.Margin = new System.Windows.Forms.Padding(2);
             this.picture_setting.Name = "picture_setting";
             this.picture_setting.Size = new System.Drawing.Size(59, 58);
             this.picture_setting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -250,6 +256,39 @@
             this.pnl_MainBH.Name = "pnl_MainBH";
             this.pnl_MainBH.Size = new System.Drawing.Size(1235, 675);
             this.pnl_MainBH.TabIndex = 8;
+            // 
+            // lb_Name
+            // 
+            this.lb_Name.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.lb_Name.Location = new System.Drawing.Point(11, 170);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(178, 57);
+            this.lb_Name.TabIndex = 28;
+            this.lb_Name.Text = "Name";
+            this.lb_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(11, 227);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 24);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "ID: ";
+            // 
+            // lb_ID
+            // 
+            this.lb_ID.AutoSize = true;
+            this.lb_ID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.lb_ID.Location = new System.Drawing.Point(86, 227);
+            this.lb_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_ID.Name = "lb_ID";
+            this.lb_ID.Size = new System.Drawing.Size(20, 24);
+            this.lb_ID.TabIndex = 34;
+            this.lb_ID.Text = "0";
             // 
             // F_NhanVienBH
             // 
@@ -294,5 +333,8 @@
         private PictureBox pictureBox8;
         private PictureBox picture_setting;
         private Button btn_CaNhanBH;
+        private Label lb_Name;
+        private Label label5;
+        private Label lb_ID;
     }
 }

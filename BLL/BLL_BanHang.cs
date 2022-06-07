@@ -33,6 +33,7 @@ namespace Do_An.BLL
         {
 
             var l = from lh in db.khoes
+                    where lh.SoLuong > 0
                     select new
                     {
                         ID_LoHang = lh.ID_LoHang,

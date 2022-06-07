@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Do_An.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,16 +19,20 @@ namespace Do_An
         {
             InitializeComponent();
             StartTimer();
-
-
+            lb_Name.Text = CurrentUser.Name;
+            lb_ID.Text = CurrentUser.ID_NhanVien.ToString();
         }
-
         private void StartTimer()
         {
             t = new System.Windows.Forms.Timer();
             t.Interval = 1000;
             t.Tick += new EventHandler(t_Tick);
             t.Enabled = true;
+        }
+
+        public void ChangeName()
+        {
+            lb_Name.Text = CurrentUser.Name;
         }
         
         private void timer1_Tick(object sender, EventArgs e)
@@ -44,6 +49,7 @@ namespace Do_An
         {
             if (!pnl_Main.Controls.Contains(UC_NhanVien.Instance))
             {
+                UC_NhanVien.Instance.changeName += ChangeName;
                 pnl_Main.Controls.Add(UC_NhanVien.Instance);
                 UC_NhanVien.Instance.Dock = DockStyle.Fill;
                 UC_NhanVien.Instance.BringToFront();
@@ -66,7 +72,7 @@ namespace Do_An
             else
             {
                 UC_Kho.Instance.BringToFront();
-                UC_Kho.Instance.Show();
+                UC_Kho.Instance.LoadTable();
             }
         }
 
@@ -74,6 +80,7 @@ namespace Do_An
         {
             if (!pnl_Main.Controls.Contains(UC_CaNhan.Instance))
             {
+                UC_CaNhan.Instance.changeName += ChangeName;
                 pnl_Main.Controls.Add(UC_CaNhan.Instance);
                 UC_CaNhan.Instance.Dock = DockStyle.Fill;
                 UC_CaNhan.Instance.BringToFront();
@@ -97,7 +104,10 @@ namespace Do_An
                 UC_HoaDon.Instance.BringToFront();
             }
             else
+            {
                 UC_HoaDon.Instance.BringToFront();
+                UC_HoaDon.Instance.Show();
+            }
         }
 
         private void btn_NhapHang_Click(object sender, EventArgs e)

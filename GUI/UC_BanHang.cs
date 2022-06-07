@@ -63,8 +63,10 @@ namespace Do_An
             dgv_DanhSachMua.Columns["ID_SanPham"].HeaderText = "ID sản phẩm";
             dgv_DanhSachMua.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
             dgv_DanhSachMua.Columns["SoLuongMua"].HeaderText = "Số lượng mua";
+            dgv_DanhSachMua.Columns["SoLuongMua"].DefaultCellStyle.Format = "N0";
             dgv_DanhSachMua.Columns["GiamGia"].HeaderText = "% giảm giá";
             dgv_DanhSachMua.Columns["DonGia"].HeaderText = "Đơn giá";
+            dgv_DanhSachMua.Columns["DonGia"].DefaultCellStyle.Format = "N0";
             dgv_SanPham.DataSource = BLL_BanHang.Instance.GetDataTableBanHang();
             dgv_SanPham.Columns["ID_LoHang"].HeaderText = "ID lô hàng";
             dgv_SanPham.Columns["ID_SanPham"].HeaderText = "ID sản phẩm";
@@ -72,10 +74,13 @@ namespace Do_An
             dgv_SanPham.Columns["PhanLoai"].HeaderText = "Phân loại";
             dgv_SanPham.Columns["NgayNhap"].HeaderText = "Ngày nhập";
             dgv_SanPham.Columns["SoLuongNhap"].HeaderText = "Số lượng nhập";
+            dgv_SanPham.Columns["SoLuongNhap"].DefaultCellStyle.Format = "N0";
             dgv_SanPham.Columns["SoLuong"].HeaderText = "Số lượng còn";
             dgv_SanPham.Columns["GiamGia"].HeaderText = "% giảm giá";
             dgv_SanPham.Columns["GiaBanGoc"].HeaderText = "Giá bán gốc";
+            dgv_SanPham.Columns["GiaBanGoc"].DefaultCellStyle.Format = "N0";
             dgv_SanPham.Columns["GiaKhuyenMai"].HeaderText = "Giá khuyến mãi";
+            dgv_SanPham.Columns["GiaKhuyenMai"].DefaultCellStyle.Format = "N0";
         }
 
 

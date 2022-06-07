@@ -38,6 +38,7 @@ namespace Do_An.BLL
                         ID_HoaDon = ttbh.ID_HoaDon,
                         ID_LoHang = ttbh.ID_LoHang,
                         ID_SanPham = ttbh.ID_SanPham,
+                        TenSanPham = ttbh.hoadon.chitiethoadons.FirstOrDefault().kho.sanpham.Ten,
                         HanBaoHanh = ttbh.HanBaoHanh,
                         Serial = ttbh.Serial
                     }).ToList();
@@ -54,6 +55,7 @@ namespace Do_An.BLL
                          ID_HoaDon = ttbh.ID_HoaDon,
                          ID_LoHang = ttbh.ID_LoHang,
                          ID_SanPham = ttbh.ID_SanPham,
+                         TenSanPham = ttbh.hoadon.chitiethoadons.FirstOrDefault().kho.sanpham.Ten,
                          HanBaoHanh = ttbh.HanBaoHanh,
                          Serial = ttbh.Serial
                      }).ToList();
@@ -103,8 +105,8 @@ namespace Do_An.BLL
             {
                 return true;
             }
-            return db.lichsubaohanhs.All(p => p.ID_BaoHanh == ID_BaoHanh && 
-            (p.TinhTrang == "Đã hoàn thành" || p.TinhTrang == "Đã bàn giao cho khách"));
+            return db.lichsubaohanhs.Where(p => p.ID_BaoHanh == ID_BaoHanh).All(p => 
+            p.TinhTrang == "Đã hoàn thành" || p.TinhTrang == "Đã bàn giao cho khách");
         }
         public bool CheckHanBaoHanh(int ID_BaoHanh)
         {
@@ -120,6 +122,7 @@ namespace Do_An.BLL
                     {
                         STT = lsbh.STT,
                         ID_BaoHanh = lsbh.ID_BaoHanh,
+                        TenSanPham = lsbh.thongtinbaohanh.hoadon.chitiethoadons.FirstOrDefault().kho.sanpham.Ten,
                         ID_NhanVien = lsbh.ID_NhanVien,
                         TinhTrang = lsbh.TinhTrang,
                         NgayBaoHanh = lsbh.NgayBaoHanh,

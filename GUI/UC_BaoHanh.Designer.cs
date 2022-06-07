@@ -36,8 +36,14 @@
             this.tb_Search = new System.Windows.Forms.TextBox();
             this.btn_Save = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.dgv_LichSuBaoHanh = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lb_IDBaoHanh = new System.Windows.Forms.Label();
+            this.lb_Serial = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tb_IDNhanVien = new System.Windows.Forms.TextBox();
             this.lb_STT = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dtp_NgayBaoHanh = new System.Windows.Forms.DateTimePicker();
@@ -54,12 +60,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgv_DangBaoHanh = new System.Windows.Forms.DataGridView();
-            this.tb_IDNhanVien = new System.Windows.Forms.TextBox();
-            this.lb_Serial = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btn_Delete = new System.Windows.Forms.Button();
-            this.lb_IDBaoHanh = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lb_TenSP = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_LichSuBaoHanh)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -167,6 +169,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lịch sử bảo hành";
             // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Delete.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Delete.FlatAppearance.BorderSize = 0;
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Delete.Location = new System.Drawing.Point(620, 102);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(139, 57);
+            this.btn_Delete.TabIndex = 133;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
             // dgv_LichSuBaoHanh
             // 
             this.dgv_LichSuBaoHanh.AllowUserToAddRows = false;
@@ -190,6 +209,8 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.lb_TenSP);
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.lb_IDBaoHanh);
             this.groupBox2.Controls.Add(this.lb_Serial);
@@ -217,11 +238,60 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin bảo hành sản phẩm";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(27, 146);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(287, 16);
+            this.label15.TabIndex = 161;
+            this.label15.Text = "________________________________________";
+            // 
+            // lb_IDBaoHanh
+            // 
+            this.lb_IDBaoHanh.AutoSize = true;
+            this.lb_IDBaoHanh.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.lb_IDBaoHanh.Location = new System.Drawing.Point(168, 22);
+            this.lb_IDBaoHanh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_IDBaoHanh.Name = "lb_IDBaoHanh";
+            this.lb_IDBaoHanh.Size = new System.Drawing.Size(96, 27);
+            this.lb_IDBaoHanh.TabIndex = 160;
+            this.lb_IDBaoHanh.Text = "Không có";
+            // 
+            // lb_Serial
+            // 
+            this.lb_Serial.AutoSize = true;
+            this.lb_Serial.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.lb_Serial.Location = new System.Drawing.Point(168, 54);
+            this.lb_Serial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_Serial.Name = "lb_Serial";
+            this.lb_Serial.Size = new System.Drawing.Size(96, 27);
+            this.lb_Serial.TabIndex = 159;
+            this.lb_Serial.Text = "Không có";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(25, 54);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(94, 27);
+            this.label9.TabIndex = 158;
+            this.label9.Text = "Số serial:";
+            // 
+            // tb_IDNhanVien
+            // 
+            this.tb_IDNhanVien.Location = new System.Drawing.Point(176, 236);
+            this.tb_IDNhanVien.Name = "tb_IDNhanVien";
+            this.tb_IDNhanVien.Size = new System.Drawing.Size(172, 22);
+            this.tb_IDNhanVien.TabIndex = 157;
+            // 
             // lb_STT
             // 
             this.lb_STT.AutoSize = true;
             this.lb_STT.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.lb_STT.Location = new System.Drawing.Point(176, 141);
+            this.lb_STT.Location = new System.Drawing.Point(171, 162);
             this.lb_STT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_STT.Name = "lb_STT";
             this.lb_STT.Size = new System.Drawing.Size(23, 27);
@@ -232,7 +302,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(25, 141);
+            this.label5.Location = new System.Drawing.Point(25, 162);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 27);
@@ -241,8 +311,8 @@
             // 
             // dtp_NgayBaoHanh
             // 
-            this.dtp_NgayBaoHanh.Location = new System.Drawing.Point(176, 180);
-            this.dtp_NgayBaoHanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtp_NgayBaoHanh.Location = new System.Drawing.Point(176, 203);
+            this.dtp_NgayBaoHanh.Margin = new System.Windows.Forms.Padding(4);
             this.dtp_NgayBaoHanh.Name = "dtp_NgayBaoHanh";
             this.dtp_NgayBaoHanh.Size = new System.Drawing.Size(172, 22);
             this.dtp_NgayBaoHanh.TabIndex = 153;
@@ -261,7 +331,7 @@
             // tb_GhiChuBaoHanh
             // 
             this.tb_GhiChuBaoHanh.Location = new System.Drawing.Point(363, 55);
-            this.tb_GhiChuBaoHanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_GhiChuBaoHanh.Margin = new System.Windows.Forms.Padding(4);
             this.tb_GhiChuBaoHanh.Multiline = true;
             this.tb_GhiChuBaoHanh.Name = "tb_GhiChuBaoHanh";
             this.tb_GhiChuBaoHanh.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -272,7 +342,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(23, 221);
+            this.label12.Location = new System.Drawing.Point(23, 232);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 27);
@@ -283,7 +353,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(23, 178);
+            this.label8.Location = new System.Drawing.Point(23, 198);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(155, 27);
@@ -300,7 +370,7 @@
             "Đã hoàn thành",
             "Đã bàn giao cho khách"});
             this.cbb_TinhTrang.Location = new System.Drawing.Point(176, 269);
-            this.cbb_TinhTrang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_TinhTrang.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_TinhTrang.Name = "cbb_TinhTrang";
             this.cbb_TinhTrang.Size = new System.Drawing.Size(172, 24);
             this.cbb_TinhTrang.TabIndex = 144;
@@ -359,7 +429,7 @@
             this.dgv_DanhSachBaoHanh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_DanhSachBaoHanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DanhSachBaoHanh.Location = new System.Drawing.Point(20, 108);
-            this.dgv_DanhSachBaoHanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_DanhSachBaoHanh.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_DanhSachBaoHanh.Name = "dgv_DanhSachBaoHanh";
             this.dgv_DanhSachBaoHanh.ReadOnly = true;
             this.dgv_DanhSachBaoHanh.RowHeadersWidth = 51;
@@ -381,9 +451,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.dgv_DangBaoHanh);
             this.groupBox3.Location = new System.Drawing.Point(20, 412);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(500, 268);
             this.groupBox3.TabIndex = 140;
             this.groupBox3.TabStop = false;
@@ -398,7 +468,7 @@
             this.dgv_DangBaoHanh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_DangBaoHanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DangBaoHanh.Location = new System.Drawing.Point(19, 22);
-            this.dgv_DangBaoHanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_DangBaoHanh.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_DangBaoHanh.Name = "dgv_DangBaoHanh";
             this.dgv_DangBaoHanh.ReadOnly = true;
             this.dgv_DangBaoHanh.RowHeadersWidth = 51;
@@ -408,71 +478,27 @@
             this.dgv_DangBaoHanh.TabIndex = 140;
             this.dgv_DangBaoHanh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DangBaoHanh_CellClick);
             // 
-            // tb_IDNhanVien
+            // label4
             // 
-            this.tb_IDNhanVien.Location = new System.Drawing.Point(176, 225);
-            this.tb_IDNhanVien.Name = "tb_IDNhanVien";
-            this.tb_IDNhanVien.Size = new System.Drawing.Size(172, 22);
-            this.tb_IDNhanVien.TabIndex = 157;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(25, 119);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(77, 27);
+            this.label4.TabIndex = 162;
+            this.label4.Text = "Tên SP:";
             // 
-            // lb_Serial
+            // lb_TenSP
             // 
-            this.lb_Serial.AutoSize = true;
-            this.lb_Serial.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.lb_Serial.Location = new System.Drawing.Point(168, 54);
-            this.lb_Serial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_Serial.Name = "lb_Serial";
-            this.lb_Serial.Size = new System.Drawing.Size(96, 27);
-            this.lb_Serial.TabIndex = 159;
-            this.lb_Serial.Text = "Không có";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(25, 54);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 27);
-            this.label9.TabIndex = 158;
-            this.label9.Text = "Số serial:";
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Delete.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Delete.FlatAppearance.BorderSize = 0;
-            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Delete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_Delete.Location = new System.Drawing.Point(620, 102);
-            this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(139, 57);
-            this.btn_Delete.TabIndex = 133;
-            this.btn_Delete.Text = "Xóa";
-            this.btn_Delete.UseVisualStyleBackColor = false;
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
-            // 
-            // lb_IDBaoHanh
-            // 
-            this.lb_IDBaoHanh.AutoSize = true;
-            this.lb_IDBaoHanh.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.lb_IDBaoHanh.Location = new System.Drawing.Point(168, 22);
-            this.lb_IDBaoHanh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_IDBaoHanh.Name = "lb_IDBaoHanh";
-            this.lb_IDBaoHanh.Size = new System.Drawing.Size(96, 27);
-            this.lb_IDBaoHanh.TabIndex = 160;
-            this.lb_IDBaoHanh.Text = "Không có";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(25, 117);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(287, 16);
-            this.label15.TabIndex = 161;
-            this.label15.Text = "________________________________________";
+            this.lb_TenSP.AutoEllipsis = true;
+            this.lb_TenSP.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.lb_TenSP.Location = new System.Drawing.Point(171, 119);
+            this.lb_TenSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_TenSP.Name = "lb_TenSP";
+            this.lb_TenSP.Size = new System.Drawing.Size(177, 27);
+            this.lb_TenSP.TabIndex = 163;
+            this.lb_TenSP.Text = "Không có";
             // 
             // UC_BaoHanh
             // 
@@ -534,5 +560,7 @@
         private Button btn_Delete;
         private Label label15;
         private Label lb_IDBaoHanh;
+        private Label lb_TenSP;
+        private Label label4;
     }
 }

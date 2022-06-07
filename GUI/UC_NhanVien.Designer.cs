@@ -74,13 +74,10 @@
             // 
             this.tb_IdNhanVien.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_IdNhanVien.Location = new System.Drawing.Point(186, 13);
-
             this.tb_IdNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.tb_IdNhanVien.Name = "tb_IdNhanVien";
             this.tb_IdNhanVien.Size = new System.Drawing.Size(290, 34);
-
             this.tb_IdNhanVien.TabIndex = 87;
-           
             // 
             // label10
             // 
@@ -94,7 +91,6 @@
             this.label10.Size = new System.Drawing.Size(95, 27);
             this.label10.TabIndex = 88;
             this.label10.Text = "Giới Tính";
-            
             // 
             // label13
             // 
@@ -103,13 +99,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.label13.Location = new System.Drawing.Point(33, 112);
-
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 27);
             this.label13.TabIndex = 85;
             this.label13.Text = "Vị trí";
-            
             // 
             // rb_Nam
             // 
@@ -124,7 +118,6 @@
             this.rb_Nam.TabIndex = 91;
             this.rb_Nam.Text = "Nam";
             this.rb_Nam.UseVisualStyleBackColor = true;
-           
             // 
             // cbb_ViTri
             // 
@@ -135,7 +128,6 @@
             this.cbb_ViTri.Name = "cbb_ViTri";
             this.cbb_ViTri.Size = new System.Drawing.Size(290, 34);
             this.cbb_ViTri.TabIndex = 92;
-            
             // 
             // rb_Nu
             // 
@@ -150,7 +142,6 @@
             this.rb_Nu.TabIndex = 89;
             this.rb_Nu.Text = "Nữ";
             this.rb_Nu.UseVisualStyleBackColor = true;
-       
             // 
             // tb_TenNhanVien
             // 
@@ -160,7 +151,6 @@
             this.tb_TenNhanVien.Name = "tb_TenNhanVien";
             this.tb_TenNhanVien.Size = new System.Drawing.Size(290, 34);
             this.tb_TenNhanVien.TabIndex = 90;
-         
             // 
             // label12
             // 
@@ -174,7 +164,6 @@
             this.label12.Size = new System.Drawing.Size(47, 27);
             this.label12.TabIndex = 80;
             this.label12.Text = "SĐT";
-            
             // 
             // label14
             // 
@@ -188,7 +177,6 @@
             this.label14.Size = new System.Drawing.Size(139, 27);
             this.label14.TabIndex = 83;
             this.label14.Text = "Tên nhân viên";
-           
             // 
             // label11
             // 
@@ -202,7 +190,6 @@
             this.label11.Size = new System.Drawing.Size(73, 27);
             this.label11.TabIndex = 81;
             this.label11.Text = "Địa chỉ";
-       
             // 
             // label15
             // 
@@ -216,7 +203,6 @@
             this.label15.Size = new System.Drawing.Size(129, 27);
             this.label15.TabIndex = 82;
             this.label15.Text = "ID Nhân viên";
-   
             // 
             // tb_SoDienThoai
             // 
@@ -226,7 +212,6 @@
             this.tb_SoDienThoai.Name = "tb_SoDienThoai";
             this.tb_SoDienThoai.Size = new System.Drawing.Size(274, 34);
             this.tb_SoDienThoai.TabIndex = 86;
-            
             // 
             // tb_DiaChi
             // 
@@ -236,7 +221,6 @@
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(274, 34);
             this.tb_DiaChi.TabIndex = 84;
-           
             // 
             // dtlv_nv
             // 
@@ -256,7 +240,7 @@
             this.dtlv_nv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtlv_nv.Size = new System.Drawing.Size(1050, 420);
             this.dtlv_nv.TabIndex = 94;
-          
+            this.dtlv_nv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtlv_nv_CellClick);
             // 
             // btn_Add
             // 
@@ -350,7 +334,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1193, 216);
             this.panel1.TabIndex = 99;
-            
             // 
             // tb_TaiKhoan
             // 
@@ -360,7 +343,6 @@
             this.tb_TaiKhoan.Name = "tb_TaiKhoan";
             this.tb_TaiKhoan.Size = new System.Drawing.Size(274, 34);
             this.tb_TaiKhoan.TabIndex = 137;
-           
             // 
             // label2
             // 
@@ -374,7 +356,6 @@
             this.label2.Size = new System.Drawing.Size(100, 27);
             this.label2.TabIndex = 136;
             this.label2.Text = "Tài khoản";
-
             // 
             // dtp_NgaySinh
             // 
@@ -385,7 +366,6 @@
             this.dtp_NgaySinh.Size = new System.Drawing.Size(290, 22);
             this.dtp_NgaySinh.TabIndex = 135;
             this.dtp_NgaySinh.Value = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
-          
             // 
             // label1
             // 
@@ -399,7 +379,6 @@
             this.label1.Size = new System.Drawing.Size(100, 27);
             this.label1.TabIndex = 134;
             this.label1.Text = "Ngày sinh";
-         
             // 
             // btn_Save
             // 

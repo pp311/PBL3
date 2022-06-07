@@ -26,7 +26,7 @@ namespace Do_An.EF
         public System.DateTime NgayTao { get; set; }
         public string TenKhachHang { get; set; }
         public string SoDienThoai { get; set; }
-        public int TongTien { get; set; }
+        public long TongTien { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<chitiethoadon> chitiethoadons { get; set; }

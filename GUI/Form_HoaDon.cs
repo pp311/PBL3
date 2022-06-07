@@ -42,9 +42,10 @@ namespace Do_An
             dgv_Table.Columns["ID_SanPham"].HeaderText = "ID sản phẩm";
             dgv_Table.Columns["TenSanPham"].HeaderText = "Tên sản phẩm";
             dgv_Table.Columns["SoLuongMua"].HeaderText = "Số lượng mua";
+            dgv_Table.Columns["SoLuongMua"].DefaultCellStyle.Format = "N0";
             dgv_Table.Columns["GiamGia"].HeaderText = "% Giảm giá";
             dgv_Table.Columns["DonGia"].HeaderText = "Đơn giá";
-
+            dgv_Table.Columns["DonGia"].DefaultCellStyle.Format = "N0";
 
             GUI(mode);
         }
@@ -65,7 +66,7 @@ namespace Do_An
             {
                 TongTien += Convert.ToInt32(dr["DonGia"].ToString()) * Convert.ToInt32(dr["SoLuongMua"].ToString());
             }
-            lb_TongTien.Text = TongTien.ToString() + " VND";
+            lb_TongTien.Text = TongTien.ToString("N0") + " VND";
             
            
         }
@@ -112,6 +113,7 @@ namespace Do_An
                     TongTien = (int)TongTien,
                 };
                 BLL_BanHang.Instance.AddHoaDon(dt, data);
+                MessageBox.Show("Tạo hóa đơn thành công");
                 loadTable();
                 this.Close();
             }

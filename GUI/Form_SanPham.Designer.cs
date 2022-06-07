@@ -51,10 +51,14 @@
             this.btn_XacNhan = new System.Windows.Forms.Button();
             this.dgv_ThongSoKyThuat = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btn_TSKT = new System.Windows.Forms.Button();
+            this.num_TSKT = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_GiaBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_ThoiHanBaoHanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongSoKyThuat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_TSKT)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -252,6 +256,7 @@
             this.cbb_PhanLoai.Name = "cbb_PhanLoai";
             this.cbb_PhanLoai.Size = new System.Drawing.Size(249, 34);
             this.cbb_PhanLoai.TabIndex = 107;
+            this.cbb_PhanLoai.SelectedIndexChanged += new System.EventHandler(this.cbb_PhanLoai_SelectedIndexChanged);
             // 
             // tb_IDSP
             // 
@@ -342,11 +347,52 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(218, 239);
+            this.label12.Location = new System.Drawing.Point(218, 222);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(190, 29);
             this.label12.TabIndex = 132;
             this.label12.Text = "Thông số kỹ thuật";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(764, 237);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(166, 29);
+            this.label7.TabIndex = 133;
+            this.label7.Text = "Sao chép TSKT: ";
+            // 
+            // btn_TSKT
+            // 
+            this.btn_TSKT.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_TSKT.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_TSKT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_TSKT.FlatAppearance.BorderSize = 0;
+            this.btn_TSKT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TSKT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_TSKT.Location = new System.Drawing.Point(999, 237);
+            this.btn_TSKT.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TSKT.Name = "btn_TSKT";
+            this.btn_TSKT.Size = new System.Drawing.Size(75, 30);
+            this.btn_TSKT.TabIndex = 136;
+            this.btn_TSKT.Text = "Copy";
+            this.btn_TSKT.UseVisualStyleBackColor = false;
+            this.btn_TSKT.Click += new System.EventHandler(this.btn_TSKT_Click);
+            // 
+            // num_TSKT
+            // 
+            this.num_TSKT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_TSKT.Location = new System.Drawing.Point(926, 239);
+            this.num_TSKT.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.num_TSKT.Name = "num_TSKT";
+            this.num_TSKT.Size = new System.Drawing.Size(68, 28);
+            this.num_TSKT.TabIndex = 137;
             // 
             // Form_SanPham
             // 
@@ -355,6 +401,9 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1489, 740);
             this.ControlBox = false;
+            this.Controls.Add(this.num_TSKT);
+            this.Controls.Add(this.btn_TSKT);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dgv_ThongSoKyThuat);
             this.Controls.Add(this.btn_Huy);
@@ -372,6 +421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.num_GiaBan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_ThoiHanBaoHanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongSoKyThuat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_TSKT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,5 +451,8 @@
         private NumericUpDown num_GiaBan;
         private Label label1;
         private Label label12;
+        private Label label7;
+        private Button btn_TSKT;
+        private NumericUpDown num_TSKT;
     }
 }

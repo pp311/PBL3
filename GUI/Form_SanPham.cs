@@ -16,6 +16,7 @@ namespace Do_An
     {
         public Action loadTable { get; set; }
         //mode 1: cho phép edit, mode 0: không cho phép edit (khi nhấn "xem chi tiết")
+        public int ID_SanPham = 0;
         public Form_SanPham(int id = 0, int mode = 1)
         {
             InitializeComponent();
@@ -24,10 +25,10 @@ namespace Do_An
             dt.Columns.Add("col0", typeof(String));
             dt.Columns.Add("col1", typeof(String));
             dgv_ThongSoKyThuat.DataSource = dt;
-
-            if (id != 0)
+            ID_SanPham = id;
+            if (ID_SanPham != 0)
             {
-                ChiTietSanPhamView data = BLL_SanPham.Instance.GetChiTietSanPhamViewByIDSanPham(id);
+                ChiTietSanPhamView data = BLL_SanPham.Instance.GetChiTietSanPhamViewByIDSanPham(ID_SanPham);
                 GUI(data, mode);
             }
 
@@ -77,7 +78,6 @@ namespace Do_An
                     dr[1] = line.Substring(line.IndexOf(";") + 1, line.Length - line.IndexOf(";") - 2);
                     dt.Rows.Add(dr);
                 }
-
             }
             return dt;
         }
@@ -107,15 +107,23 @@ namespace Do_An
                     Ten = tb_TenSP.Text,
                     TenHang = tb_TenHang.Text,
                     PhanLoai = cbb_PhanLoai.SelectedItem.ToString(),
-                    NamSX = Convert.ToInt32(tb_NamSX.Text),
+                    NamSX = tb_NamSX.Text != "" ? Convert.ToInt32(tb_NamSX.Text) : 0,
                     XuatXu = tb_XuatXu.Text,
                     GiaBan = Convert.ToInt32(num_GiaBan.Value),
                     ThongSoKyThuat = csv,
                     ThoiHanBaoHanh = Convert.ToInt32(num_ThoiHanBaoHanh.Value)
                 };
-                BLL_SanPham.Instance.ExcuteDB(data);
-                loadTable();
-                this.Close();
+                string msg = BLL_SanPham.Instance.ExcuteDB(data);
+                if(msg != "")
+                {
+                    MessageBox.Show(msg);
+                }
+                else
+                {
+                    MessageBox.Show("Lưu thông tin thành công");
+                    loadTable();
+                    this.Close();
+                }
             }
             
         }
@@ -128,7 +136,7 @@ namespace Do_An
             string namsx = tb_NamSX.Text;
             bool isValid = true;
             if (!namsx.All(c => char.IsNumber(c))) isValid = false;
-            if (string.IsNullOrEmpty(ten) || !ten.All(c => char.IsLetterOrDigit(c) || char.IsWhiteSpace(c))) isValid = false;
+            if (string.IsNullOrEmpty(ten)) isValid = false;
             if (cbb_PhanLoai.SelectedItem == null) isValid = false;
             if(gia <= 0 || thbh < 0) isValid = false;
             if (!isValid)
@@ -139,6 +147,34 @@ namespace Do_An
             return check;
         }
 
+        private void cbb_PhanLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(ID_SanPham == 0)
+            {
+                if(cbb_PhanLoai.SelectedItem.ToString() == "Xe đạp")
+                {
+                    string csv = "Kích cỡ;N / A;\r\nMàu sắc; N / A;\r\nChất liệu khung; N / A;\r\n" +
+                        "Phuộc; N / A;\r\nLốp xe; N / A;\r\nYên; N / A;\r\nBộ thắng; N / A;\r\n" +
+                        "Tay thắng; N / A;\r\nBộ líp; N / A;\r\nSên xe; N / A;\r\nGiò dĩa; N / A;\r\n" +
+                        "Trọng lượng; N / A;\r\nTay đề; N / A;\r\nGhi đông; N / A;";
+                    dgv_ThongSoKyThuat.DataSource = ReadCSVFormat(csv);
+                }
+                else
+                {
+                    dgv_ThongSoKyThuat.DataSource = ReadCSVFormat("");
+                }
+            }
+        }
 
+        private void btn_TSKT_Click(object sender, EventArgs e)
+        {
+            int id = (int)num_TSKT.Value;
+            string result = BLL_SanPham.Instance.GetThongSoKyThuatByIDSanPham(id);
+            if (result == "") MessageBox.Show($"Thông số kỹ thuật của sản phẩm có ID {id} không tồn tại");
+            else
+            {
+                dgv_ThongSoKyThuat.DataSource = ReadCSVFormat(result);
+            }
+        }
     }
 }

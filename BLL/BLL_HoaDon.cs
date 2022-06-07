@@ -127,13 +127,27 @@ namespace Do_An.BLL
                 return l.ToList();
             }
         }
-        public void SaveThongTinBaoHanh(List<thongtinbaohanh> data)
+        public (bool success, string msg) SaveThongTinBaoHanh(List<thongtinbaohanh> data)
         {
-            foreach(var i in data)
+            string msg = "Lưu thông tin thành công";
+            bool isSuccess = true;
+            if (data.Count != data.Select(p => p.Serial).Distinct().Count())
             {
+                msg = "Serial nhập vào không được trùng nhau";
+                isSuccess = false;
+                return (isSuccess, msg);
+            }
+            foreach (var i in data)
+            {
+                if(db.thongtinbaohanhs.Any(p => p.Serial == i.Serial))
+                {
+                    msg = $"Serial {i.Serial} đã tồn tại";
+                    isSuccess = false;
+                    return (isSuccess, msg);
+                }
                 int thoiHanBaoHanh = BLL_SanPham.Instance.GetThoiHanBaoHanh(i.ID_SanPham);
                 hoadon hd = GetThongTinHoaDonByIDHoaDon(i.ID_HoaDon);
-                i.HanBaoHanh = hd.NgayTao.AddDays(30 * thoiHanBaoHanh);
+                i.HanBaoHanh = hd.NgayTao.AddDays(30 * thoiHanBaoHanh);          
                 if(i.ID_BaoHanh == 0 )
                     db.thongtinbaohanhs.Add(i);
                 else
@@ -143,6 +157,7 @@ namespace Do_An.BLL
                 }
             db.SaveChanges();
             }
+            return (isSuccess, msg);
         }
 
     }

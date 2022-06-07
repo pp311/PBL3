@@ -19,7 +19,7 @@ namespace Do_An
 {
     public partial class UC_CaNhan : UserControl
     {
-
+        public Action changeName { get; set; }
         public UC_CaNhan()
         {
             InitializeComponent();
@@ -100,6 +100,8 @@ namespace Do_An
                 }
                 BLL_NhanVien.Instance.Update(nv);
                 MessageBox.Show("Bạn đã sửa thông tin nhân viên này thành công !!! ");
+                CurrentUser.Name = nv.TenNhanVien;
+                changeName();
             }
 
         }

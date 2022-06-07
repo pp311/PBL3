@@ -32,6 +32,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_BanHang = new System.Windows.Forms.Button();
             this.btn_NhapHang = new System.Windows.Forms.Button();
             this.btn_CaNhan = new System.Windows.Forms.Button();
             this.btn_ThongKe = new System.Windows.Forms.Button();
@@ -47,7 +48,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pnl_Main = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btn_BanHang = new System.Windows.Forms.Button();
+            this.lb_Name = new System.Windows.Forms.Label();
+            this.lb_ID = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,13 +63,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(90, 191);
+            this.label4.Location = new System.Drawing.Point(60, 272);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Quản lý";
-   
             // 
             // label1
             // 
@@ -78,13 +80,14 @@
             this.label1.Size = new System.Drawing.Size(97, 26);
             this.label1.TabIndex = 17;
             this.label1.Text = "Bike Shop";
-      
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.lb_ID);
+            this.panel2.Controls.Add(this.lb_Name);
             this.panel2.Controls.Add(this.btn_BanHang);
-            this.panel2.Controls.Add(this.btn_NhapHang);
             this.panel2.Controls.Add(this.btn_CaNhan);
             this.panel2.Controls.Add(this.btn_ThongKe);
             this.panel2.Controls.Add(this.btn_NhanVien);
@@ -94,12 +97,30 @@
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.btn_NhapHang);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 770);
             this.panel2.TabIndex = 5;
+            // 
+            // btn_BanHang
+            // 
+            this.btn_BanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_BanHang.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_BanHang.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_BanHang.FlatAppearance.BorderSize = 0;
+            this.btn_BanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_BanHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_BanHang.Location = new System.Drawing.Point(0, 329);
+            this.btn_BanHang.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_BanHang.Name = "btn_BanHang";
+            this.btn_BanHang.Size = new System.Drawing.Size(197, 72);
+            this.btn_BanHang.TabIndex = 26;
+            this.btn_BanHang.Text = "Bán Hàng";
+            this.btn_BanHang.UseVisualStyleBackColor = false;
+            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
             // 
             // btn_NhapHang
             // 
@@ -206,7 +227,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Do_An.Properties.Resources.admin1;
-            this.pictureBox6.Location = new System.Drawing.Point(11, 175);
+            this.pictureBox6.Location = new System.Drawing.Point(0, 174);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(56, 54);
@@ -245,7 +266,7 @@
             this.lb_Clock.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lb_Clock.AutoSize = true;
             this.lb_Clock.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lb_Clock.Location = new System.Drawing.Point(956, 18);
+            this.lb_Clock.Location = new System.Drawing.Point(955, 12);
             this.lb_Clock.Name = "lb_Clock";
             this.lb_Clock.Size = new System.Drawing.Size(133, 28);
             this.lb_Clock.TabIndex = 84;
@@ -296,28 +317,44 @@
             this.pnl_Main.Name = "pnl_Main";
             this.pnl_Main.Size = new System.Drawing.Size(1253, 712);
             this.pnl_Main.TabIndex = 8;
-            
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btn_BanHang
+            // lb_Name
             // 
-            this.btn_BanHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_BanHang.BackColor = System.Drawing.Color.Turquoise;
-            this.btn_BanHang.FlatAppearance.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_BanHang.FlatAppearance.BorderSize = 0;
-            this.btn_BanHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_BanHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_BanHang.Location = new System.Drawing.Point(0, 329);
-            this.btn_BanHang.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_BanHang.Name = "btn_BanHang";
-            this.btn_BanHang.Size = new System.Drawing.Size(197, 72);
-            this.btn_BanHang.TabIndex = 26;
-            this.btn_BanHang.Text = "Bán Hàng";
-            this.btn_BanHang.UseVisualStyleBackColor = false;
-            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
+            this.lb_Name.AllowDrop = true;
+            this.lb_Name.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_Name.Location = new System.Drawing.Point(60, 174);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(137, 54);
+            this.lb_Name.TabIndex = 27;
+            this.lb_Name.Text = "Name";
+            this.lb_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lb_ID
+            // 
+            this.lb_ID.AutoSize = true;
+            this.lb_ID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.lb_ID.Location = new System.Drawing.Point(94, 233);
+            this.lb_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_ID.Name = "lb_ID";
+            this.lb_ID.Size = new System.Drawing.Size(20, 24);
+            this.lb_ID.TabIndex = 28;
+            this.lb_ID.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(11, 233);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 24);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "ID: ";
             // 
             // F_QuanLy
             // 
@@ -365,5 +402,8 @@
         private System.Windows.Forms.Timer timer1;
         private Label lb_Clock;
         private Button btn_BanHang;
+        private Label lb_Name;
+        private Label label5;
+        private Label lb_ID;
     }
 }

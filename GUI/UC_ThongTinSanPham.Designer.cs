@@ -102,7 +102,7 @@
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(149, 57);
             this.btn_Delete.TabIndex = 104;
-            this.btn_Delete.Text = "Xóa sản phẩm";
+            this.btn_Delete.Text = "Xóa thông tin sản phẩm";
             this.btn_Delete.UseVisualStyleBackColor = false;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
@@ -146,7 +146,7 @@
             this.tb_Search.Location = new System.Drawing.Point(755, 183);
             this.tb_Search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_Search.Name = "tb_Search";
-            this.tb_Search.Size = new System.Drawing.Size(229, 33);
+            this.tb_Search.Size = new System.Drawing.Size(229, 34);
             this.tb_Search.TabIndex = 118;
             // 
             // btn_Search

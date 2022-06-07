@@ -68,7 +68,7 @@ namespace Do_An
             else
             {
                 if (tk == "" || mk == "") MessageBox.Show("Vui lòng điền đầy đủ thông tin");
-                else MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                else MessageBox.Show("Cần nhập đúng tên đăng nhập và mật khẩu");
             }
    
 

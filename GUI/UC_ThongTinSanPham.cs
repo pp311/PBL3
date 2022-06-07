@@ -42,6 +42,7 @@ namespace Do_An
             dgv_TableSanPham.Columns["Ten"].HeaderText = "Tên Sản phẩm";
             dgv_TableSanPham.Columns["PhanLoai"].HeaderText = "Phân loại";
             dgv_TableSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
+            dgv_TableSanPham.Columns["GiaBan"].DefaultCellStyle.Format = "N0";
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -87,19 +88,24 @@ namespace Do_An
             string msg;
             if (dgv_TableSanPham.SelectedRows.Count >= 1)
             {
-                List<int> delList = new List<int>();
-                foreach (DataGridViewRow row in dgv_TableSanPham.SelectedRows)
+                DialogResult dia = MessageBox.Show("Bạn chắc chắn muốn xóa thông tin sản phẩm này?", "Xác nhận xóa", MessageBoxButtons.YesNo);
+                if (dia == DialogResult.Yes)
                 {
-                    delList.Add(Convert.ToInt32(row.Cells["ID_SanPham"].Value));
-                }
-                msg = BLL_SanPham.Instance.DeleteThongTinSanPham(delList);
+                    List<int> delList = new List<int>();
+                    foreach (DataGridViewRow row in dgv_TableSanPham.SelectedRows)
+                    {
+                        delList.Add(Convert.ToInt32(row.Cells["ID_SanPham"].Value));
+                    }
+                    msg = BLL_SanPham.Instance.DeleteThongTinSanPham(delList);
+                    MessageBox.Show(msg);
+                    Show();
+                }    
             }
             else
             {
                 msg = "Vui lòng chọn ít nhất 1 sản phẩm để xoá!";
+                MessageBox.Show(msg);
             }
-            MessageBox.Show(msg);
-            Show();
         }
 
         private void cbb_Type_SelectedIndexChanged(object sender, EventArgs e)

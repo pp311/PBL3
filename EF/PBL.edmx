@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="PBLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="PBLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
 warning 6002: The table/view 'PBL.dbo.chitiethoadon' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="chitiethoadon">
@@ -42,7 +42,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Property Name="NgayTao" Type="date" Nullable="false" />
           <Property Name="TenKhachHang" Type="nvarchar" MaxLength="255" />
           <Property Name="SoDienThoai" Type="varchar" MaxLength="20" />
-          <Property Name="TongTien" Type="int" Nullable="false" />
+          <Property Name="TongTien" Type="bigint" Nullable="false" />
         </EntityType>
         <EntityType Name="kho">
           <Key>
@@ -224,24 +224,11 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <EntitySet Name="sanpham" EntityType="Self.sanpham" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="taikhoan" EntityType="Self.taikhoan" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="thongtinbaohanh" EntityType="Self.thongtinbaohanh" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="chitiethoadon" EntityType="Self.chitiethoadon" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [chitiethoadon].[ID_HoaDon] AS [ID_HoaDon], 
-    [chitiethoadon].[ID_LoHang] AS [ID_LoHang], 
-    [chitiethoadon].[SoLuongMua] AS [SoLuongMua], 
-    [chitiethoadon].[GiamGia] AS [GiamGia], 
-    [chitiethoadon].[DonGia] AS [DonGia]
-    FROM [dbo].[chitiethoadon] AS [chitiethoadon]</DefiningQuery>
+          <EntitySet Name="chitiethoadon" EntityType="Self.chitiethoadon" store:Type="Tables" Schema="dbo">
+            
           </EntitySet>
-          <EntitySet Name="chitietsanpham" EntityType="Self.chitietsanpham" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [chitietsanpham].[ID_SanPham] AS [ID_SanPham], 
-    [chitietsanpham].[NamSX] AS [NamSX], 
-    [chitietsanpham].[XuatXu] AS [XuatXu], 
-    [chitietsanpham].[TenHang] AS [TenHang], 
-    [chitietsanpham].[ThongSoKyThuat] AS [ThongSoKyThuat], 
-    [chitietsanpham].[ThoiHanBaoHanh] AS [ThoiHanBaoHanh]
-    FROM [dbo].[chitietsanpham] AS [chitietsanpham]</DefiningQuery>
+          <EntitySet Name="chitietsanpham" EntityType="Self.chitietsanpham" store:Type="Tables" Schema="dbo">
+            
           </EntitySet>
           <AssociationSet Name="FK_ChiTietHoaDon_HoaDon" Association="Self.FK_ChiTietHoaDon_HoaDon">
             <End Role="hoadon" EntitySet="hoadon" />
@@ -280,7 +267,8 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
             <End Role="thongtinbaohanh" EntitySet="thongtinbaohanh" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PBLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -290,10 +278,10 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           </Key>
           <Property Name="ID_HoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_NhanVien" Type="Int32" Nullable="false" />
-          <Property Name="NgayTao" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="NgayTao" Type="DateTime" Nullable="false" />
           <Property Name="TenKhachHang" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="SoDienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="TongTien" Type="Int32" Nullable="false" />
+          <Property Name="TongTien" Type="Int64" Nullable="false" />
           <NavigationProperty Name="chitiethoadons" Relationship="Self.FK_ChiTietHoaDon_HoaDon" FromRole="hoadon" ToRole="chitiethoadon" />
           <NavigationProperty Name="nhanvien" Relationship="Self.FK_HoaDon_NhanVien" FromRole="hoadon" ToRole="nhanvien" />
           <NavigationProperty Name="thongtinbaohanhs" Relationship="Self.FK_thongtinbaohanh_hoadon" FromRole="hoadon" ToRole="thongtinbaohanh" />
@@ -304,7 +292,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           </Key>
           <Property Name="ID_LoHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_SanPham" Type="Int32" Nullable="false" />
-          <Property Name="NgayNhap" Type="DateTime" Precision="0" />
+          <Property Name="NgayNhap" Type="DateTime" />
           <Property Name="GiamGia" Type="Int32" />
           <Property Name="SoLuongNhap" Type="Int32" Nullable="false" />
           <Property Name="GiaMua" Type="Int32" Nullable="false" />
@@ -316,10 +304,10 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Key>
             <PropertyRef Name="STT" />
           </Key>
-          <Property Name="STT" Type="Int32" Nullable="false" />
+          <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_BaoHanh" Type="Int32" Nullable="false" />
           <Property Name="ID_NhanVien" Type="Int32" Nullable="false" />
-          <Property Name="NgayBaoHanh" Type="DateTime" Precision="0" />
+          <Property Name="NgayBaoHanh" Type="DateTime" />
           <Property Name="GhiChuBaoHanh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="TinhTrang" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="nhanvien" Relationship="Self.FK_LichSuBaoHanh_NhanVien" FromRole="lichsubaohanh" ToRole="nhanvien" />
@@ -332,7 +320,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Property Name="ID_NhanVien" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_TaiKhoan" Type="Int32" Nullable="false" />
           <Property Name="TenNhanVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+          <Property Name="NgaySinh" Type="DateTime" />
           <Property Name="GioiTinh" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="ViTri" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SoDienThoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
@@ -369,7 +357,7 @@ warning 6002: The table/view 'PBL.dbo.chitietsanpham' does not have a primary ke
           <Property Name="ID_HoaDon" Type="Int32" Nullable="false" />
           <Property Name="ID_LoHang" Type="Int32" Nullable="false" />
           <Property Name="ID_SanPham" Type="Int32" Nullable="false" />
-          <Property Name="HanBaoHanh" Type="DateTime" Precision="0" />
+          <Property Name="HanBaoHanh" Type="DateTime" />
           <Property Name="Serial" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="hoadon" Relationship="Self.FK_thongtinbaohanh_hoadon" FromRole="thongtinbaohanh" ToRole="hoadon" />
           <NavigationProperty Name="lichsubaohanhs" Relationship="Self.FK_LichSuBaoHanh_ThongTinBaoHanh" FromRole="thongtinbaohanh" ToRole="lichsubaohanh" />
