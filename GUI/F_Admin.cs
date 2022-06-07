@@ -31,14 +31,14 @@ namespace Do_An
 
         private void btn_Kho_Click(object sender, EventArgs e)
         {
-            if (!pnl_Main.Controls.Contains(UC_Kho.Instance))
+            if (!pnl_Main.Controls.Contains(UC_ThongTinSanPham.Instance))
             {
-                pnl_Main.Controls.Add(UC_Kho.Instance);
-                UC_Kho.Instance.Dock = DockStyle.Fill;
-                UC_Kho.Instance.BringToFront();
+                pnl_Main.Controls.Add(UC_ThongTinSanPham.Instance);
+                UC_ThongTinSanPham.Instance.Dock = DockStyle.Fill;
+                UC_ThongTinSanPham.Instance.BringToFront();
             }
             else
-                UC_Kho.Instance.BringToFront();
+                UC_ThongTinSanPham.Instance.BringToFront();
         }
 
         private void btn_CaNhan_Click(object sender, EventArgs e)
@@ -67,14 +67,14 @@ namespace Do_An
 
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
-            if (!pnl_Main.Controls.Contains(UC_NhapHang.Instance))
-            {
-                pnl_Main.Controls.Add(UC_NhapHang.Instance);
-                UC_NhapHang.Instance.Dock = DockStyle.Fill;
-                UC_NhapHang.Instance.BringToFront();
-            }
-            else
-                UC_NhapHang.Instance.BringToFront();
+            if (!pnl_Main.Controls.Contains(UC_Kho.Instance))
+              {
+                  pnl_Main.Controls.Add(UC_Kho.Instance);
+                  UC_Kho.Instance.Dock = DockStyle.Fill;
+                  UC_Kho.Instance.BringToFront();
+              }
+              else
+                UC_Kho.Instance.BringToFront();
         }
 
         private void btn_ThongKe_Click(object sender, EventArgs e)
@@ -87,6 +87,11 @@ namespace Do_An
             }
             else
                 UC_ThongKe.Instance.BringToFront();
+        }
+
+        private void pictureĐX_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
