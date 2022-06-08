@@ -148,6 +148,7 @@
             this.tb_TenNhanVien.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_TenNhanVien.Location = new System.Drawing.Point(186, 60);
             this.tb_TenNhanVien.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_TenNhanVien.MaxLength = 255;
             this.tb_TenNhanVien.Name = "tb_TenNhanVien";
             this.tb_TenNhanVien.Size = new System.Drawing.Size(290, 34);
             this.tb_TenNhanVien.TabIndex = 90;
@@ -209,6 +210,7 @@
             this.tb_SoDienThoai.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_SoDienThoai.Location = new System.Drawing.Point(727, 50);
             this.tb_SoDienThoai.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_SoDienThoai.MaxLength = 20;
             this.tb_SoDienThoai.Name = "tb_SoDienThoai";
             this.tb_SoDienThoai.Size = new System.Drawing.Size(274, 34);
             this.tb_SoDienThoai.TabIndex = 86;
@@ -218,6 +220,7 @@
             this.tb_DiaChi.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.tb_DiaChi.Location = new System.Drawing.Point(727, 100);
             this.tb_DiaChi.Margin = new System.Windows.Forms.Padding(2);
+            this.tb_DiaChi.MaxLength = 255;
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(274, 34);
             this.tb_DiaChi.TabIndex = 84;

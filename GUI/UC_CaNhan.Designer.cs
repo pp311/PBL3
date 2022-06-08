@@ -56,7 +56,6 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(66, 195);
-
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 29);
             this.label6.TabIndex = 28;
@@ -79,6 +78,7 @@
             this.tb_DiaChi.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_DiaChi.Location = new System.Drawing.Point(194, 298);
             this.tb_DiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_DiaChi.MaxLength = 255;
             this.tb_DiaChi.Name = "tb_DiaChi";
             this.tb_DiaChi.Size = new System.Drawing.Size(381, 36);
             this.tb_DiaChi.TabIndex = 35;
@@ -100,6 +100,7 @@
             this.tb_SoDienThoai.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_SoDienThoai.Location = new System.Drawing.Point(194, 246);
             this.tb_SoDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_SoDienThoai.MaxLength = 20;
             this.tb_SoDienThoai.Name = "tb_SoDienThoai";
             this.tb_SoDienThoai.Size = new System.Drawing.Size(381, 36);
             this.tb_SoDienThoai.TabIndex = 34;
@@ -163,6 +164,7 @@
             this.tb_HoTen.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_HoTen.Location = new System.Drawing.Point(194, 32);
             this.tb_HoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_HoTen.MaxLength = 255;
             this.tb_HoTen.Name = "tb_HoTen";
             this.tb_HoTen.Size = new System.Drawing.Size(381, 36);
             this.tb_HoTen.TabIndex = 31;
@@ -208,7 +210,7 @@
             this.rb_Nam.AutoSize = true;
             this.rb_Nam.Font = new System.Drawing.Font("Calibri Light", 13.2F);
             this.rb_Nam.Location = new System.Drawing.Point(303, 142);
-            this.rb_Nam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_Nam.Margin = new System.Windows.Forms.Padding(2);
             this.rb_Nam.Name = "rb_Nam";
             this.rb_Nam.Size = new System.Drawing.Size(74, 31);
             this.rb_Nam.TabIndex = 110;
@@ -222,7 +224,7 @@
             this.rb_Nu.AutoSize = true;
             this.rb_Nu.Font = new System.Drawing.Font("Calibri Light", 13.2F);
             this.rb_Nu.Location = new System.Drawing.Point(219, 142);
-            this.rb_Nu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rb_Nu.Margin = new System.Windows.Forms.Padding(2);
             this.rb_Nu.Name = "rb_Nu";
             this.rb_Nu.Size = new System.Drawing.Size(60, 31);
             this.rb_Nu.TabIndex = 109;
@@ -259,7 +261,7 @@
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Save.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_Save.Location = new System.Drawing.Point(365, 400);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(149, 57);
             this.btn_Save.TabIndex = 104;
@@ -276,7 +278,7 @@
             this.btn_DMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DMK.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold);
             this.btn_DMK.Location = new System.Drawing.Point(127, 400);
-            this.btn_DMK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_DMK.Margin = new System.Windows.Forms.Padding(2);
             this.btn_DMK.Name = "btn_DMK";
             this.btn_DMK.Size = new System.Drawing.Size(149, 57);
             this.btn_DMK.TabIndex = 103;

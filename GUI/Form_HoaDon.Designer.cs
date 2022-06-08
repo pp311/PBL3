@@ -34,7 +34,6 @@
             this.tb_IDHoaDon = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tb_SoDienThoai = new System.Windows.Forms.TextBox();
-
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -88,7 +87,6 @@
             this.dtp_NgayTao.Name = "dtp_NgayTao";
             this.dtp_NgayTao.Size = new System.Drawing.Size(297, 26);
             this.dtp_NgayTao.TabIndex = 120;
-
             // 
             // label11
             // 
@@ -128,6 +126,7 @@
             this.tb_SoDienThoai.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_SoDienThoai.Location = new System.Drawing.Point(183, 98);
             this.tb_SoDienThoai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_SoDienThoai.MaxLength = 20;
             this.tb_SoDienThoai.Name = "tb_SoDienThoai";
             this.tb_SoDienThoai.Size = new System.Drawing.Size(297, 36);
             this.tb_SoDienThoai.TabIndex = 115;
@@ -216,6 +215,7 @@
             this.tb_TenKhachHang.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_TenKhachHang.Location = new System.Drawing.Point(183, 49);
             this.tb_TenKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_TenKhachHang.MaxLength = 255;
             this.tb_TenKhachHang.Name = "tb_TenKhachHang";
             this.tb_TenKhachHang.Size = new System.Drawing.Size(297, 36);
             this.tb_TenKhachHang.TabIndex = 31;
@@ -366,7 +366,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Table)).EndInit();
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
