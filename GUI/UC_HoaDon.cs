@@ -68,7 +68,7 @@ namespace Do_An
         }
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            if(Convert.ToInt32(tb_IdNhanVien.Text) != CurrentUser.ID_NhanVien || CurrentUser.ViTri != "Quản lý")
+            if(Convert.ToInt32(tb_IdNhanVien.Text) != CurrentUser.ID_NhanVien && CurrentUser.ViTri != "Quản lý")
             {
                 MessageBox.Show("Lỗi phân quyền: Không thể chỉnh sửa hóa đơn do nhân viên khác tạo nếu không phải là quản lý");
             }
@@ -178,7 +178,8 @@ namespace Do_An
                             return;
                         }
                     }
-                    BLL_HoaDon.Instance.DelHoaDon(list);
+                    string msg = BLL_HoaDon.Instance.DelHoaDon(list);
+                    if (msg != "") MessageBox.Show(msg);
                     dataGridView1.DataSource = BLL_HoaDon.Instance.GetAllHoaDon();
                 }
             }

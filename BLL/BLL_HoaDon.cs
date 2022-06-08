@@ -36,12 +36,19 @@ namespace Do_An.BLL
         {
             return dshd.GetAllHoaDon();
         }
-        public void DelHoaDon(List<string> del)
+        public string DelHoaDon(List<string> del)
         {
+            foreach (string delItem in del)
+            {
+                int id = Convert.ToInt32(delItem);
+                if (db.thongtinbaohanhs.Any(p => p.ID_HoaDon == id))
+                    return $"Không thể xóa hóa đơn có id {delItem} do có sản phẩm đã kích hoạt bảo hành";
+            }
             foreach (string delItem in del)
             {
                 DAL_HoaDon.Instance.DelHoaDon(delItem);
             }
+            return "";
         }
         public HoaDon GetHoaDonByID(int ID)
         {

@@ -87,7 +87,7 @@ namespace Do_An.DAL
        
         public void UpdateHoaDon(HoaDon hd)
         {
-            string queryhd = $"update hoadon set ID_NhanVien = '{hd.ID_NhanVien}',NgayTao = '{hd.NgayTao.ToString("yyyy-MM-dd")}',TongTien = '{hd.TongTien}', TenKhachHang = N'{hd.TenKhachHang}',SoDienThoai='{hd.SoDienThoai}' where ID_HoaDon ='{hd.ID_HoaDon}'";
+            string queryhd = $"update hoadon set ID_NhanVien = '{hd.ID_NhanVien}',NgayTao = '{hd.NgayTao.ToString("yyyy-MM-dd")}', TenKhachHang = N'{hd.TenKhachHang}',SoDienThoai='{hd.SoDienThoai}' where ID_HoaDon ='{hd.ID_HoaDon}'";
             DBHelper.Instance.ExcuteDB(queryhd);
         }
 

@@ -126,6 +126,7 @@
             this.tb_TenHang.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_TenHang.Location = new System.Drawing.Point(1065, 10);
             this.tb_TenHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_TenHang.MaxLength = 255;
             this.tb_TenHang.Name = "tb_TenHang";
             this.tb_TenHang.Size = new System.Drawing.Size(276, 36);
             this.tb_TenHang.TabIndex = 119;
@@ -168,6 +169,7 @@
             this.tb_XuatXu.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_XuatXu.Location = new System.Drawing.Point(631, 61);
             this.tb_XuatXu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_XuatXu.MaxLength = 255;
             this.tb_XuatXu.Name = "tb_XuatXu";
             this.tb_XuatXu.Size = new System.Drawing.Size(249, 36);
             this.tb_XuatXu.TabIndex = 115;
@@ -228,6 +230,7 @@
             this.tb_TenSP.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.tb_TenSP.Location = new System.Drawing.Point(185, 61);
             this.tb_TenSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_TenSP.MaxLength = 255;
             this.tb_TenSP.Name = "tb_TenSP";
             this.tb_TenSP.Size = new System.Drawing.Size(294, 36);
             this.tb_TenSP.TabIndex = 32;
