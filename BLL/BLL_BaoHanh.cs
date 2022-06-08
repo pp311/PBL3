@@ -31,14 +31,14 @@ namespace Do_An.BLL
         }
         public DataTable GetDanhSachBaoHanh()
         {
-            var l = (from ttbh in db.thongtinbaohanhs
+            var l = (from ttbh in db.thongtinbaohanhs.AsEnumerable()
                     select new
                     {
                         ID_BaoHanh = ttbh.ID_BaoHanh,
                         ID_HoaDon = ttbh.ID_HoaDon,
                         ID_LoHang = ttbh.ID_LoHang,
                         ID_SanPham = ttbh.ID_SanPham,
-                        TenSanPham = ttbh.hoadon.chitiethoadons.FirstOrDefault().kho.sanpham.Ten,
+                        TenSanPham = BLL_SanPham.Instance.GetTenSanPham(ttbh.ID_SanPham),
                         HanBaoHanh = ttbh.HanBaoHanh,
                         Serial = ttbh.Serial
                     }).ToList();
@@ -55,7 +55,7 @@ namespace Do_An.BLL
                          ID_HoaDon = ttbh.ID_HoaDon,
                          ID_LoHang = ttbh.ID_LoHang,
                          ID_SanPham = ttbh.ID_SanPham,
-                         TenSanPham = ttbh.hoadon.chitiethoadons.FirstOrDefault().kho.sanpham.Ten,
+                         TenSanPham = BLL_SanPham.Instance.GetTenSanPham(ttbh.ID_SanPham),
                          HanBaoHanh = ttbh.HanBaoHanh,
                          Serial = ttbh.Serial
                      }).ToList();
@@ -116,13 +116,13 @@ namespace Do_An.BLL
         }
         public DataTable GetSanPhamDangBaoHanh()
         {
-            var l = from lsbh in db.lichsubaohanhs
+            var l = from lsbh in db.lichsubaohanhs.AsEnumerable()
                     where lsbh.TinhTrang != "Đã hoàn thành" && lsbh.TinhTrang != "Đã bàn giao cho khách"
                     select new
                     {
                         STT = lsbh.STT,
                         ID_BaoHanh = lsbh.ID_BaoHanh,
-                        TenSanPham = lsbh.thongtinbaohanh.hoadon.chitiethoadons.FirstOrDefault().kho.sanpham.Ten,
+                        TenSanPham = BLL_SanPham.Instance.GetTenSanPham(lsbh.thongtinbaohanh.ID_SanPham),
                         ID_NhanVien = lsbh.ID_NhanVien,
                         TinhTrang = lsbh.TinhTrang,
                         NgayBaoHanh = lsbh.NgayBaoHanh,
