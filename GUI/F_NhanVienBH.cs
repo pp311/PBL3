@@ -20,6 +20,9 @@ namespace Do_An
             StartTimer();
             lb_Name.Text = CurrentUser.Name;
             lb_ID.Text = CurrentUser.ID_NhanVien.ToString();
+            pnl_MainBH.Controls.Add(UC_BanHang.Instance);
+            UC_BanHang.Instance.Dock = DockStyle.Fill;
+            UC_BanHang.Instance.BringToFront();
         }
         public void ChangeName()
         {
@@ -59,17 +62,10 @@ namespace Do_An
 
         private void btn_BanHangBH_Click(object sender, EventArgs e)
         {
-            if (!pnl_MainBH.Controls.Contains(UC_BanHang.Instance))
-            {
-                pnl_MainBH.Controls.Add(UC_BanHang.Instance);
-                UC_BanHang.Instance.Dock = DockStyle.Fill;
-                UC_BanHang.Instance.BringToFront();
-            }
-            else
-            {
+            
                 UC_BanHang.Instance.BringToFront();
                 UC_BanHang.Instance.Show();
-            }
+            
         }
 
         private void btn_SanPhamBH_Click(object sender, EventArgs e)

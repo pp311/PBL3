@@ -45,9 +45,8 @@ namespace Do_An.BLL
         }
         public void AddNhanVien(NhanVien nv, TaiKhoan tk)
         {
-            tk.MatKhau = BLL_TaiKhoan.EncodePass(tk.MatKhau);
-            DAL_NhanVien.Instance.DAL_AddNhanVien(nv, tk);
-
+                tk.MatKhau = BLL_TaiKhoan.EncodePass(tk.MatKhau);
+                DAL_NhanVien.Instance.DAL_AddNhanVien(nv, tk);
         }
 
 

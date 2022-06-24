@@ -57,6 +57,9 @@ namespace Do_An
                 btn_XacNhan.Visible = false;
                 btn_Huy.Text = "Tắt";
                 btn_Huy.Location = new Point(678, 661);
+                label7.Visible = false;
+                num_TSKT.Visible = false;
+                btn_TSKT.Visible = false;
             }
 
         }

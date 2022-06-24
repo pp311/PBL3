@@ -248,6 +248,12 @@ namespace Do_An
                 isValid = false;
                 MessageBox.Show("Bạn đã nhập thiếu hoặc sai thông tin , vui lòng nhập lại !!");
             }
+            PBLEntities db = new PBLEntities();
+            if(db.taikhoans.Any(p => p.TenTaiKhoan == taiKhoan))
+            {
+                isValid = false;
+                MessageBox.Show("Tên tài khoản đã tồn tại");
+            }
             return isValid;
 
         }

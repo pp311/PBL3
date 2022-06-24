@@ -63,6 +63,7 @@ namespace Do_An
 
             if (Validate())
             {
+                
                 if(tos!=-1)
                 {
                     // cap nhat mk 
@@ -92,18 +93,12 @@ namespace Do_An
                 nv.SoDienThoai = sodienthoai;
                 nv.ViTri = vitri;
                 nv.NgaySinh = ngaysinh;
-
-                BLL_NhanVien.Instance.AddNhanVien(nv, tk);
-
+                
                 MessageBox.Show("Bạn đã thêm nhân viên này thành công !!! ");
                 load("");
-
                 this.Dispose();
+                
                 }
-              
-
-
-
             }
         }
 

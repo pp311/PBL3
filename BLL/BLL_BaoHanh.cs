@@ -48,7 +48,7 @@ namespace Do_An.BLL
         {
             kw = kw.ToLower();
             var l = (from ttbh in db.thongtinbaohanhs
-                     where ttbh.ID_BaoHanh.ToString().Contains(kw) || ttbh.Serial.ToLower().Contains(kw)
+                     where ttbh.ID_BaoHanh.ToString().Contains(kw) || ttbh.Serial.ToLower().Contains(kw) || ttbh.ID_HoaDon.ToString().Contains(kw)
                      select new
                      {
                          ID_BaoHanh = ttbh.ID_BaoHanh,

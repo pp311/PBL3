@@ -21,6 +21,9 @@ namespace Do_An
             StartTimer();
             lb_Name.Text = CurrentUser.Name;
             lb_ID.Text = CurrentUser.ID_NhanVien.ToString();
+            pnl_Main.Controls.Add(UC_ThongTinSanPham.Instance);
+            UC_ThongTinSanPham.Instance.Dock = DockStyle.Fill;
+            UC_ThongTinSanPham.Instance.BringToFront();
         }
         private void StartTimer()
         {
@@ -112,17 +115,10 @@ namespace Do_An
 
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
-            if (!pnl_Main.Controls.Contains(UC_ThongTinSanPham.Instance))
-            {
-                pnl_Main.Controls.Add(UC_ThongTinSanPham.Instance);
-                UC_ThongTinSanPham.Instance.Dock = DockStyle.Fill;
-                UC_ThongTinSanPham.Instance.BringToFront();
-            }
-            else
-            {
+            
                 UC_ThongTinSanPham.Instance.BringToFront();
                 UC_ThongTinSanPham.Instance.Show();
-            }
+            
 
         }
 

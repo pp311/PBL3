@@ -66,7 +66,9 @@ namespace Do_An.BLL
             keyWord = keyWord.ToLower();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                if (!(dt.Rows[i]["Ten"].ToString().ToLower().Contains(keyWord)))
+                if (!(dt.Rows[i]["Ten"].ToString().ToLower().Contains(keyWord)) &&
+                    !(dt.Rows[i]["ID_SanPham"].ToString().ToLower().Contains(keyWord)) &&
+                    !(GetThongSoKyThuatByIDSanPham((int)dt.Rows[i]["ID_SanPham"]).ToString().ToLower().Contains(keyWord)))
                 {
                     dt.Rows.Remove(dt.Rows[i]);
                     i--;
