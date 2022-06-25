@@ -219,7 +219,6 @@
             this.datetime2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime2.Location = new System.Drawing.Point(821, 20);
             this.datetime2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.datetime2.MaxDate = new System.DateTime(2030, 10, 24, 0, 0, 0, 0);
             this.datetime2.Name = "datetime2";
             this.datetime2.Size = new System.Drawing.Size(201, 36);
             this.datetime2.TabIndex = 4;
@@ -231,11 +230,10 @@
             this.datetime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetime1.Location = new System.Drawing.Point(381, 19);
             this.datetime1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.datetime1.MaxDate = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
             this.datetime1.Name = "datetime1";
             this.datetime1.Size = new System.Drawing.Size(201, 36);
             this.datetime1.TabIndex = 3;
-            this.datetime1.Value = new System.DateTime(2022, 4, 22, 0, 0, 0, 0);
+            this.datetime1.Value = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             // 
             // label5
             // 
